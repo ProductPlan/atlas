@@ -12,7 +12,7 @@ jobs:
 
 
     env:
-      NEXT_PUBLIC_BASE_PATH: /atlas-monorepo
+      NEXT_PUBLIC_BASE_PATH: /atlas-mono
 
 
     strategy:
