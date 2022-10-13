@@ -1,0 +1,21 @@
+import React from "react";
+// import PropTypes from 'prop-types';
+import classNames from "classnames";
+import "./{{pascalCase componentName}}.scss";
+
+/** {{pascalCase componentName}} component ... */
+export default function {{pascalCase componentName}}() {
+  const classes = classNames(
+    "{{pascalCase componentName}}",
+  );
+
+  return (
+    <div className={classes}>
+      <h1>{{pascalCase componentName}}, a new Atlas Component, is ready to be born 🚀</h1>
+    </div>
+  );
+}
+
+{{pascalCase componentName}}.propTypes = {
+  // property: PropTypes.(...).isRequired,
+};

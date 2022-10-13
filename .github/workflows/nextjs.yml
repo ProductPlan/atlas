@@ -1,0 +1,41 @@
+name: Deploy to GitHub Pages
+
+
+on:
+  push:
+    branches: [main]
+
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+
+    env:
+      NEXT_PUBLIC_BASE_PATH: /atlas-monorepo
+
+
+    strategy:
+      matrix:
+        node-version: [16.x]
+
+
+    steps:
+      - name: Get files
+        uses: actions/checkout@v2
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: 16.x
+          cache: 'yarn'
+      - name: Install packages
+        run: yarn
+      - name: Export static files
+        run: yarn export
+      - name: Add .nojekyll file
+        run: touch ./apps/docs/out/.nojekyll
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@4.1.1
+        with:
+          branch: gh-pages
+          folder: ./apps/docs/out

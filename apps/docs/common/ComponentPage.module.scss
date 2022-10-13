@@ -1,0 +1,41 @@
+.ComponentPage {
+  flex-grow: 1;
+  flex-shrink: 1;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 16px;
+}
+
+.ComponentPageHeading {
+  font-size: 28px;
+  line-height: 42px;
+  padding-bottom: 4px;
+  margin: 0;
+  border-bottom: 1px solid #D1D5D9;
+}
+
+.ComponentPageSubcopy {
+  font-size: 14px;
+  line-height: 20px;
+  padding: 16px 0;
+  margin: 0;
+}
+
+.Example {
+  border-bottom: 1px solid #D1D5D9;
+  padding: 16px 0;
+}
+
+.ExampleHeader {
+  display: flex;
+  width: 100%;
+  padding-bottom: 8px;
+  justify-content: space-between;
+  align-items: center;
+
+  h4 {
+    margin: 0;
+    flex-grow: 1;
+  }
+}
+

@@ -1,0 +1,99 @@
+$black: #282929;
+$white: #fff;
+$blue: #0A6CB9;
+$blue-500: #0757AA;
+$gray1: #6A6E72;
+$gray2: #919497;
+$blue-700: #064474;
+$blue-200: #c0e2fc;
+$light-gray3: #F0F3F5;
+$light-gray1: #D1D5D9;
+$light-blue: #ECF6FE;
+$selected-box-shadow: #C0E2FC;
+
+.BasicButton {
+  padding: 8px 16px;
+  background-color: $blue;
+  border-radius: 4px;
+  border: none;
+  color: $white;
+  font-size: 14px;
+  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 36px;
+  cursor: pointer;
+
+  & + & {
+    margin-left: 8px;
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: 0px 0px 0px 2px #C0E2FC;
+    background-color: $blue-700;
+  }
+
+  &:active {
+    background-color: $blue-700;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+  }
+
+  &--ghost {
+    background-color: transparent;
+    color: $black;
+
+    &:hover {
+      background-color: $light-gray3;
+    }
+
+    &:active {
+      background-color: $light-gray3;
+    }
+    &:focus {
+      background-color: $light-gray1;
+    }
+  }
+
+  &--secondary {
+    background-color: $light-blue;
+    color: $blue;
+
+    &:hover {
+      background-color: $selected-box-shadow;
+    }
+
+    &:active {
+      background-color: $selected-box-shadow;
+    }
+
+    &:focus {
+      background-color: $blue;
+      color: $white;
+    }
+  }
+
+  &__trailingIcon {
+    height: 20px;
+    width: 20px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: -8px;
+    margin-left: 4px;
+  }
+
+  &__leadingIcon {
+    height: 20px;
+    width: 20px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -8px;
+    margin-right: 4px;
+  }
+}

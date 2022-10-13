@@ -1,0 +1,53 @@
+/* Global styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #282929;
+}
+
+#root {
+  overflow: auto;
+  height: 100%;
+}
+
+/* Documentation site component styles */
+
+.props tr td:last-of-type {
+  text-align: center;
+}
+
+.props th, td {
+  text-align: left;
+  padding: 5px;
+}
+
+.example-navigation {
+  width: 250px;
+}
+
+.Documentation {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+}
+
+pre.language-jsx::before,
+pre.language-jsx::after {
+  box-shadow: unset !important;
+}
+
+pre[class*="language-"] {
+  position: initial !important;
+}
+
+pre[class*="language-"] > code {
+  border-left-color: #0A6CB9 !important;
+  box-shadow: -1px 0px 0px 0px #0A6CB9, 0px 0px 0px 1px #D1D5D9 !important;
+  border-radius: 4px;
+  position: initial !important;
+}

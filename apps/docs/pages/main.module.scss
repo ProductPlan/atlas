@@ -1,0 +1,22 @@
+.Page {
+  flex-grow: 1;
+  flex-shrink: 1;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 16px;
+}
+
+.PageHeading {
+  font-size: 28px;
+  line-height: 42px;
+  padding-bottom: 4px;
+  margin: 0;
+  border-bottom: 1px solid #D1D5D9;
+}
+
+.PageSubcopy {
+  font-size: 14px;
+  line-height: 20px;
+  padding: 16px 0;
+  margin: 0;
+}

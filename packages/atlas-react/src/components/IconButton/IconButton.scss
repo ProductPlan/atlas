@@ -1,0 +1,46 @@
+$black: #282929;
+$white: #fff;
+$blue: #0A6CB9;
+$blue-500: #0757AA;
+$gray1: #6A6E72;
+$gray2: #919497;
+$blue-700: #064474;
+$blue-200: #c0e2fc;
+$light-gray3: #F0F3F5;
+$light-gray1: #D1D5D9;
+$light-blue: #ECF6FE;
+
+.IconButton {
+  background: none;
+  border: none;
+  margin: 0;
+  padding: 0;
+  height: 24px;
+  width: 24px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #6A6E72;
+  transition: color 300ms ease;
+  cursor: pointer;
+  border-radius: 4px;
+  
+  &:hover {
+    color: $blue;
+  }
+  
+  &:active, &:focus {
+    outline: none;
+    background-color: $light-blue;
+    color: $blue;
+  }
+  
+  &:disabled {
+    color: $gray2;
+  }
+
+  &.is-active {
+    color: $blue;
+  }
+}

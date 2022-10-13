@@ -1,0 +1,142 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BasicButton when using different variants renders a default button 1`] = `
+<div>
+  <button
+    class="BasicButton"
+    type="button"
+  >
+    Click Me
+  </button>
+</div>
+`;
+
+exports[`BasicButton when using different variants renders a ghost button 1`] = `
+<div>
+  <button
+    class="BasicButton BasicButton--ghost"
+    type="button"
+  >
+    Click Me
+  </button>
+</div>
+`;
+
+exports[`BasicButton when using different variants renders a secondary button 1`] = `
+<div>
+  <button
+    class="BasicButton BasicButton--secondary"
+    type="button"
+  >
+    Click Me
+  </button>
+</div>
+`;
+
+exports[`BasicButton when using icons when button with type default has a leading icon renders the icon 1`] = `
+<div>
+  <button
+    class="BasicButton"
+    type="button"
+  >
+    <span
+      class="BasicButton__leadingIcon"
+    >
+      <i
+        class="fa fa-chevron-left"
+      />
+    </span>
+    Click Me
+  </button>
+</div>
+`;
+
+exports[`BasicButton when using icons when button with type default has a trailing icon renders the icon 1`] = `
+<div>
+  <button
+    class="BasicButton"
+    type="button"
+  >
+    Click Me
+    <span
+      class="BasicButton__trailingIcon"
+    >
+      <i
+        class="fa fa-chevron-left"
+      />
+    </span>
+  </button>
+</div>
+`;
+
+exports[`BasicButton when using icons when button with type ghost has a leading icon renders the icon 1`] = `
+<div>
+  <button
+    class="BasicButton BasicButton--ghost"
+    type="button"
+  >
+    <span
+      class="BasicButton__leadingIcon"
+    >
+      <i
+        class="fa fa-chevron-left"
+      />
+    </span>
+    Click Me
+  </button>
+</div>
+`;
+
+exports[`BasicButton when using icons when button with type ghost has a trailing icon renders the icon 1`] = `
+<div>
+  <button
+    class="BasicButton BasicButton--ghost"
+    type="button"
+  >
+    Click Me
+    <span
+      class="BasicButton__trailingIcon"
+    >
+      <i
+        class="fa fa-chevron-left"
+      />
+    </span>
+  </button>
+</div>
+`;
+
+exports[`BasicButton when using icons when button with type secondary has a leading icon renders the icon 1`] = `
+<div>
+  <button
+    class="BasicButton BasicButton--secondary"
+    type="button"
+  >
+    <span
+      class="BasicButton__leadingIcon"
+    >
+      <i
+        class="fa fa-chevron-left"
+      />
+    </span>
+    Click Me
+  </button>
+</div>
+`;
+
+exports[`BasicButton when using icons when button with type secondary has a trailing icon renders the icon 1`] = `
+<div>
+  <button
+    class="BasicButton BasicButton--secondary"
+    type="button"
+  >
+    Click Me
+    <span
+      class="BasicButton__trailingIcon"
+    >
+      <i
+        class="fa fa-chevron-left"
+      />
+    </span>
+  </button>
+</div>
+`;
