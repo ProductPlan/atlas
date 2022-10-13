@@ -17,8 +17,13 @@ export default function Navigation({ components }) {
     <nav className={styles.Sidebar}>
       <div className={styles.Sidebar__title}>Atlas</div>
       <ul className={styles.Sidebar__list}>
-        <li className={homepageClasses} key={"homepage"} id={"homepage"}>
+        <li className={homepageClasses}>
           <Link href="/">Homepage</Link>
+        </li>
+        <li className={styles.Sidebar__listItem}>
+          <a href="https://github.com/ProductPlan/atlas-mono" target="_blank" rel="noreferrer">
+            GitHub <i className="fa-brands fa-github"></i>
+          </a>
         </li>
       </ul>
 
