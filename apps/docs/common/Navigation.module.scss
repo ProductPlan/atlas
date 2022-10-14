@@ -1,12 +1,6 @@
-$light-gray2: #E8ECEE;
-$black: #282929;
-$white: #ffffff;
-$blue: #0A6CB9;
-
 .Sidebar {
-  background-color: $light-gray2;
-  color: $black;
-
+  background-color: var(--docs-color-light-gray2);
+  color: var(--docs-color-black);
   width: 250px;
 }
 
@@ -28,12 +22,12 @@ $blue: #0A6CB9;
   padding: 10px 16px;
 
   a {
-    color: $black;
+    color: var(--docs-color-black);
     text-decoration: none;
   }
 }
 
 .Sidebar__listItemActive {
-  background-color: $white;
-  border-left-color: $blue;
+  background-color: var(--docs-color-white);
+  border-left-color: var(--docs-color-blue);
 }

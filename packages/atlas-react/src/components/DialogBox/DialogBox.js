@@ -1,30 +1,52 @@
-import React, {useEffect, useRef} from "react";
+import React, { useEffect, useRef } from "react";
 import PropTypes from "prop-types";
-import {IconButton, BasicButton} from "@productplan/atlas";
+import { IconButton, BasicButton } from "@productplan/atlas";
 import "./DialogBox.scss";
 
-{/** A Simple modal dialog that displays above the page content and renders children in the body of the modal */}
-export default function DialogBox({title, subtitle, customHeader, customFooter, children, visible = false, onCancel, onClose}) {
+{
+  /** A Simple modal dialog that displays above the page content and renders children in the body of the modal */
+}
+export default function DialogBox({
+  title,
+  subtitle,
+  customHeader,
+  customFooter,
+  children,
+  visible = false,
+  onCancel,
+  onClose,
+}) {
   // const [isVisible, setIsVisible] = useState(false);
   const dialogEl = useRef(null);
 
   useEffect(() => {
-      if (visible) {
-        dialogEl.current.showModal()
-      }
+    if (visible) {
+      dialogEl.current.showModal();
+    }
   }, [visible]);
 
   // setIsVisible(visible);
   return (
-    <dialog className="ModalDialog" ref={dialogEl} onCancel={onCancel} onClose={onClose}>
-      <ModalHeader title={title} subtitle={subtitle} handleClose={() => dialogEl.current.close()} />
+    <dialog
+      className="ModalDialog"
+      ref={dialogEl}
+      onCancel={onCancel}
+      onClose={onClose}
+    >
+      <ModalHeader
+        title={title}
+        subtitle={subtitle}
+        handleClose={() => dialogEl.current.close()}
+      />
 
-      <section className="ModalDialog__body">
-        {children}
-      </section>
+      <section className="ModalDialog__body">{children}</section>
 
       <ModalFooter>
-        <BasicButton type="ghost" label="Cancel" onClick={() => dialogEl.current.close()}/>
+        <BasicButton
+          type="ghost"
+          label="Cancel"
+          onClick={() => dialogEl.current.close()}
+        />
         <BasicButton label="Submit" htmlType="submit" htmlForm="aform" />
       </ModalFooter>
     </dialog>
@@ -47,8 +69,8 @@ DialogBox.propTypes = {
   customHeader: PropTypes.element,
   /** pass in JSX to override the default footer */
   customFooter: PropTypes.element,
-}
-function ModalHeader({title, subtitle, handleClose}) {
+};
+function ModalHeader({ title, subtitle, handleClose }) {
   return (
     <header className="ModalDialog__header">
       <div>
@@ -57,18 +79,14 @@ function ModalHeader({title, subtitle, handleClose}) {
       </div>
       <IconButton faClass="fa-times" onClick={handleClose} />
     </header>
-  )
+  );
 }
 ModalHeader.propTypes = {
   title: PropTypes.string.isRequired,
   subtitle: PropTypes.string.isRequired,
   handleClose: PropTypes.func.isRequired,
-}
+};
 
 function ModalFooter(props) {
-  return (
-    <footer className="ModalDialog__footer">
-      {props.children}
-    </footer>
-  )
+  return <footer className="ModalDialog__footer">{props.children}</footer>;
 }

@@ -1,9 +1,15 @@
 .Page {
   flex-grow: 1;
   flex-shrink: 1;
-  padding-left: 24px;
-  padding-right: 24px;
-  padding-top: 16px;
+  background-color: var(--docs-color-light-gray2);
+  display: flex;
+}
+
+.PageContent {
+  flex: 1;
+  padding: 16px 24px;
+  background-color: var(--docs-color-white);
+  border-radius: 8px 0 0 0;
 }
 
 .PageHeading {

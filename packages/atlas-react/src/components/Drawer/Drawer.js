@@ -1,75 +1,52 @@
 import React from "react";
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
 import classNames from "classnames";
 import { BasicButton } from "@productplan/atlas";
 import "./Drawer.scss";
 
 const DrawerBack = ({ label = "Back", onClick = () => {} }) => {
-  const classes = classNames(
-    "Drawer__back",
-  );
+  const classes = classNames("Drawer__back");
 
   return (
     <div className={classes}>
-      <BasicButton label={label} type="ghost" onClick={onClick} leadingIcon={<i className="fa fa-chevron-left"></i>} />
+      <BasicButton
+        label={label}
+        type="ghost"
+        onClick={onClick}
+        leadingIcon={<i className="fa fa-chevron-left"></i>}
+      />
     </div>
   );
 };
 
 const DrawerActions = ({ children }) => {
-  const classes = classNames(
-    "Drawer__actions",
-  );
+  const classes = classNames("Drawer__actions");
 
-  return (
-    <div className={classes}>
-      {children}
-    </div>
-  );
+  return <div className={classes}>{children}</div>;
 };
 
 const DrawerTitle = ({ children }) => {
-  const classes = classNames(
-    "Drawer__title",
-  );
+  const classes = classNames("Drawer__title");
 
   return <h4 className={classes}>{children}</h4>;
 };
 
 const DrawerHeader = ({ children }) => {
-  const classes = classNames(
-    "Drawer__header",
-  );
+  const classes = classNames("Drawer__header");
 
-  return (
-    <div className={classes}>
-      {children}
-    </div>
-  );
+  return <div className={classes}>{children}</div>;
 };
 
 const DrawerBody = ({ children }) => {
-  const classes = classNames(
-    "Drawer__body",
-  );
+  const classes = classNames("Drawer__body");
 
-  return (
-    <div className={classes}>
-      {children}
-    </div>
-  );
+  return <div className={classes}>{children}</div>;
 };
 
 const DrawerFooter = ({ children }) => {
-  const classes = classNames(
-    "Drawer__footer",
-  );
+  const classes = classNames("Drawer__footer");
 
-  return (
-    <div className={classes}>
-      {children}
-    </div>
-  );
+  return <div className={classes}>{children}</div>;
 };
 
 /**
@@ -78,10 +55,7 @@ const DrawerFooter = ({ children }) => {
  *
  */
 export default function Drawer({ position, children, open = false }) {
-  const drawerClasses = classNames(
-    'Drawer',
-    `Drawer--${position}`,
-  );
+  const drawerClasses = classNames("Drawer", `Drawer--${position}`);
 
   if (!open) {
     return null;

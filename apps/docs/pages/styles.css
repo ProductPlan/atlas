@@ -5,6 +5,13 @@ body, html {
   font-size: 14px;
 }
 
+:root {
+  --docs-color-light-gray2: #E8ECEE;
+  --docs-color-black: #282929;
+  --docs-color-white: #ffffff;
+  --docs-color-blue: #0A6CB9;
+}
+
 body {
   font-family: Arial, Helvetica, sans-serif;
   color: #282929;
@@ -33,7 +40,7 @@ body {
 .Documentation {
   display: flex;
   width: 100%;
-  min-height: 100vh;
+  min-height: calc(100vh - 48px);
 }
 
 pre.language-jsx::before,
@@ -46,8 +53,8 @@ pre[class*="language-"] {
 }
 
 pre[class*="language-"] > code {
-  border-left-color: #0A6CB9 !important;
-  box-shadow: -1px 0px 0px 0px #0A6CB9, 0px 0px 0px 1px #D1D5D9 !important;
+  border-left-color: var(--docs-color-blue) !important;
+  box-shadow: -1px 0px 0px 0px var(--docs-color-blue), 0px 0px 0px 1px var(--docs-color-light-gray2) !important;
   border-radius: 4px;
   position: initial !important;
 }

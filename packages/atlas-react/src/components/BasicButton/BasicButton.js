@@ -1,5 +1,5 @@
 import React from "react";
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
 import classNames from "classnames";
 import "./BasicButton.scss";
 
@@ -7,19 +7,33 @@ const buttonHtmlTypes = ["button", "submit", "reset"];
 export const buttonVariants = ["default", "secondary", "ghost"];
 
 /** A Basic Button */
-export default function BasicButton({label, htmlForm, htmlType = "button", type = "default", onClick, trailingIcon, leadingIcon}) {
-  const classes = classNames(
-    "BasicButton",
-    {
-      [`BasicButton--${type}`]: type !== "default",
-    }
-  );
+export default function BasicButton({
+  label,
+  htmlForm,
+  htmlType = "button",
+  type = "default",
+  onClick,
+  trailingIcon,
+  leadingIcon,
+}) {
+  const classes = classNames("BasicButton", {
+    [`BasicButton--${type}`]: type !== "default",
+  });
 
   return (
-    <button className={classes} type={htmlType} form={htmlForm} onClick={onClick}>
-      {leadingIcon ? <span className="BasicButton__leadingIcon">{leadingIcon}</span> : null }
+    <button
+      className={classes}
+      type={htmlType}
+      form={htmlForm}
+      onClick={onClick}
+    >
+      {leadingIcon ? (
+        <span className="BasicButton__leadingIcon">{leadingIcon}</span>
+      ) : null}
       {label}
-      {trailingIcon ? <span className="BasicButton__trailingIcon">{trailingIcon}</span> : null }
+      {trailingIcon ? (
+        <span className="BasicButton__trailingIcon">{trailingIcon}</span>
+      ) : null}
     </button>
   );
 }
@@ -41,4 +55,4 @@ BasicButton.propTypes = {
   trailingIcon: PropTypes.element,
   /** icon to display to the left of the label */
   leadingIcon: PropTypes.element,
-}
+};
