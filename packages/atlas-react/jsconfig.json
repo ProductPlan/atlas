@@ -7,9 +7,9 @@
     "allowSyntheticDefaultImports": false,
     "baseUrl": "./",
     "paths": {
-      "@src/*": ["./src/*"]
-      "@components/*": ["./src/components/*"]
+      "@components/*": ["src/components/*"],
     }
   },
-  "exclude": ["node_modules", "**/node_modules/*"]
+  "include": ["."],
+  "exclude": ["node_modules", "**/node_modules/*", "dist", "build"]
 }

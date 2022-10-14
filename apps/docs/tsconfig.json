@@ -1,5 +1,11 @@
 {
   "extends": "tsconfig/nextjs.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@components/*": ["../../packages/atlas-react/src/components/*"]
+    }
+  },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "pages/components/[component].jsx", "pages/index.jsx"],
   "exclude": ["node_modules"]
 }

@@ -1,7 +1,8 @@
 import React, { useEffect, useRef } from "react";
 import PropTypes from "prop-types";
-import { IconButton, BasicButton } from "@productplan/atlas";
+import BasicButton from "@components/BasicButton";
 import "./DialogBox.scss";
+import IconButton from "@components/IconButton";
 
 {
   /** A Simple modal dialog that displays above the page content and renders children in the body of the modal */
@@ -46,6 +47,7 @@ export default function DialogBox({
           type="ghost"
           label="Cancel"
           onClick={() => dialogEl.current.close()}
+          htmlId="dialogBoxCancel"
         />
         <BasicButton label="Submit" htmlType="submit" htmlForm="aform" />
       </ModalFooter>

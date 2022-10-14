@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import classNames from "classnames";
-import { BasicButton } from "@productplan/atlas";
+import BasicButton from "@components/BasicButton";
 import "./Drawer.scss";
 
 const DrawerBack = ({ label = "Back", onClick = () => {} }) => {

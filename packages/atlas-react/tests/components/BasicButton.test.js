@@ -1,5 +1,5 @@
 import { render, screen } from "@testing-library/react";
-import { BasicButton, buttonVariants } from "@productplan/atlas";
+import BasicButton, { buttonVariants } from "@components/BasicButton";
 
 const icon = <i className="fa fa-chevron-left"></i>;
 

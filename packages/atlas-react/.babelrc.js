@@ -1,3 +1,10 @@
+const moduleResolverPluginConfig = {
+  alias: {
+    '@components/(.*)$': './src/components/\\1',
+    cwd: 'packagejson',
+  }
+};
+
 let config = {
   presets: [
     [
@@ -27,7 +34,8 @@ let config = {
         ],
         "css": true
       }
-    ]
+    ],
+    ['babel-plugin-module-resolver', moduleResolverPluginConfig]
   ]
 };
 

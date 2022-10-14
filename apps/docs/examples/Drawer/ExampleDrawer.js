@@ -23,6 +23,7 @@ export default function ExampleDrawer() {
     <div>
       {availablePositions.map((position) => (
         <BasicButton
+          kye={`${position}-button`}
           label={`Launch Drawer (${position})`}
           htmlForm=""
           htmlType="button"
