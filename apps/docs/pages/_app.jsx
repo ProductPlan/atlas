@@ -8,15 +8,20 @@ import "./normalize.css";
 
 const AtlasDocsApp = ({ Component, pageProps }) => {
   return (
-    <div>
-      <Heading />
-      <div className="Documentation">
-        <Navigation
-          components={componentData.map((component) => component.name)}
-        />
-        <Component {...pageProps} />
+    <>
+      <Head>
+        <title>ProductPlan Atlas</title>
+      </Head>
+      <div>
+        <Heading />
+        <div className="Documentation">
+          <Navigation
+            components={componentData.map((component) => component.name)}
+          />
+          <Component {...pageProps} />
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 
