@@ -1,4 +1,5 @@
 import { Html, Head, Main, NextScript } from "next/document";
+import { addBasePath } from "next/dist/client/add-base-path";
 import Navigation from "../common/Navigation";
 import Heading from "../common/Heading";
 import componentData from "../data/componentData";
@@ -14,7 +15,7 @@ export default function Document() {
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
         />
-        <link rel="shortcut icon" href="/favicon.ico" />
+        <link rel="shortcut icon" href={addBasePath("/favicon.ico")} />
       </Head>
       <body>
         <Main />
