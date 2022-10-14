@@ -19,11 +19,17 @@
 .Sidebar__listItem {
   font-size: 14px;
   border-left: 6px solid transparent;
-  padding: 10px 16px;
+
+  &:hover {
+    background-color: var(--docs-color-light-gray3);
+    border-left-color: var(--docs-color-blue);
+  }
 
   a {
+    padding: 10px 16px;
     color: var(--docs-color-black);
     text-decoration: none;
+    display: block;
   }
 }
 
