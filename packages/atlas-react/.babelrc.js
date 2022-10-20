@@ -10,17 +10,10 @@ let config = {
     [
       "@babel/preset-env",
       {
-        "targets": {
-          "edge": "17",
-          "firefox": "60",
-          "chrome": "67",
-          "safari": "11.1"
-        },
-        "useBuiltIns": "usage",
-        "corejs": "3.6.5"
+        "targets": ">0.2%, not dead, not op_mini all"
       }
     ],
-    "@babel/preset-react"
+    "@babel/preset-react",
   ],
   plugins: [
     [
@@ -35,6 +28,7 @@ let config = {
         "css": true
       }
     ],
+    "@babel/plugin-transform-runtime",
     ['babel-plugin-module-resolver', moduleResolverPluginConfig]
   ]
 };
