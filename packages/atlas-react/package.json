@@ -8,7 +8,8 @@
   "scripts": {
     "build": "rollup -c --bundleConfigAsCjs",
     "build:watch": "rollup -c -w --bundleConfigAsCjs",
-    "lint": "IMING=1 eslint --ext .js,.jsx,.ts,.tsx components/* --cache --cache-strategy metadata",
+    "format": "prettier --write \"src/**/*.{js,jsx}\"",
+    "lint": "TIMING=1 eslint --cache .",
     "test": "jest"
   },
   "devDependencies": {
@@ -53,6 +54,7 @@
     "postcss-loader": "^7.0.1",
     "postcss-normalize": "^10.0.1",
     "postcss-preset-env": "^7.0.1",
+    "prettier": "^2.7.1",
     "prompts": "^2.4.2",
     "prop-types": "^15.8.1",
     "react-app-polyfill": "^3.0.0",
