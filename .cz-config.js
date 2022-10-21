@@ -22,6 +22,7 @@ module.exports = {
     },
     { value: 'revert', name: 'revert:   Revert to a commit' },
     { value: 'WIP', name: 'WIP:      Work in progress' },
+    { value: 'POC', name: 'POC:      Proof of Concept' },
   ],
 
   scopes: [{ name: 'global' }, { name: 'atlas-docs' }, { name: 'atlas-react' }],
@@ -45,7 +46,6 @@ module.exports = {
 
   allowCustomScopes: false,
   allowBreakingChanges: ['feat', 'fix'],
-  skipQuestions: ['body'],
 
   subjectLimit: 100,
   breaklineChar: '|'
