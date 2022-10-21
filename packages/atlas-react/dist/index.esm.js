@@ -141,15 +141,15 @@ IconButton.propTypes = {
   /** The icon class to render */
   faClass: PropTypes.string.isRequired,
   /** Click Handler */
-  onClick: PropTypes.func
+  onClick: PropTypes.func,
+  /** Whether or not the button is active */
+  isActive: PropTypes.bool
 };
 
 function DialogBox(_ref) {
   var title = _ref.title,
-    subtitle = _ref.subtitle;
-    _ref.customHeader;
-    _ref.customFooter;
-    var children = _ref.children,
+    subtitle = _ref.subtitle,
+    children = _ref.children,
     _ref$visible = _ref.visible,
     visible = _ref$visible === void 0 ? false : _ref$visible,
     onCancel = _ref.onCancel,
@@ -232,6 +232,9 @@ function ModalFooter(props) {
     className: "ModalDialog__footer"
   }, props.children);
 }
+ModalFooter.propTypes = {
+  children: PropTypes.element
+};
 
 var DrawerBack = function DrawerBack(_ref) {
   var _ref$label = _ref.label,
@@ -250,12 +253,19 @@ var DrawerBack = function DrawerBack(_ref) {
     })
   }));
 };
+DrawerBack.propTypes = {
+  label: PropTypes.string,
+  onClick: PropTypes.func
+};
 var DrawerActions = function DrawerActions(_ref2) {
   var children = _ref2.children;
   var classes = classNames("Drawer__actions");
   return /*#__PURE__*/React.createElement("div", {
     className: classes
   }, children);
+};
+DrawerActions.propTypes = {
+  children: PropTypes.node
 };
 var DrawerTitle = function DrawerTitle(_ref3) {
   var children = _ref3.children;
@@ -264,12 +274,18 @@ var DrawerTitle = function DrawerTitle(_ref3) {
     className: classes
   }, children);
 };
+DrawerTitle.propTypes = {
+  children: PropTypes.node
+};
 var DrawerHeader = function DrawerHeader(_ref4) {
   var children = _ref4.children;
   var classes = classNames("Drawer__header");
   return /*#__PURE__*/React.createElement("div", {
     className: classes
   }, children);
+};
+DrawerHeader.propTypes = {
+  children: PropTypes.node
 };
 var DrawerBody = function DrawerBody(_ref5) {
   var children = _ref5.children;
@@ -278,12 +294,18 @@ var DrawerBody = function DrawerBody(_ref5) {
     className: classes
   }, children);
 };
+DrawerBody.propTypes = {
+  children: PropTypes.node
+};
 var DrawerFooter = function DrawerFooter(_ref6) {
   var children = _ref6.children;
   var classes = classNames("Drawer__footer");
   return /*#__PURE__*/React.createElement("div", {
     className: classes
   }, children);
+};
+DrawerFooter.propTypes = {
+  children: PropTypes.node
 };
 
 /**

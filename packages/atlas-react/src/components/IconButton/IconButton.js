@@ -22,4 +22,6 @@ IconButton.propTypes = {
   faClass: PropTypes.string.isRequired,
   /** Click Handler */
   onClick: PropTypes.func,
+  /** Whether or not the button is active */
+  isActive: PropTypes.bool,
 };

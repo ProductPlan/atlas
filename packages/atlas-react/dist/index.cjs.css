@@ -1,3 +1,29 @@
+.IconButton {
+  background: none;
+  border: none;
+  margin: 0;
+  padding: 0;
+  height: 24px;
+  width: 24px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #6A6E72;
+  transition: color 300ms ease;
+  cursor: pointer;
+  border-radius: 4px; }
+  .IconButton:hover {
+    color: #0A6CB9; }
+  .IconButton:active, .IconButton:focus {
+    outline: none;
+    background-color: #ECF6FE;
+    color: #0A6CB9; }
+  .IconButton:disabled {
+    color: #919497; }
+  .IconButton.is-active {
+    color: #0A6CB9; }
+
 .BasicButton {
   padding: 8px 16px;
   background-color: #0A6CB9;
@@ -57,31 +83,39 @@
     margin-left: -8px;
     margin-right: 4px; }
 
-.IconButton {
-  background: none;
+.ModalDialog {
+  background: #fff;
+  box-shadow: 0px 2px 12px rgba(40, 41, 41, 0.2);
+  border-radius: 4px;
   border: none;
-  margin: 0;
+  color: #282929;
   padding: 0;
-  height: 24px;
-  width: 24px;
-  font-size: 16px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #6A6E72;
-  transition: color 300ms ease;
-  cursor: pointer;
-  border-radius: 4px; }
-  .IconButton:hover {
-    color: #0A6CB9; }
-  .IconButton:active, .IconButton:focus {
-    outline: none;
-    background-color: #ECF6FE;
-    color: #0A6CB9; }
-  .IconButton:disabled {
-    color: #919497; }
-  .IconButton.is-active {
-    color: #0A6CB9; }
+  min-width: 540px; }
+  .ModalDialog::backdrop {
+    background: rgba(40, 41, 41, 0.7); }
+  .ModalDialog__header {
+    padding: 16px;
+    display: grid;
+    grid-template-columns: auto 24px;
+    border-bottom: 1px solid #D1D5D9; }
+  .ModalDialog__title {
+    margin: 0;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 32px; }
+  .ModalDialog__subtitle {
+    margin: 0;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #6A6E72; }
+  .ModalDialog__body {
+    padding: 16px; }
+  .ModalDialog__footer {
+    padding: 16px;
+    text-align: right;
+    border-top: 1px solid #D1D5D9; }
 
 h1.a-heading, h1.a-heading-large, h1.Drawer__title {
   color: #282929;
@@ -213,37 +247,3 @@ h6.a-heading-large {
     right: 0; }
   .Drawer--left {
     left: 0; }
-
-.ModalDialog {
-  background: #fff;
-  box-shadow: 0px 2px 12px rgba(40, 41, 41, 0.2);
-  border-radius: 4px;
-  border: none;
-  color: #282929;
-  padding: 0;
-  min-width: 540px; }
-  .ModalDialog::backdrop {
-    background: rgba(40, 41, 41, 0.7); }
-  .ModalDialog__header {
-    padding: 16px;
-    display: grid;
-    grid-template-columns: auto 24px;
-    border-bottom: 1px solid #D1D5D9; }
-  .ModalDialog__title {
-    margin: 0;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 32px; }
-  .ModalDialog__subtitle {
-    margin: 0;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 20px;
-    color: #6A6E72; }
-  .ModalDialog__body {
-    padding: 16px; }
-  .ModalDialog__footer {
-    padding: 16px;
-    text-align: right;
-    border-top: 1px solid #D1D5D9; }

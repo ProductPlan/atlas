@@ -19,10 +19,19 @@ const DrawerBack = ({ label = "Back", onClick = () => {} }) => {
   );
 };
 
+DrawerBack.propTypes = {
+  label: PropTypes.string,
+  onClick: PropTypes.func,
+};
+
 const DrawerActions = ({ children }) => {
   const classes = classNames("Drawer__actions");
 
   return <div className={classes}>{children}</div>;
+};
+
+DrawerActions.propTypes = {
+  children: PropTypes.node,
 };
 
 const DrawerTitle = ({ children }) => {
@@ -31,10 +40,18 @@ const DrawerTitle = ({ children }) => {
   return <h4 className={classes}>{children}</h4>;
 };
 
+DrawerTitle.propTypes = {
+  children: PropTypes.node,
+};
+
 const DrawerHeader = ({ children }) => {
   const classes = classNames("Drawer__header");
 
   return <div className={classes}>{children}</div>;
+};
+
+DrawerHeader.propTypes = {
+  children: PropTypes.node,
 };
 
 const DrawerBody = ({ children }) => {
@@ -43,10 +60,18 @@ const DrawerBody = ({ children }) => {
   return <div className={classes}>{children}</div>;
 };
 
+DrawerBody.propTypes = {
+  children: PropTypes.node,
+};
+
 const DrawerFooter = ({ children }) => {
   const classes = classNames("Drawer__footer");
 
   return <div className={classes}>{children}</div>;
+};
+
+DrawerFooter.propTypes = {
+  children: PropTypes.node,
 };
 
 /**
