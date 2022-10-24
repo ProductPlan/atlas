@@ -12,12 +12,10 @@
     "export": "turbo run export",
     "lint": "turbo run lint",
     "test": "turbo run test",
-    "format": "prettier --write \"**/*.{js,jsx,ts,tsx}\"",
     "plop": "yarn workspace @productplan/atlas plop"
   },
   "devDependencies": {
     "eslint-config-custom": "*",
-    "prettier": "latest",
     "turbo": "latest"
   },
   "engines": {

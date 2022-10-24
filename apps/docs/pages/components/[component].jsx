@@ -19,6 +19,7 @@ const Component = ({ component }) => {
 export const getStaticPaths = async () => {
   const allComponents = componentData.map(component => component.name);
   const paths = allComponents.map((component) => ({ params: { component } }));
+
   return {
     paths,
     fallback: false,

@@ -10,8 +10,8 @@ import IconButton from "@components/IconButton";
 export default function DialogBox({
   title,
   subtitle,
-  customHeader,
-  customFooter,
+  // customHeader,
+  // customFooter,
   children,
   visible = false,
   onCancel,
@@ -54,6 +54,7 @@ export default function DialogBox({
     </dialog>
   );
 }
+
 DialogBox.propTypes = {
   /** Displays in the Modal Header */
   title: PropTypes.string.isRequired,
@@ -72,6 +73,7 @@ DialogBox.propTypes = {
   /** pass in JSX to override the default footer */
   customFooter: PropTypes.element,
 };
+
 function ModalHeader({ title, subtitle, handleClose }) {
   return (
     <header className="ModalDialog__header">
@@ -83,6 +85,7 @@ function ModalHeader({ title, subtitle, handleClose }) {
     </header>
   );
 }
+
 ModalHeader.propTypes = {
   title: PropTypes.string.isRequired,
   subtitle: PropTypes.string.isRequired,
@@ -92,3 +95,7 @@ ModalHeader.propTypes = {
 function ModalFooter(props) {
   return <footer className="ModalDialog__footer">{props.children}</footer>;
 }
+
+ModalFooter.propTypes = {
+  children: PropTypes.element,
+};
