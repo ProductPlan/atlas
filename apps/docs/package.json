@@ -5,6 +5,9 @@
   "scripts": {
     "build": "next build",
     "dev": "yarn generate:examples && next dev --port 8000",
+    "e2e:open": "cypress open",
+    "e2e:run": "cypress run --browser chrome --e2e --headed",
+    "e2e:run:headless": "cypress run --browser chrome --e2e",
     "export": "next export",
     "generate:examples": "node scripts/generateComponentData",
     "lint": "next lint",
@@ -27,6 +30,7 @@
     "@babel/core": "^7.0.0",
     "@types/node": "^17.0.12",
     "@types/react": "18.0.17",
+    "cypress": "^10.10.0",
     "eslint": "7.32.0",
     "eslint-config-custom": "*",
     "next-transpile-modules": "9.0.0",
