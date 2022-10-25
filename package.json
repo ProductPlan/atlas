@@ -8,6 +8,7 @@
   ],
   "scripts": {
     "build": "turbo run build",
+    "commit": "cz",
     "dev": "turbo run dev --parallel",
     "export": "turbo run export",
     "lint": "turbo run lint",
@@ -15,6 +16,8 @@
     "plop": "yarn workspace @productplan/atlas plop"
   },
   "devDependencies": {
+    "commitizen": "^4.2.5",
+    "cz-customizable": "^7.0.0",
     "eslint-config-custom": "*",
     "turbo": "latest"
   },
