@@ -72,6 +72,37 @@
   margin-right: 4px;
 }
 
+.IconButton {
+  background: none;
+  border: none;
+  margin: 0;
+  padding: 0;
+  height: 24px;
+  width: 24px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #6A6E72;
+  transition: color 300ms ease;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.IconButton:hover {
+  color: #0A6CB9;
+}
+.IconButton:active, .IconButton:focus {
+  outline: none;
+  background-color: #ECF6FE;
+  color: #0A6CB9;
+}
+.IconButton:disabled {
+  color: #919497;
+}
+.IconButton.is-active {
+  color: #0A6CB9;
+}
+
 .ModalDialog {
   background: #fff;
   box-shadow: 0px 2px 12px rgba(40, 41, 41, 0.2);
@@ -268,35 +299,4 @@ h6.a-heading-large {
 }
 .Drawer--left {
   left: 0;
-}
-
-.IconButton {
-  background: none;
-  border: none;
-  margin: 0;
-  padding: 0;
-  height: 24px;
-  width: 24px;
-  font-size: 16px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #6A6E72;
-  transition: color 300ms ease;
-  cursor: pointer;
-  border-radius: 4px;
-}
-.IconButton:hover {
-  color: #0A6CB9;
-}
-.IconButton:active, .IconButton:focus {
-  outline: none;
-  background-color: #ECF6FE;
-  color: #0A6CB9;
-}
-.IconButton:disabled {
-  color: #919497;
-}
-.IconButton.is-active {
-  color: #0A6CB9;
 }
