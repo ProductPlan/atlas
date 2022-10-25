@@ -1,3 +1,77 @@
+.BasicButton {
+  padding: 8px 16px;
+  background-color: #0A6CB9;
+  border-radius: 4px;
+  border: none;
+  color: #fff;
+  font-size: 14px;
+  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 36px;
+  cursor: pointer;
+}
+.BasicButton + .BasicButton {
+  margin-left: 8px;
+}
+.BasicButton:focus {
+  outline: none;
+  box-shadow: 0px 0px 0px 2px #C0E2FC;
+  background-color: #064474;
+}
+.BasicButton:active {
+  background-color: #064474;
+}
+.BasicButton:disabled {
+  opacity: 0.5;
+}
+.BasicButton--ghost {
+  background-color: transparent;
+  color: #282929;
+}
+.BasicButton--ghost:hover {
+  background-color: #F0F3F5;
+}
+.BasicButton--ghost:active {
+  background-color: #F0F3F5;
+}
+.BasicButton--ghost:focus {
+  background-color: #D1D5D9;
+}
+.BasicButton--secondary {
+  background-color: #ECF6FE;
+  color: #0A6CB9;
+}
+.BasicButton--secondary:hover {
+  background-color: #C0E2FC;
+}
+.BasicButton--secondary:active {
+  background-color: #C0E2FC;
+}
+.BasicButton--secondary:focus {
+  background-color: #0A6CB9;
+  color: #fff;
+}
+.BasicButton__trailingIcon {
+  height: 20px;
+  width: 20px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: -8px;
+  margin-left: 4px;
+}
+.BasicButton__leadingIcon {
+  height: 20px;
+  width: 20px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: -8px;
+  margin-right: 4px;
+}
+
 .IconButton {
   background: none;
   border: none;
@@ -225,78 +299,4 @@ h6.a-heading-large {
 }
 .Drawer--left {
   left: 0;
-}
-
-.BasicButton {
-  padding: 8px 16px;
-  background-color: #0A6CB9;
-  border-radius: 4px;
-  border: none;
-  color: #fff;
-  font-size: 14px;
-  line-height: 1;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  height: 36px;
-  cursor: pointer;
-}
-.BasicButton + .BasicButton {
-  margin-left: 8px;
-}
-.BasicButton:focus {
-  outline: none;
-  box-shadow: 0px 0px 0px 2px #C0E2FC;
-  background-color: #064474;
-}
-.BasicButton:active {
-  background-color: #064474;
-}
-.BasicButton:disabled {
-  opacity: 0.5;
-}
-.BasicButton--ghost {
-  background-color: transparent;
-  color: #282929;
-}
-.BasicButton--ghost:hover {
-  background-color: #F0F3F5;
-}
-.BasicButton--ghost:active {
-  background-color: #F0F3F5;
-}
-.BasicButton--ghost:focus {
-  background-color: #D1D5D9;
-}
-.BasicButton--secondary {
-  background-color: #ECF6FE;
-  color: #0A6CB9;
-}
-.BasicButton--secondary:hover {
-  background-color: #C0E2FC;
-}
-.BasicButton--secondary:active {
-  background-color: #C0E2FC;
-}
-.BasicButton--secondary:focus {
-  background-color: #0A6CB9;
-  color: #fff;
-}
-.BasicButton__trailingIcon {
-  height: 20px;
-  width: 20px;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  margin-right: -8px;
-  margin-left: 4px;
-}
-.BasicButton__leadingIcon {
-  height: 20px;
-  width: 20px;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: -8px;
-  margin-right: 4px;
 }
