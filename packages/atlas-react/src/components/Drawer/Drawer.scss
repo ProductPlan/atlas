@@ -13,20 +13,20 @@
   //
   &__back {
     border-right: 2px solid color('light-gray-100');
-    padding-right: $small;
+    padding-right: spacer(small);
   }
 
   &__body {
     flex: 1;
-    padding: 0 $small $small $small;
+    padding: 0 spacer(small) spacer(small) spacer(small);
     overflow: auto;
   }
 
   &__header {
     display: flex;
     align-items: center;
-    padding: $small;
-    gap: $small;
+    padding: spacer(small);
+    gap: spacer(small);
 
     .BasicButton {
       margin-left: 0;
@@ -40,7 +40,7 @@
 
   &__footer {
     border-top: 1px solid color('light-gray-100');
-    padding: $small;
+    padding: spacer(small);
     display: flex;
     justify-content: flex-end;
   }

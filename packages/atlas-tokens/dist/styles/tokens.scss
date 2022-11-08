@@ -1,7 +1,7 @@
 
 /**
  * Do not edit directly
- * Generated on Tue, 08 Nov 2022 15:41:45 GMT
+ * Generated on Tue, 08 Nov 2022 16:54:21 GMT
  */
 
 $color-black-400: #282929 !default;
@@ -91,6 +91,11 @@ $line-height-font-long-form-18: 1.625rem !default;
 $font-weight-font-400: 400 !default;
 $font-weight-font-500: 500 !default;
 $font-weight-font-700: 700 !default;
+$spacers-micro: 4px !default;
+$spacers-mini: 8px !default;
+$spacers-small: 16px !default;
+$spacers-medium: 24px !default;
+$spacers-large: 32px !default;
 
 $tokens: (
   'color': (
@@ -215,5 +220,12 @@ $tokens: (
       '500': $font-weight-font-500,
       '700': $font-weight-font-700
     )
+  ),
+  'spacers': (
+    'micro': $spacers-micro,
+    'mini': $spacers-mini,
+    'small': $spacers-small,
+    'medium': $spacers-medium,
+    'large': $spacers-large
   )
 );

@@ -15,6 +15,7 @@
   },
   "dependencies": {
     "@productplan/atlas": "*",
+    "@productplan/atlas-tokens": "*",
     "chalk": "^2.0.0",
     "chokidar": "^3.5.3",
     "classnames": "^2.3.2",

@@ -33,6 +33,7 @@ export default function Navigation({ components }) {
             GitHub <i className="fa-brands fa-github"></i>
           </a>
         </li>
+        <NavigationLink href="/tokens" label="Tokens" />
       </ul>
 
       <div className={styles.Sidebar__title}>Components</div>
