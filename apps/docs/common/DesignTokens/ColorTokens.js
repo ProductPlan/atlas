@@ -1,6 +1,6 @@
 import styles from "./DesignTokens.module.scss";
 
-const Colors = ({ colors }) => {
+const ColorTokens = ({ colors }) => {
   return (
     <section>
       <h2>Colors</h2>
@@ -19,16 +19,18 @@ const Colors = ({ colors }) => {
           {Object.keys(colors).map((color) => (
             Object.keys(colors[color]).map((shade) => (
               <tr key={`${color}-${shade}`}>
-                <td>{`${color}-${shade}`}</td>
                 <td>
                   <div
                     style={{
-                      backgroundColor: colors[color][shade].value,
+                      backgroundColor: `var(--a-color-${color}-${shade})`,
                       width: 100,
                       height: 40,
                       borderRadius: 4,
                     }}
                   />
+                </td>
+                <td>
+                  <code>{colors[color][shade].value}</code>
                 </td>
                 <td>
                   <code>{colors[color][shade].name}</code>
@@ -48,4 +50,4 @@ const Colors = ({ colors }) => {
   );
 };
 
-export default Colors;
+export default ColorTokens;

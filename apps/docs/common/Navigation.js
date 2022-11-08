@@ -10,7 +10,7 @@ const NavigationLink = ({ href, label }) => {
 
   const linkClasses = classnames({
     [styles.Sidebar__listItem]: true,
-    [styles.Sidebar__listItemActive]: router.asPath === href,
+    [styles.Sidebar__listItemActive]: router.asPath === href || (router.asPath.startsWith(href) && href !== "/"),
   });
 
   return (
