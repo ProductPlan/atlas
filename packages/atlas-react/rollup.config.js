@@ -16,7 +16,9 @@ export default [
       nodeResolve({
         extensions: [".js", "jsx"],
       }),
-      scss(),
+      scss({
+        prefix: `@import "./src/common/styles/atlas.scss";`,
+      }),
       babel({
         babelHelpers: "runtime",
         exclude: "**/node_modules/**",

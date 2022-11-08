@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Tue, 08 Nov 2022 03:09:28 GMT
+ * Generated on Tue, 08 Nov 2022 15:41:45 GMT
  */
 
 var _styleDictionary = {
@@ -1896,6 +1896,73 @@ var _styleDictionary = {
           "line-height",
           "font",
           "long-form-18"
+        ]
+      }
+    }
+  },
+  "font-weight": {
+    "font": {
+      "400": {
+        "value": "400",
+        "comment": "",
+        "filePath": "tokens/size/font.json",
+        "isSource": true,
+        "original": {
+          "value": "400",
+          "comment": ""
+        },
+        "name": "FontWeightFont400",
+        "attributes": {
+          "category": "font-weight",
+          "type": "font",
+          "item": "400"
+        },
+        "path": [
+          "font-weight",
+          "font",
+          "400"
+        ]
+      },
+      "500": {
+        "value": "500",
+        "comment": "",
+        "filePath": "tokens/size/font.json",
+        "isSource": true,
+        "original": {
+          "value": "500",
+          "comment": ""
+        },
+        "name": "FontWeightFont500",
+        "attributes": {
+          "category": "font-weight",
+          "type": "font",
+          "item": "500"
+        },
+        "path": [
+          "font-weight",
+          "font",
+          "500"
+        ]
+      },
+      "700": {
+        "value": "700",
+        "comment": "",
+        "filePath": "tokens/size/font.json",
+        "isSource": true,
+        "original": {
+          "value": "700",
+          "comment": ""
+        },
+        "name": "FontWeightFont700",
+        "attributes": {
+          "category": "font-weight",
+          "type": "font",
+          "item": "700"
+        },
+        "path": [
+          "font-weight",
+          "font",
+          "700"
         ]
       }
     }
