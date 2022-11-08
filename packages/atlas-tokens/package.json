@@ -1,0 +1,14 @@
+{
+  "name": "@productplan/atlas-tokens",
+  "version": "0.0.0",
+  "main": "dist/js/tokens.js",
+  "license": "MIT",
+  "scripts": {
+    "build:tokens": "npm run clean && style-dictionary build",
+    "clean": "del-cli --force ./dist"
+  },
+  "dependencies": {
+    "del-cli": "^5.0.0",
+    "style-dictionary": "^3.7.1"
+  }
+}

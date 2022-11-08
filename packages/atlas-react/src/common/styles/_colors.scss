@@ -1,65 +1,15 @@
-// Blue
-$blue-100: #ecf6fe;
-$blue-200: #c0e2fc;
-$blue-300: #4faae8;
-$blue-400: #0a6cb9;
-$blue-500: #0757aa;
-$blue-700: #064474;
+@import "@productplan/atlas-tokens/dist/styles/tokens.scss";
 
-// Green
-$green-100: #f4faef;
-$green-200: #d4ecc0;
-$green-300: #9dca79;
-$green-400: #65a831;
-$green-500: #457e19;
-$green-700: #395f1c;
+$colors: map-get($tokens, 'color');
 
-// Yellow
-$yellow-100: #fff9eb;
-$yellow-200: #ffe6ad;
-$yellow-300: #ffd575;
-$yellow-400: #ffc33d;
-$yellow-500: #d39e29;
-$yellow-600: #a67a14;
-$yellow-700: #7a5500;
+:root {
+  @each $color, $value in $colors {
+    @each $shade, $colorValue in $value {
+      --#{$namespace}-color-#{$color}-#{$shade}: #{$colorValue};
+    }
+  }
+}
 
-// Orange
-$orange-100: #fef3ec;
-$orange-200: #faceb3;
-$orange-300: #f5a370;
-$orange-400: #f0782d;
-$orange-500: #b05821;
-$orange-700: #723108;
-
-// Red
-$red-100: #fcefed;
-$red-200: #f4bdb8;
-$red-300: #e1756c;
-$red-400: #cd2d1f;
-$red-500: #ac261a;
-$red-600: #8b1f15;
-$red-700: #6a1810;
-
-// Purple
-$purple-100: #f3effb;
-$purple-200: #cdbeef;
-$purple-300: #9376d2;
-$purple-400: #582db4;
-$purple-700: #301862;
-
-// Light Gray
-$light-gray-100: #f0f3f5;
-$light-gray-200: #e8ecee;
-$light-gray-300: #dde1e4;
-$light-gray-400: #d1d5d9;
-
-// Gray
-$gray-200: #919497;
-$gray-400: #6a6e72;
-
-// Black
-$black-400: #282929;
-$black-700: #000000;
-
-// White
-$white: #ffffff;
+@function color($tone) {
+  @return var(--#{$namespace}-color-#{$tone});
+}

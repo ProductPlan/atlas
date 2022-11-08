@@ -1,0 +1,209 @@
+
+/**
+ * Do not edit directly
+ * Generated on Tue, 08 Nov 2022 03:09:28 GMT
+ */
+
+$color-black-400: #282929 !default;
+$color-black-700: #000000 !default;
+$color-white-400: #ffffff !default;
+$color-white-transparent: rgba(255, 255, 255, 0.2) !default;
+$color-gray-200: #919497 !default;
+$color-gray-400: #6a6e72 !default;
+$color-light-gray-100: #f0f3f5 !default;
+$color-light-gray-200: #e8ecee !default;
+$color-light-gray-300: #dde1e4 !default;
+$color-light-gray-400: #d1d5d9 !default;
+$color-blue-100: #ecf6fe !default;
+$color-blue-200: #c0e2fc !default;
+$color-blue-300: #4faae8 !default;
+$color-blue-400: #0a6cb9 !default;
+$color-blue-500: #0757aa !default;
+$color-blue-700: #064474 !default;
+$color-orange-100: #fef3ec !default;
+$color-orange-200: #faceb3 !default;
+$color-orange-300: #f5a370 !default;
+$color-orange-400: #f0782d !default;
+$color-orange-500: #b05821 !default;
+$color-orange-700: #723108 !default;
+$color-red-100: #fcefed !default;
+$color-red-200: #f4bdb8 !default;
+$color-red-300: #e1756c !default;
+$color-red-400: #cd2d1f !default;
+$color-red-500: #ac261a !default;
+$color-red-600: #8b1f15 !default;
+$color-red-700: #6a1810 !default;
+$color-yellow-100: #fff9eb !default;
+$color-yellow-200: #ffe6ad !default;
+$color-yellow-300: #ffd575 !default;
+$color-yellow-400: #ffc33d !default;
+$color-yellow-500: #d39e29 !default;
+$color-yellow-600: #a67a14 !default;
+$color-yellow-700: #7a5500 !default;
+$color-green-100: #f4faef !default;
+$color-green-200: #d4ecc0 !default;
+$color-green-300: #9dca79 !default;
+$color-green-400: #65a831 !default;
+$color-green-500: #457e19 !default;
+$color-green-700: #395f1c !default;
+$color-purple-100: #f3effb !default;
+$color-purple-200: #cdbeef !default;
+$color-purple-300: #9376d2 !default;
+$color-purple-400: #582db4 !default;
+$color-purple-700: #301862 !default;
+$color-transparent-overlay: rgba(40, 41, 41, 0.7) !default;
+$color-transparent-shadow: rgba(40, 41, 41, 0.2) !default;
+$color-transparent-empty: rgba(255, 255, 255, 0) !default;
+$size-font-heading-48: 3rem !default;
+$size-font-heading-40: 2.5rem !default;
+$size-font-heading-32: 2rem !default;
+$size-font-heading-28: 1.75rem !default;
+$size-font-heading-24: 1.5rem !default;
+$size-font-heading-20: 1.5rem !default;
+$size-font-heading-18: 1.125rem !default;
+$size-font-heading-16: 1rem !default;
+$size-font-body-24: 1.5rem !default;
+$size-font-body-20: 1.25rem !default;
+$size-font-body-18: 1.125rem !default;
+$size-font-body-16: 1rem !default;
+$size-font-body-14: 0.875rem !default;
+$size-font-body-12: 0.75rem !default;
+$size-font-long-form-24: 1.5rem !default;
+$size-font-long-form-20: 1.25rem !default;
+$size-font-long-form-18: 1.125rem !default;
+$line-height-font-heading-48: 3.75rem !default;
+$line-height-font-heading-40: 3.12rem !default;
+$line-height-font-heading-32: 2.5rem !default;
+$line-height-font-heading-28: 2.625rem !default;
+$line-height-font-heading-24: 2.25rem !default;
+$line-height-font-heading-20: 2rem !default;
+$line-height-font-heading-18: 1.625rem !default;
+$line-height-font-heading-16: 1.5rem !default;
+$line-height-font-body-24: 2.25rem !default;
+$line-height-font-body-20: 1.875rem !default;
+$line-height-font-body-18: 1.625rem !default;
+$line-height-font-body-16: 1.5rem !default;
+$line-height-font-body-14: 1.25rem !default;
+$line-height-font-body-12: 1rem !default;
+$line-height-font-long-form-24: 2.25rem !default;
+$line-height-font-long-form-20: 1.875rem !default;
+$line-height-font-long-form-18: 1.625rem !default;
+
+$tokens: (
+  'color': (
+    'black': (
+      '400': $color-black-400,
+      '700': $color-black-700
+    ),
+    'white': (
+      '400': $color-white-400,
+      'transparent': $color-white-transparent
+    ),
+    'gray': (
+      '200': $color-gray-200,
+      '400': $color-gray-400
+    ),
+    'light-gray': (
+      '100': $color-light-gray-100,
+      '200': $color-light-gray-200,
+      '300': $color-light-gray-300,
+      '400': $color-light-gray-400
+    ),
+    'blue': (
+      '100': $color-blue-100,
+      '200': $color-blue-200,
+      '300': $color-blue-300,
+      '400': $color-blue-400,
+      '500': $color-blue-500,
+      '700': $color-blue-700
+    ),
+    'orange': (
+      '100': $color-orange-100,
+      '200': $color-orange-200,
+      '300': $color-orange-300,
+      '400': $color-orange-400,
+      '500': $color-orange-500,
+      '700': $color-orange-700
+    ),
+    'red': (
+      '100': $color-red-100,
+      '200': $color-red-200,
+      '300': $color-red-300,
+      '400': $color-red-400,
+      '500': $color-red-500,
+      '600': $color-red-600,
+      '700': $color-red-700
+    ),
+    'yellow': (
+      '100': $color-yellow-100,
+      '200': $color-yellow-200,
+      '300': $color-yellow-300,
+      '400': $color-yellow-400,
+      '500': $color-yellow-500,
+      '600': $color-yellow-600,
+      '700': $color-yellow-700
+    ),
+    'green': (
+      '100': $color-green-100,
+      '200': $color-green-200,
+      '300': $color-green-300,
+      '400': $color-green-400,
+      '500': $color-green-500,
+      '700': $color-green-700
+    ),
+    'purple': (
+      '100': $color-purple-100,
+      '200': $color-purple-200,
+      '300': $color-purple-300,
+      '400': $color-purple-400,
+      '700': $color-purple-700
+    ),
+    'transparent': (
+      'overlay': $color-transparent-overlay,
+      'shadow': $color-transparent-shadow,
+      'empty': $color-transparent-empty
+    )
+  ),
+  'size': (
+    'font': (
+      'heading-48': $size-font-heading-48,
+      'heading-40': $size-font-heading-40,
+      'heading-32': $size-font-heading-32,
+      'heading-28': $size-font-heading-28,
+      'heading-24': $size-font-heading-24,
+      'heading-20': $size-font-heading-20,
+      'heading-18': $size-font-heading-18,
+      'heading-16': $size-font-heading-16,
+      'body-24': $size-font-body-24,
+      'body-20': $size-font-body-20,
+      'body-18': $size-font-body-18,
+      'body-16': $size-font-body-16,
+      'body-14': $size-font-body-14,
+      'body-12': $size-font-body-12,
+      'long-form-24': $size-font-long-form-24,
+      'long-form-20': $size-font-long-form-20,
+      'long-form-18': $size-font-long-form-18
+    )
+  ),
+  'line-height': (
+    'font': (
+      'heading-48': $line-height-font-heading-48,
+      'heading-40': $line-height-font-heading-40,
+      'heading-32': $line-height-font-heading-32,
+      'heading-28': $line-height-font-heading-28,
+      'heading-24': $line-height-font-heading-24,
+      'heading-20': $line-height-font-heading-20,
+      'heading-18': $line-height-font-heading-18,
+      'heading-16': $line-height-font-heading-16,
+      'body-24': $line-height-font-body-24,
+      'body-20': $line-height-font-body-20,
+      'body-18': $line-height-font-body-18,
+      'body-16': $line-height-font-body-16,
+      'body-14': $line-height-font-body-14,
+      'body-12': $line-height-font-body-12,
+      'long-form-24': $line-height-font-long-form-24,
+      'long-form-20': $line-height-font-long-form-20,
+      'long-form-18': $line-height-font-long-form-18
+    )
+  )
+);

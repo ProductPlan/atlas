@@ -17,7 +17,7 @@ export default function BasicButton({
   leadingIcon,
 }) {
   const classes = classNames("BasicButton", {
-    [`BasicButton--${type}`]: type !== "default",
+    [`BasicButton--${type}`]: true,
   });
 
   return (
