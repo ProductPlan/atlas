@@ -6,7 +6,7 @@ import "./IconButton.scss";
 /** A simple button containing only an icon */
 export default function IconButton({ faClass, onClick, isActive }) {
   const iconClasses = classNames("fa", faClass);
-  const buttonClasses = classNames("IconButton", {
+  const buttonClasses = classNames("AtlasIconButton", {
     "is-active": isActive,
   });
 

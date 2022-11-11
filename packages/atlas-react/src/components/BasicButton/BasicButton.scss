@@ -1,4 +1,4 @@
-.BasicButton.BasicButton--default {
+.AtlasBasicButton.AtlasBasicButton--default {
   --#{$namespace}-button-background-color: #{color(blue-400)};
   --#{$namespace}-button-background-color-hover: #{color(blue-400)};
   --#{$namespace}-button-background-color-focus: #{color(blue-400)};
@@ -7,7 +7,7 @@
   --#{$namespace}-button-color: #{color(white-400)};
 }
 
-.BasicButton.BasicButton--ghost {
+.AtlasBasicButton.AtlasBasicButton--ghost {
   --#{$namespace}-button-background-color: transparent;
   --#{$namespace}-button-background-color-hover: #{color(light-gray-300)};
   --#{$namespace}-button-background-color-focus: #{color(light-gray-300)};
@@ -16,7 +16,7 @@
   --#{$namespace}-button-color: #{color(black-400)};
 }
 
-.BasicButton.BasicButton--secondary {
+.AtlasBasicButton.AtlasBasicButton--secondary {
   --#{$namespace}-button-background-color: #{color(blue-100)};
   --#{$namespace}-button-background-color-hover: #{color(blue-200)};
   --#{$namespace}-button-background-color-focus: #{color(blue-200)};
@@ -25,7 +25,7 @@
   --#{$namespace}-button-color: #{color(blue-400)};
 }
 
-.BasicButton.BasicButton--destructive {
+.AtlasBasicButton.AtlasBasicButton--destructive {
   --#{$namespace}-button-background-color: #{color(red-400)};
   --#{$namespace}-button-background-color-hover: #{color(red-500)};
   --#{$namespace}-button-background-color-focus: #{color(red-500)};
@@ -34,7 +34,7 @@
   --#{$namespace}-button-color: #{color(white-400)};
 }
 
-.BasicButton {
+.AtlasBasicButton {
   padding: 8px 16px;
   background-color: var(--#{$namespace}-button-background-color);
   border-radius: 4px;
