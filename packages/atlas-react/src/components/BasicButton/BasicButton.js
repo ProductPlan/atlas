@@ -16,8 +16,8 @@ export default function BasicButton({
   trailingIcon,
   leadingIcon,
 }) {
-  const classes = classNames("BasicButton", {
-    [`BasicButton--${type}`]: true,
+  const classes = classNames("AtlasBasicButton", {
+    [`AtlasBasicButton--${type}`]: true,
   });
 
   return (
@@ -28,11 +28,11 @@ export default function BasicButton({
       onClick={onClick}
     >
       {leadingIcon ? (
-        <span className="BasicButton__leadingIcon">{leadingIcon}</span>
+        <span className="AtlasBasicButton__leadingIcon">{leadingIcon}</span>
       ) : null}
       {label}
       {trailingIcon ? (
-        <span className="BasicButton__trailingIcon">{trailingIcon}</span>
+        <span className="AtlasBasicButton__trailingIcon">{trailingIcon}</span>
       ) : null}
     </button>
   );
