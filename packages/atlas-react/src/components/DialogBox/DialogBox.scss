@@ -1,58 +1,41 @@
-$black: #282929;
-$white: #fff;
-$blue: #0A6CB9;
-$blue-500: #0757AA;
-$gray1: #6A6E72;
-$gray2: #919497;
-$blue-700: #064474;
-$blue-200: #c0e2fc;
-$light-gray3: #F0F3F5;
-$light-gray1: #D1D5D9;
-$light-blue: #ECF6FE;
-
-.ModalDialog {
-  background: $white;
+.AtlasModalDialog {
+  background: color(white-400);
   box-shadow: 0px 2px 12px rgba(40, 41, 41, 0.2);
   border-radius: 4px;
   border: none;
-  color: $black;
+  color: color(black-400);
   padding: 0;
   min-width: 540px; //TODO: is this good? maybe we want slimmer? sm, med, large?
 
   &::backdrop {
     background: rgba(40,41,41,.7);
   }
-  
+
   &__header {
-    padding: 16px;
+    padding: spacer(small);
     display: grid;
     grid-template-columns: auto 24px;
-    border-bottom: 1px solid #D1D5D9;
+    border-bottom: 1px solid color(light-gray-100);
   }
-  
+
   &__title {
+    @include heading20;
     margin: 0;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 32px;
   }
-  
+
   &__subtitle {
+    @include heading16;
     margin: 0;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 20px;
-    color: #6A6E72;
+    color: color(gray-200);
   }
-  
+
   &__body {
-    padding: 16px;
+    padding: spacer(small);
   }
-  
+
   &__footer {
-    padding: 16px;
+    padding: spacer(small);
     text-align: right;
-    border-top: 1px solid #D1D5D9;
+    border-top: 1px solid color(light-gray-100);
   }
 }

@@ -29,7 +29,7 @@ export default function DialogBox({
   // setIsVisible(visible);
   return (
     <dialog
-      className="ModalDialog"
+      className="AtlasModalDialog"
       ref={dialogEl}
       onCancel={onCancel}
       onClose={onClose}
@@ -40,7 +40,7 @@ export default function DialogBox({
         handleClose={() => dialogEl.current.close()}
       />
 
-      <section className="ModalDialog__body">{children}</section>
+      <section className="AtlasModalDialog__body">{children}</section>
 
       <ModalFooter>
         <BasicButton
@@ -76,10 +76,10 @@ DialogBox.propTypes = {
 
 function ModalHeader({ title, subtitle, handleClose }) {
   return (
-    <header className="ModalDialog__header">
+    <header className="AtlasModalDialog__header">
       <div>
-        <h1 className="ModalDialog__title">{title}</h1>
-        <p className="ModalDialog__subtitle">{subtitle}</p>
+        <h1 className="AtlasModalDialog__title">{title}</h1>
+        <p className="AtlasModalDialog__subtitle">{subtitle}</p>
       </div>
       <IconButton faClass="fa-times" onClick={handleClose} />
     </header>
@@ -93,7 +93,7 @@ ModalHeader.propTypes = {
 };
 
 function ModalFooter(props) {
-  return <footer className="ModalDialog__footer">{props.children}</footer>;
+  return <footer className="AtlasModalDialog__footer">{props.children}</footer>;
 }
 
 ModalFooter.propTypes = {

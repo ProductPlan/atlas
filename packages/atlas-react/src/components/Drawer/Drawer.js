@@ -5,7 +5,7 @@ import BasicButton from "@components/BasicButton";
 import "./Drawer.scss";
 
 const DrawerBack = ({ label = "Back", onClick = () => {} }) => {
-  const classes = classNames("Drawer__back");
+  const classes = classNames("AtlasDrawer__back");
 
   return (
     <div className={classes}>
@@ -25,7 +25,7 @@ DrawerBack.propTypes = {
 };
 
 const DrawerActions = ({ children }) => {
-  const classes = classNames("Drawer__actions");
+  const classes = classNames("AtlasDrawer__actions");
 
   return <div className={classes}>{children}</div>;
 };
@@ -35,7 +35,7 @@ DrawerActions.propTypes = {
 };
 
 const DrawerTitle = ({ children }) => {
-  const classes = classNames("Drawer__title");
+  const classes = classNames("AtlasDrawer__title");
 
   return <h4 className={classes}>{children}</h4>;
 };
@@ -45,7 +45,7 @@ DrawerTitle.propTypes = {
 };
 
 const DrawerHeader = ({ children }) => {
-  const classes = classNames("Drawer__header");
+  const classes = classNames("AtlasDrawer__header");
 
   return <div className={classes}>{children}</div>;
 };
@@ -55,7 +55,7 @@ DrawerHeader.propTypes = {
 };
 
 const DrawerBody = ({ children }) => {
-  const classes = classNames("Drawer__body");
+  const classes = classNames("AtlasDrawer__body");
 
   return <div className={classes}>{children}</div>;
 };
@@ -65,7 +65,7 @@ DrawerBody.propTypes = {
 };
 
 const DrawerFooter = ({ children }) => {
-  const classes = classNames("Drawer__footer");
+  const classes = classNames("AtlasDrawer__footer");
 
   return <div className={classes}>{children}</div>;
 };
@@ -80,7 +80,7 @@ DrawerFooter.propTypes = {
  *
  */
 export default function Drawer({ position, children, open = false }) {
-  const drawerClasses = classNames("Drawer", `Drawer--${position}`);
+  const drawerClasses = classNames("AtlasDrawer", `AtlasDrawer--${position}`);
 
   if (!open) {
     return null;
