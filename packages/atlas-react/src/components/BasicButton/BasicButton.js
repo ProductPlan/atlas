@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import classNames from "classnames";
-import "./BasicButton.scss";
+import styles from "./BasicButton.scss";
 
 const buttonHtmlTypes = ["button", "submit", "reset"];
 export const buttonVariants = ["default", "secondary", "ghost"];
@@ -16,8 +16,8 @@ export default function BasicButton({
   trailingIcon,
   leadingIcon,
 }) {
-  const classes = classNames("AtlasBasicButton", {
-    [`AtlasBasicButton--${type}`]: true,
+  const classes = classNames(styles.BasicButton, {
+    [styles[`BasicButton--${type}`]]: true,
   });
 
   return (
@@ -28,11 +28,11 @@ export default function BasicButton({
       onClick={onClick}
     >
       {leadingIcon ? (
-        <span className="AtlasBasicButton__leadingIcon">{leadingIcon}</span>
+        <span className={styles.BasicButtonLeadingIcon}>{leadingIcon}</span>
       ) : null}
       {label}
       {trailingIcon ? (
-        <span className="AtlasBasicButton__trailingIcon">{trailingIcon}</span>
+        <span className={styles.BasicButtonTrailingIcon}>{trailingIcon}</span>
       ) : null}
     </button>
   );

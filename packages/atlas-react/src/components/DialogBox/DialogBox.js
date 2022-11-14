@@ -1,8 +1,9 @@
 import React, { useEffect, useRef } from "react";
 import PropTypes from "prop-types";
 import BasicButton from "@components/BasicButton";
-import "./DialogBox.scss";
 import IconButton from "@components/IconButton";
+
+import styles from "./DialogBox.scss";
 
 {
   /** A Simple modal dialog that displays above the page content and renders children in the body of the modal */
@@ -29,7 +30,7 @@ export default function DialogBox({
   // setIsVisible(visible);
   return (
     <dialog
-      className="AtlasModalDialog"
+      className={styles.ModalDialog}
       ref={dialogEl}
       onCancel={onCancel}
       onClose={onClose}
@@ -40,7 +41,7 @@ export default function DialogBox({
         handleClose={() => dialogEl.current.close()}
       />
 
-      <section className="AtlasModalDialog__body">{children}</section>
+      <section className={styles.ModalDialogBody}>{children}</section>
 
       <ModalFooter>
         <BasicButton
@@ -76,10 +77,10 @@ DialogBox.propTypes = {
 
 function ModalHeader({ title, subtitle, handleClose }) {
   return (
-    <header className="AtlasModalDialog__header">
+    <header className={styles.ModalDialogHeader}>
       <div>
-        <h1 className="AtlasModalDialog__title">{title}</h1>
-        <p className="AtlasModalDialog__subtitle">{subtitle}</p>
+        <h1 className={styles.ModalDialogTitle}>{title}</h1>
+        <p className={styles.ModalDialogSubtitle}>{subtitle}</p>
       </div>
       <IconButton faClass="fa-times" onClick={handleClose} />
     </header>
@@ -93,7 +94,7 @@ ModalHeader.propTypes = {
 };
 
 function ModalFooter(props) {
-  return <footer className="AtlasModalDialog__footer">{props.children}</footer>;
+  return <footer className={styles.ModalDialogFooter}>{props.children}</footer>;
 }
 
 ModalFooter.propTypes = {

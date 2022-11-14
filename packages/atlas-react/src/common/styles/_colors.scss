@@ -1,15 +1,3 @@
-@import "@productplan/atlas-tokens/dist/styles/tokens.scss";
-
-$colors: map-get($tokens, 'color');
-
-:root {
-  @each $color, $value in $colors {
-    @each $shade, $colorValue in $value {
-      --#{$namespace}-color-#{$color}-#{$shade}: #{$colorValue};
-    }
-  }
-}
-
 @function color($tone) {
   @return var(--#{$namespace}-color-#{$tone});
 }

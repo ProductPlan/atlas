@@ -1,4 +1,6 @@
-.AtlasModalDialog {
+@import "../../common/styles/atlas";
+
+.ModalDialog {
   background: color(white-400);
   box-shadow: 0px 2px 12px rgba(40, 41, 41, 0.2);
   border-radius: 4px;
@@ -10,32 +12,32 @@
   &::backdrop {
     background: rgba(40,41,41,.7);
   }
+}
 
-  &__header {
-    padding: spacer(small);
-    display: grid;
-    grid-template-columns: auto 24px;
-    border-bottom: 1px solid color(light-gray-100);
-  }
+.ModalDialogHeader {
+  padding: spacer(small);
+  display: grid;
+  grid-template-columns: auto 24px;
+  border-bottom: 1px solid color(light-gray-100);
+}
 
-  &__title {
-    @include heading20;
-    margin: 0;
-  }
+.ModalDialogTitle {
+  @include heading20;
+  margin: 0;
+}
 
-  &__subtitle {
-    @include heading16;
-    margin: 0;
-    color: color(gray-200);
-  }
+.ModalDialogSubtitle {
+  @include heading16;
+  margin: 0;
+  color: color(gray-200);
+}
 
-  &__body {
-    padding: spacer(small);
-  }
+.ModalDialogBody {
+  padding: spacer(small);
+}
 
-  &__footer {
-    padding: spacer(small);
-    text-align: right;
-    border-top: 1px solid color(light-gray-100);
-  }
+.ModalDialogFooter {
+  padding: spacer(small);
+  text-align: right;
+  border-top: 1px solid color(light-gray-100);
 }

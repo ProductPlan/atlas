@@ -1,4 +1,6 @@
-.AtlasBasicButton.AtlasBasicButton--default {
+@import "../../common/styles/atlas";
+
+.BasicButton.BasicButton--default {
   --#{$namespace}-button-background-color: #{color(blue-400)};
   --#{$namespace}-button-background-color-hover: #{color(blue-400)};
   --#{$namespace}-button-background-color-focus: #{color(blue-400)};
@@ -7,7 +9,7 @@
   --#{$namespace}-button-color: #{color(white-400)};
 }
 
-.AtlasBasicButton.AtlasBasicButton--ghost {
+.BasicButton.BasicButton--ghost {
   --#{$namespace}-button-background-color: transparent;
   --#{$namespace}-button-background-color-hover: #{color(light-gray-300)};
   --#{$namespace}-button-background-color-focus: #{color(light-gray-300)};
@@ -16,7 +18,7 @@
   --#{$namespace}-button-color: #{color(black-400)};
 }
 
-.AtlasBasicButton.AtlasBasicButton--secondary {
+.BasicButton.BasicButton--secondary {
   --#{$namespace}-button-background-color: #{color(blue-100)};
   --#{$namespace}-button-background-color-hover: #{color(blue-200)};
   --#{$namespace}-button-background-color-focus: #{color(blue-200)};
@@ -25,7 +27,7 @@
   --#{$namespace}-button-color: #{color(blue-400)};
 }
 
-.AtlasBasicButton.AtlasBasicButton--destructive {
+.BasicButton.BasicButton--destructive {
   --#{$namespace}-button-background-color: #{color(red-400)};
   --#{$namespace}-button-background-color-hover: #{color(red-500)};
   --#{$namespace}-button-background-color-focus: #{color(red-500)};
@@ -34,7 +36,7 @@
   --#{$namespace}-button-color: #{color(white-400)};
 }
 
-.AtlasBasicButton {
+.BasicButton {
   padding: 8px 16px;
   background-color: var(--#{$namespace}-button-background-color);
   border-radius: 4px;
@@ -69,24 +71,25 @@
   &:hover {
     background-color: var(--#{$namespace}-button-background-color-hover);
   }
+}
 
-  &__trailingIcon {
-    height: 20px;
-    width: 20px;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: -8px;
-    margin-left: 4px;
-  }
 
-  &__leadingIcon {
-    height: 20px;
-    width: 20px;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: -8px;
-    margin-right: 4px;
-  }
+.BasicButtonTrailingIcon {
+  height: 20px;
+  width: 20px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: -8px;
+  margin-left: 4px;
+}
+
+.BasicButtonLeadingIcon {
+  height: 20px;
+  width: 20px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: -8px;
+  margin-right: 4px;
 }

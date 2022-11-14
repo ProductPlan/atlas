@@ -1,34 +1,7 @@
-@import "@productplan/atlas-tokens/dist/styles/tokens.scss";
-
-$sizes: map-get($tokens, 'size');
-$lineHeights: map-get($tokens, 'line-height');
-$fontWeights: map-get($tokens, 'font-weight');
-
-:root {
-  @each $size, $value in $sizes {
-    @each $breakpoint, $sizeValue in $value {
-      --#{$namespace}-size-#{$size}-#{$breakpoint}: #{$sizeValue};
-    }
-  }
-
-  @each $lineHeight, $value in $lineHeights {
-    @each $breakpoint, $lineHeightValue in $value {
-      --#{$namespace}-line-height-#{$lineHeight}-#{$breakpoint}: #{$lineHeightValue};
-    }
-  }
-
-  @each $fontWeight, $value in $fontWeights {
-    @each $breakpoint, $fontWeightValue in $value {
-      --#{$namespace}-font-weight-#{$fontWeight}-#{$breakpoint}: #{$fontWeightValue};
-    }
-  }
-}
-
 // Mixins
 @mixin fontSize($typography) {
   font-size: var(--#{$namespace}-size-#{$typography});
   line-height: var(--#{$namespace}-line-height-#{$typography});
-  // font-weight: var(--#{$namespace}-font-weight-#{$typography});
 }
 
 @mixin heading48 {

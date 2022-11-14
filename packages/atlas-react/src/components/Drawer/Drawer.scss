@@ -1,4 +1,6 @@
-.AtlasDrawer {
+@import "../../common/styles/atlas";
+
+.Drawer {
   width: 600px;
   height: 100%;
   overflow: visible;
@@ -7,82 +9,83 @@
   box-shadow: $atlas-box-shadow-0;
   display: flex;
   flex-direction: column;
+}
 
-  //
-  // Internal Components
-  //
-  &__back {
-    border-right: 2px solid color('light-gray-100');
-    padding-right: spacer(small);
+
+//
+// Positions
+//
+// Top/Bottom Drawers
+.Drawer__top, .Drawer__bottom {
+  width: 100%;
+  height: 320px;
+  max-height: 70%;
+  position: fixed;
+  left: 0;
+}
+
+.Drawer__top {
+  top: 0;
+}
+
+.Drawer__bottom {
+  bottom: 0;
+}
+
+// Right/Left Drawers
+.Drawer__right, .Drawer__left {
+  width: 640px;
+  max-width: 70%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+}
+
+.Drawer__right {
+  right: 0;
+}
+
+.Drawer__left {
+  left: 0;
+}
+
+//
+// Internal Components
+//
+.DrawerBack {
+  border-right: 2px solid color('light-gray-100');
+  padding-right: spacer(small);
+}
+
+.DrawerBody {
+  flex: 1;
+  padding: 0 spacer(small) spacer(small) spacer(small);
+  overflow: auto;
+}
+
+.DrawerHeader {
+  display: flex;
+  align-items: center;
+  padding: spacer(small);
+  gap: spacer(small);
+
+  .BasicButton {
+    margin-left: 0;
   }
+}
 
-  &__body {
-    flex: 1;
-    padding: 0 spacer(small) spacer(small) spacer(small);
-    overflow: auto;
-  }
+.DrawerTitle {
+  @include heading20;
+  flex: 1;
+}
 
-  &__header {
-    display: flex;
-    align-items: center;
-    padding: spacer(small);
-    gap: spacer(small);
+.DrawerFooter {
+  border-top: 1px solid color('light-gray-100');
+  padding: spacer(small);
+  display: flex;
+  justify-content: flex-end;
+}
 
-    .BasicButton {
-      margin-left: 0;
-    }
-  }
-
-  &__title {
-    @include heading20;
-    flex: 1;
-  }
-
-  &__footer {
-    border-top: 1px solid color('light-gray-100');
-    padding: spacer(small);
-    display: flex;
-    justify-content: flex-end;
-  }
-
-  &__actions {
-    display: flex;
-  }
-
-  //
-  // Positions
-  //
-  // Top/Bottom Drawers
-  &--top, &--bottom {
-    width: 100%;
-    height: 320px;
-    max-height: 70%;
-    position: fixed;
-    left: 0;
-  }
-
-  &--top {
-    top: 0;
-  }
-
-  &--bottom {
-    bottom: 0;
-  }
-
-  // Right/Left Drawers
-  &--right, &--left {
-    width: 640px;
-    max-width: 70%;
-    height: 100%;
-    position: fixed;
-    top: 0;
-  }
-
-  &--right {
-    right: 0;
-  }
-
-  &--left {
-    left: 0;
-  }
+.DrawerActions {
+  display: flex;
 }

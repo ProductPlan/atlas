@@ -1,0 +1,47 @@
+@import "variables.scss";
+@import "~@productplan/atlas-tokens/dist/styles/tokens.scss";
+
+// Colors
+$colors: map-get($tokens, 'color');
+
+:root {
+  @each $color, $value in $colors {
+    @each $shade, $colorValue in $value {
+      --#{$namespace}-color-#{$color}-#{$shade}: #{$colorValue};
+    }
+  }
+}
+
+// Spacers
+$spacers: map-get($tokens, 'spacers');
+
+:root {
+  @each $spacer, $value in $spacers {
+    --#{$namespace}-spacer-#{$spacer}: #{$value};
+  }
+}
+
+// Typography
+$sizes: map-get($tokens, 'size');
+$lineHeights: map-get($tokens, 'line-height');
+$fontWeights: map-get($tokens, 'font-weight');
+
+:root {
+  @each $size, $value in $sizes {
+    @each $breakpoint, $sizeValue in $value {
+      --#{$namespace}-size-#{$size}-#{$breakpoint}: #{$sizeValue};
+    }
+  }
+
+  @each $lineHeight, $value in $lineHeights {
+    @each $breakpoint, $lineHeightValue in $value {
+      --#{$namespace}-line-height-#{$lineHeight}-#{$breakpoint}: #{$lineHeightValue};
+    }
+  }
+
+  @each $fontWeight, $value in $fontWeights {
+    @each $breakpoint, $fontWeightValue in $value {
+      --#{$namespace}-font-weight-#{$fontWeight}-#{$breakpoint}: #{$fontWeightValue};
+    }
+  }
+}

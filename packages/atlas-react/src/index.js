@@ -1,3 +1,6 @@
+// Design Tokens
+import "./common/styles/tokens.scss";
+
 export {
   default as BasicButton,
   buttonVariants,

@@ -1,4 +1,6 @@
-.AtlasIconButton {
+@import "../../common/styles/atlas";
+
+.IconButton {
   background: none;
   border: none;
   margin: 0;
@@ -27,8 +29,8 @@
   &:disabled {
     color: color(gray-200);
   }
+}
 
-  &.is-active {
-    color: color(blue-400);
-  }
+.is-active {
+  color: color(blue-400);
 }

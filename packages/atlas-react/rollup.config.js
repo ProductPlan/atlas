@@ -4,6 +4,7 @@ import commonjs from "@rollup/plugin-commonjs";
 import babel from "@rollup/plugin-babel";
 import { externals } from "rollup-plugin-node-externals";
 import scss from "rollup-plugin-scss";
+import postcss from "rollup-plugin-postcss";
 import del from "rollup-plugin-delete";
 import pkg from "./package.json";
 
@@ -17,7 +18,15 @@ export default [
         extensions: [".js", "jsx"],
       }),
       scss({
-        prefix: `@import "./src/common/styles/atlas.scss";`,
+        include: ["./src/common/styles/tokens.scss"],
+        output: "dist/tokens.css",
+      }),
+      postcss({
+        include: ["./src/**/*.scss"],
+        exclude: ["**/tokens.scss"],
+        modules: true,
+        extract: "atlas.css",
+        use: ["sass"],
       }),
       babel({
         babelHelpers: "runtime",

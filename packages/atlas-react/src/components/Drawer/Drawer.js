@@ -2,10 +2,10 @@ import React from "react";
 import PropTypes from "prop-types";
 import classNames from "classnames";
 import BasicButton from "@components/BasicButton";
-import "./Drawer.scss";
+import styles from "./Drawer.scss";
 
 const DrawerBack = ({ label = "Back", onClick = () => {} }) => {
-  const classes = classNames("AtlasDrawer__back");
+  const classes = classNames(styles.DrawerBack);
 
   return (
     <div className={classes}>
@@ -25,7 +25,7 @@ DrawerBack.propTypes = {
 };
 
 const DrawerActions = ({ children }) => {
-  const classes = classNames("AtlasDrawer__actions");
+  const classes = classNames(styles.DrawerActions);
 
   return <div className={classes}>{children}</div>;
 };
@@ -35,7 +35,7 @@ DrawerActions.propTypes = {
 };
 
 const DrawerTitle = ({ children }) => {
-  const classes = classNames("AtlasDrawer__title");
+  const classes = classNames(styles.DrawerTitle);
 
   return <h4 className={classes}>{children}</h4>;
 };
@@ -45,7 +45,7 @@ DrawerTitle.propTypes = {
 };
 
 const DrawerHeader = ({ children }) => {
-  const classes = classNames("AtlasDrawer__header");
+  const classes = classNames(styles.DrawerHeader);
 
   return <div className={classes}>{children}</div>;
 };
@@ -55,7 +55,7 @@ DrawerHeader.propTypes = {
 };
 
 const DrawerBody = ({ children }) => {
-  const classes = classNames("AtlasDrawer__body");
+  const classes = classNames(styles.DrawerBody);
 
   return <div className={classes}>{children}</div>;
 };
@@ -65,7 +65,7 @@ DrawerBody.propTypes = {
 };
 
 const DrawerFooter = ({ children }) => {
-  const classes = classNames("AtlasDrawer__footer");
+  const classes = classNames(styles.DrawerFooter);
 
   return <div className={classes}>{children}</div>;
 };
@@ -80,7 +80,10 @@ DrawerFooter.propTypes = {
  *
  */
 export default function Drawer({ position, children, open = false }) {
-  const drawerClasses = classNames("AtlasDrawer", `AtlasDrawer--${position}`);
+  const drawerClasses = classNames(
+    styles.Drawer,
+    styles[`Drawer__${position}`]
+  );
 
   if (!open) {
     return null;

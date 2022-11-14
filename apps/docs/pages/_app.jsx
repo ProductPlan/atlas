@@ -5,7 +5,8 @@ import componentData from "../data/componentData";
 
 import "./styles.css";
 import "./normalize.css";
-import "@productplan/atlas/dist/index.cjs.css";
+import "@productplan/atlas/dist/tokens.css";
+import "@productplan/atlas/dist/atlas.css";
 
 const AtlasDocsApp = ({ Component, pageProps }) => {
   return (

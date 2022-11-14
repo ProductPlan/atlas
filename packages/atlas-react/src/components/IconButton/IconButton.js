@@ -1,13 +1,13 @@
 import React from "react";
 import PropTypes from "prop-types";
 import classNames from "classnames";
-import "./IconButton.scss";
+import styles from "./IconButton.scss";
 
 /** A simple button containing only an icon */
 export default function IconButton({ faClass, onClick, isActive }) {
   const iconClasses = classNames("fa", faClass);
-  const buttonClasses = classNames("AtlasIconButton", {
-    "is-active": isActive,
+  const buttonClasses = classNames(styles.IconButton, {
+    [styles["is-active"]]: isActive,
   });
 
   return (
