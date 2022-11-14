@@ -1,0 +1,31 @@
+.DesignToken__Table {
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 100%;
+  table-layout: fixed;
+  text-align: left;
+
+  thead {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  th {
+    color: var(--a-color-gray-400);
+    font-size: var(--a-size-font-body-14);
+    text-transform: uppercase;
+  }
+
+  th, td {
+    padding: var(--a-spacer-small) var(--a-spacer-small) var(--a-spacer-small) 0;
+    width: 200px;
+    box-sizing: content-box;
+    border-bottom: 1px solid var(--a-color-light-gray-400);
+  }
+}
+
+.DesignToken__CellDescription {
+  font-size: var(--a-size-font-body-14);
+  color: var(--a-color-gray-400);
+}

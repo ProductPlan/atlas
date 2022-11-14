@@ -10,7 +10,7 @@ const NavigationLink = ({ href, label }) => {
 
   const linkClasses = classnames({
     [styles.Sidebar__listItem]: true,
-    [styles.Sidebar__listItemActive]: router.asPath === href,
+    [styles.Sidebar__listItemActive]: router.asPath === href || (router.asPath.startsWith(href) && href !== "/"),
   });
 
   return (
@@ -33,6 +33,7 @@ export default function Navigation({ components }) {
             GitHub <i className="fa-brands fa-github"></i>
           </a>
         </li>
+        <NavigationLink href="/tokens" label="Tokens" />
       </ul>
 
       <div className={styles.Sidebar__title}>Components</div>

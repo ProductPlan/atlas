@@ -9,7 +9,7 @@
   "scripts": {
     "build": "turbo run build",
     "commit": "cz",
-    "dev": "turbo run dev --parallel",
+    "dev": "yarn workspace @productplan/atlas-tokens build && turbo run dev --parallel",
     "export": "turbo run export",
     "lint": "turbo run lint",
     "test": "turbo run test",

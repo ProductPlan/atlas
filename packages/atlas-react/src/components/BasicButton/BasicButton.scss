@@ -1,22 +1,45 @@
-$black: #282929;
-$white: #fff;
-$blue: #0A6CB9;
-$blue-500: #0757AA;
-$gray1: #6A6E72;
-$gray2: #919497;
-$blue-700: #064474;
-$blue-200: #c0e2fc;
-$light-gray3: #F0F3F5;
-$light-gray1: #D1D5D9;
-$light-blue: #ECF6FE;
-$selected-box-shadow: #C0E2FC;
+.BasicButton.BasicButton--default {
+  --#{$namespace}-button-background-color: #{color(blue-400)};
+  --#{$namespace}-button-background-color-hover: #{color(blue-400)};
+  --#{$namespace}-button-background-color-focus: #{color(blue-400)};
+  --#{$namespace}-button-background-color-focus-shadow: #{color(blue-200)};
+  --#{$namespace}-button-background-color-active: #{color(blue-700)};
+  --#{$namespace}-button-color: #{color(white-400)};
+}
+
+.BasicButton.BasicButton--ghost {
+  --#{$namespace}-button-background-color: transparent;
+  --#{$namespace}-button-background-color-hover: #{color(light-gray-300)};
+  --#{$namespace}-button-background-color-focus: #{color(light-gray-300)};
+  --#{$namespace}-button-background-color-focus-shadow: #{color(blue-200)};
+  --#{$namespace}-button-background-color-active: #{color(light-gray-300)};
+  --#{$namespace}-button-color: #{color(black-400)};
+}
+
+.BasicButton.BasicButton--secondary {
+  --#{$namespace}-button-background-color: #{color(blue-100)};
+  --#{$namespace}-button-background-color-hover: #{color(blue-200)};
+  --#{$namespace}-button-background-color-focus: #{color(blue-200)};
+  --#{$namespace}-button-background-color-focus-shadow: #{color(blue-200)};
+  --#{$namespace}-button-background-color-active: #{color(blue-200)};
+  --#{$namespace}-button-color: #{color(blue-400)};
+}
+
+.BasicButton.BasicButton--destructive {
+  --#{$namespace}-button-background-color: #{color(red-400)};
+  --#{$namespace}-button-background-color-hover: #{color(red-500)};
+  --#{$namespace}-button-background-color-focus: #{color(red-500)};
+  --#{$namespace}-button-background-color-focus-shadow: #{color(red-100)};
+  --#{$namespace}-button-background-color-active: #{color(red-500)};
+  --#{$namespace}-button-color: #{color(white-400)};
+}
 
 .BasicButton {
   padding: 8px 16px;
-  background-color: $blue;
+  background-color: var(--#{$namespace}-button-background-color);
   border-radius: 4px;
   border: none;
-  color: $white;
+  color: var(--#{$namespace}-button-color);
   font-size: 14px;
   line-height: 1;
   display: inline-flex;
@@ -31,50 +54,20 @@ $selected-box-shadow: #C0E2FC;
 
   &:focus {
     outline: none;
-    box-shadow: 0px 0px 0px 2px #C0E2FC;
-    background-color: $blue-700;
+    box-shadow: 0px 0px 0px 2px var(--#{$namespace}-button-background-color-focus-shadow);
+    background-color: var(--#{$namespace}-button-background-color-focus);
   }
 
   &:active {
-    background-color: $blue-700;
+    background-color: var(--#{$namespace}-button-background-color-active);
   }
 
   &:disabled {
     opacity: 0.5;
   }
 
-  &--ghost {
-    background-color: transparent;
-    color: $black;
-
-    &:hover {
-      background-color: $light-gray3;
-    }
-
-    &:active {
-      background-color: $light-gray3;
-    }
-    &:focus {
-      background-color: $light-gray1;
-    }
-  }
-
-  &--secondary {
-    background-color: $light-blue;
-    color: $blue;
-
-    &:hover {
-      background-color: $selected-box-shadow;
-    }
-
-    &:active {
-      background-color: $selected-box-shadow;
-    }
-
-    &:focus {
-      background-color: $blue;
-      color: $white;
-    }
+  &:hover {
+    background-color: var(--#{$namespace}-button-background-color-hover);
   }
 
   &__trailingIcon {

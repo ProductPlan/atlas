@@ -1,0 +1,19 @@
+{
+  "spacers": {
+    "micro": {
+      "value": "4px"
+    },
+    "mini": {
+      "value": "8px"
+    },
+    "small": {
+      "value": "16px"
+    },
+    "medium": {
+      "value": "24px"
+    },
+    "large": {
+      "value": "32px"
+    }
+  }
+}
