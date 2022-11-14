@@ -3,7 +3,7 @@
 exports[`BasicButton when using different variants renders a default button 1`] = `
 <div>
   <button
-    class="BasicButton BasicButton--default"
+    class="AtlasBasicButton AtlasBasicButton--default"
     type="button"
   >
     Click Me
@@ -14,7 +14,7 @@ exports[`BasicButton when using different variants renders a default button 1`] 
 exports[`BasicButton when using different variants renders a ghost button 1`] = `
 <div>
   <button
-    class="BasicButton BasicButton--ghost"
+    class="AtlasBasicButton AtlasBasicButton--ghost"
     type="button"
   >
     Click Me
@@ -25,7 +25,7 @@ exports[`BasicButton when using different variants renders a ghost button 1`] = 
 exports[`BasicButton when using different variants renders a secondary button 1`] = `
 <div>
   <button
-    class="BasicButton BasicButton--secondary"
+    class="AtlasBasicButton AtlasBasicButton--secondary"
     type="button"
   >
     Click Me
@@ -36,11 +36,11 @@ exports[`BasicButton when using different variants renders a secondary button 1`
 exports[`BasicButton when using icons when button with type default has a leading icon renders the icon 1`] = `
 <div>
   <button
-    class="BasicButton BasicButton--default"
+    class="AtlasBasicButton AtlasBasicButton--default"
     type="button"
   >
     <span
-      class="BasicButton__leadingIcon"
+      class="AtlasBasicButton__leadingIcon"
     >
       <i
         class="fa fa-chevron-left"
@@ -54,12 +54,12 @@ exports[`BasicButton when using icons when button with type default has a leadin
 exports[`BasicButton when using icons when button with type default has a trailing icon renders the icon 1`] = `
 <div>
   <button
-    class="BasicButton BasicButton--default"
+    class="AtlasBasicButton AtlasBasicButton--default"
     type="button"
   >
     Click Me
     <span
-      class="BasicButton__trailingIcon"
+      class="AtlasBasicButton__trailingIcon"
     >
       <i
         class="fa fa-chevron-left"
@@ -72,11 +72,11 @@ exports[`BasicButton when using icons when button with type default has a traili
 exports[`BasicButton when using icons when button with type ghost has a leading icon renders the icon 1`] = `
 <div>
   <button
-    class="BasicButton BasicButton--ghost"
+    class="AtlasBasicButton AtlasBasicButton--ghost"
     type="button"
   >
     <span
-      class="BasicButton__leadingIcon"
+      class="AtlasBasicButton__leadingIcon"
     >
       <i
         class="fa fa-chevron-left"
@@ -90,12 +90,12 @@ exports[`BasicButton when using icons when button with type ghost has a leading 
 exports[`BasicButton when using icons when button with type ghost has a trailing icon renders the icon 1`] = `
 <div>
   <button
-    class="BasicButton BasicButton--ghost"
+    class="AtlasBasicButton AtlasBasicButton--ghost"
     type="button"
   >
     Click Me
     <span
-      class="BasicButton__trailingIcon"
+      class="AtlasBasicButton__trailingIcon"
     >
       <i
         class="fa fa-chevron-left"
@@ -108,11 +108,11 @@ exports[`BasicButton when using icons when button with type ghost has a trailing
 exports[`BasicButton when using icons when button with type secondary has a leading icon renders the icon 1`] = `
 <div>
   <button
-    class="BasicButton BasicButton--secondary"
+    class="AtlasBasicButton AtlasBasicButton--secondary"
     type="button"
   >
     <span
-      class="BasicButton__leadingIcon"
+      class="AtlasBasicButton__leadingIcon"
     >
       <i
         class="fa fa-chevron-left"
@@ -126,12 +126,12 @@ exports[`BasicButton when using icons when button with type secondary has a lead
 exports[`BasicButton when using icons when button with type secondary has a trailing icon renders the icon 1`] = `
 <div>
   <button
-    class="BasicButton BasicButton--secondary"
+    class="AtlasBasicButton AtlasBasicButton--secondary"
     type="button"
   >
     Click Me
     <span
-      class="BasicButton__trailingIcon"
+      class="AtlasBasicButton__trailingIcon"
     >
       <i
         class="fa fa-chevron-left"
