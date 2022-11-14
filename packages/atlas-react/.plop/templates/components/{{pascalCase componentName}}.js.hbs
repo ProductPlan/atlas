@@ -1,12 +1,12 @@
 import React from "react";
 // import PropTypes from 'prop-types';
 import classNames from "classnames";
-import "./{{pascalCase componentName}}.scss";
+import styles from "./{{pascalCase componentName}}.module.scss";
 
 /** {{pascalCase componentName}} component ... */
 export default function {{pascalCase componentName}}() {
   const classes = classNames(
-    ".Atlas{{pascalCase componentName}}",
+    styles.{{pascalCase componentName}},
   );
 
   return (
