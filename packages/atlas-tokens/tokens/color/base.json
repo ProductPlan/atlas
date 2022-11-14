@@ -2,58 +2,58 @@
   "color": {
     "black": {
       "700": {
-        "description": "Never use this. Only used on bars to hit AA contrast combination with Secondary label color. ",
+        "description": "For use of text on Bars, Containers, Lanes, and Milestones to ensure AA Contrast compliancy.",
         "type": "color",
         "value": "#000000ff"
       },
       "400": {
-        "description": "Used for text and such.",
+        "description": "For use as our main text color.",
         "type": "color",
         "value": "#282929ff"
       }
     },
     "white": {
       "400": {
-        "description": "",
+        "description": "For use as a text color on dark elements.",
         "type": "color",
         "value": "#ffffffff"
       },
       "transparent": {
-        "description": "",
+        "description": "For use as the background color of elements which lay on top of surfaces to obscure their contents. This color has an alpha of `0.2`.",
         "type": "color",
         "value": "#ffffff33"
       }
     },
     "gray": {
       "400": {
-        "description": "Sub-copy (toolbar)",
+        "description": "For use as secodary copy and side navigation. Also for use as default icon color",
         "type": "color",
         "value": "#6a6e72ff"
       },
       "200": {
-        "description": "Disabled state text",
+        "description": "For use as the disabled state text within inputs and other form elements. Also for use as background on pills.",
         "type": "color",
         "value": "#919497ff"
       }
     },
     "light-gray": {
       "300": {
-        "description": "",
+        "description": "——",
         "type": "color",
         "value": "#dde1e4ff"
       },
       "400": {
-        "description": "Border color",
+        "description": "For use as the border color on form inputs and other elements. Also for use on hover, active, and focus state of teritary buttons.",
         "type": "color",
         "value": "#d1d5d9ff"
       },
       "200": {
-        "description": "",
+        "description": "——",
         "type": "color",
         "value": "#e8eceeff"
       },
       "100": {
-        "description": "Backgrounds",
+        "description": "For use of teritary buttons in their defaut state and hover and active state for ghost buttons. Also for use of backgrounds to slightly distinguish between white backgrounds.",
         "type": "color",
         "value": "#f0f3f5ff"
       }
@@ -65,209 +65,209 @@
         "value": "#4faae8ff"
       },
       "500": {
-        "description": "",
+        "description": "For use as background on primary button's hover state.",
         "type": "color",
         "value": "#0757aaff"
       },
       "700": {
-        "description": "",
+        "description": "For use as text on informational banners, alerts, and background elements. Also for use on backgrounds for primary button's focus and active state.",
         "type": "color",
         "value": "#064474ff"
       },
       "400": {
-        "description": "$blue",
+        "description": "For use as the primary blue for links and buttons. Also for use of icons within informational banners and alerts.",
         "type": "color",
         "value": "#0a6cb9ff"
       },
       "200": {
-        "description": "",
+        "description": "For use as background color on secondary button's hover state. Also for use as background on pills.",
         "type": "color",
         "value": "#c0e2fcff"
       },
       "100": {
-        "description": "",
+        "description": "For use as the background color on informational alerts and banners. Also for use as the main background on secdondary buttons",
         "type": "color",
         "value": "#ecf6feff"
       }
     },
     "orange": {
       "100": {
-        "description": "",
+        "description": "For use as a decorative surface color.",
         "type": "color",
         "value": "#fef3ecff"
       },
       "200": {
-        "description": "",
+        "description": "For use as a decorative surface color.",
         "type": "color",
         "value": "#faceb3ff"
       },
       "300": {
-        "description": "",
+        "description": "For use as a decorative surface color.",
         "type": "color",
         "value": "#f5a370ff"
       },
       "500": {
-        "description": "",
+        "description": "For use as a decorative surface color.",
         "type": "color",
         "value": "#b05821ff"
       },
       "700": {
-        "description": "",
+        "description": "For use as a decorative surface color.",
         "type": "color",
         "value": "#723108ff"
       },
       "400": {
-        "description": "",
+        "description": "For use as a decorative surface color.",
         "type": "color",
         "value": "#f0782dff"
       }
     },
     "red": {
       "200": {
-        "description": "",
+        "description": "For use as border color on danger button's focused state. Also for use as background on pills.",
         "type": "color",
         "value": "#f4bdb8ff"
       },
       "300": {
-        "description": "",
+        "description": "For use as background on pills.",
         "type": "color",
         "value": "#e1756cff"
       },
       "500": {
-        "description": "",
+        "description": "For use as background color on danger button's hover and active state",
         "type": "color",
         "value": "#ac261aff"
       },
       "600": {
-        "description": "",
+        "description": "——",
         "type": "color",
         "value": "#8b1f15ff"
       },
       "700": {
-        "description": "",
+        "description": "For use as background color on danger button's focused state. Also for use as text color on destructive alerts and banners.",
         "type": "color",
         "value": "#6a1810ff"
       },
       "400": {
-        "description": "",
+        "description": "For use as background color on danger button's default state. Also for use as primary color on connections line.",
         "type": "color",
         "value": "#cd2d1fff"
       },
       "100": {
-        "description": "",
+        "description": "For use as the background color on destructive alerts and banners.",
         "type": "color",
         "value": "#fcefedff"
       }
     },
     "yellow": {
       "200": {
-        "description": "",
+        "description": "For use as background on pills.",
         "type": "color",
         "value": "#ffe6adff"
       },
       "300": {
-        "description": "",
+        "description": "For use as background on pills.",
         "type": "color",
         "value": "#ffd575ff"
       },
       "500": {
-        "description": "",
+        "description": "——",
         "type": "color",
         "value": "#d39e29ff"
       },
       "600": {
-        "description": "",
+        "description": "——",
         "type": "color",
         "value": "#a67a14ff"
       },
       "700": {
-        "description": "",
+        "description": "For use as text color on warning alerts and banners. Also for use as text color on pills.",
         "type": "color",
         "value": "#7a5500ff"
       },
       "400": {
-        "description": "",
+        "description": "For use as icon color on warning alerts",
         "type": "color",
         "value": "#ffc33dff"
       },
       "100": {
-        "description": "",
+        "description": "For use as the background color on warning alerts and banners.",
         "type": "color",
         "value": "#fff9ebff"
       }
     },
     "green": {
       "200": {
-        "description": "",
+        "description": "For use as background on pills.",
         "type": "color",
         "value": "#d4ecc0ff"
       },
       "300": {
-        "description": "",
+        "description": "For use as background on pills.",
         "type": "color",
         "value": "#9dca79ff"
       },
       "500": {
-        "description": "",
+        "description": "For use as icon color on success alerts and banners.",
         "type": "color",
         "value": "#457e19ff"
       },
       "700": {
-        "description": "",
+        "description": "For use as text color on success alerts and banners. Also for use as text color on pills.",
         "type": "color",
         "value": "#395f1cff"
       },
       "400": {
-        "description": "",
+        "description": "For use as icon color on success alerts and banners. Also for use on legacy bootstrap buttons.",
         "type": "color",
         "value": "#65a831ff"
       },
       "100": {
-        "description": "",
+        "description": "For use as the background color on success alerts and banners.",
         "type": "color",
         "value": "#f4faefff"
       }
     },
     "purple": {
       "100": {
-        "description": "",
+        "description": "For use as a decorative surface color.",
         "type": "color",
         "value": "#f3effbff"
       },
       "200": {
-        "description": "",
+        "description": "For use as a decorative surface color.",
         "type": "color",
         "value": "#cdbeefff"
       },
       "300": {
-        "description": "",
+        "description": "For use as a decorative surface color.",
         "type": "color",
         "value": "#9376d2ff"
       },
       "400": {
-        "description": "",
+        "description": "For use as a decorative surface color.",
         "type": "color",
         "value": "#582db4ff"
       },
       "700": {
-        "description": "",
+        "description": "For use as a decorative surface color.",
         "type": "color",
         "value": "#301862ff"
       }
     },
     "transparent": {
       "overlay": {
-        "description": "",
+        "description": "For use as the transparent background behind modals and dialogs. This color has an alpha of `0.7`.",
         "type": "color",
         "value": "#282929b3"
       },
       "shadow": {
-        "description": "",
+        "description": "For use as the drop shadow (box-shadow) on windows.",
         "type": "color",
         "value": "#28292933"
       },
       "empty": {
-        "description": "",
+        "description": "——",
         "type": "color",
         "value": "#ffffff00"
       }
