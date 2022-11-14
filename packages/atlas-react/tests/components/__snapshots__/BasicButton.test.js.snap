@@ -3,7 +3,7 @@
 exports[`BasicButton when using different variants renders a default button 1`] = `
 <div>
   <button
-    class="BasicButton"
+    class="BasicButton BasicButton--default"
     type="button"
   >
     Click Me
@@ -36,7 +36,7 @@ exports[`BasicButton when using different variants renders a secondary button 1`
 exports[`BasicButton when using icons when button with type default has a leading icon renders the icon 1`] = `
 <div>
   <button
-    class="BasicButton"
+    class="BasicButton BasicButton--default"
     type="button"
   >
     <span
@@ -54,7 +54,7 @@ exports[`BasicButton when using icons when button with type default has a leadin
 exports[`BasicButton when using icons when button with type default has a trailing icon renders the icon 1`] = `
 <div>
   <button
-    class="BasicButton"
+    class="BasicButton BasicButton--default"
     type="button"
   >
     Click Me
