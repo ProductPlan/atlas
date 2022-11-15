@@ -1,0 +1,5 @@
+:root {
+<% _.each(allTokens, function(prop) {
+%>--a-<%= prop.name %>: <%= prop.value %>;<% if (prop.comment) { %> // <%= prop.comment %><% } %>
+<% }); %>
+}
