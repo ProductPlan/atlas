@@ -4,11 +4,14 @@
   "main": "dist/js/tokens.js",
   "license": "MIT",
   "scripts": {
-    "build": "npm run clean && style-dictionary build",
+    "build": "npm run clean && node ./build.js",
     "clean": "del-cli --force ./dist"
   },
   "dependencies": {
     "del-cli": "^5.0.0",
     "style-dictionary": "^3.7.1"
+  },
+  "devDependencies": {
+    "lodash": "^4.17.21"
   }
 }

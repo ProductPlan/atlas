@@ -18,6 +18,7 @@ export default [
       }),
       scss({
         prefix: `@import "./src/common/styles/atlas.scss";`,
+        output: "dist/atlas.css",
       }),
       babel({
         babelHelpers: "runtime",

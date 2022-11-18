@@ -22,8 +22,8 @@ const SpacerTokens = ({ spacers }) => {
                 <div
                   style={{
                     backgroundColor: `var(--a-color-blue-200)`,
-                    width: `var(--a-spacer-${spacer})`,
-                    height: `var(--a-spacer-${spacer})`,
+                    width: `var(--a-spacers-${spacer})`,
+                    height: `var(--a-spacers-${spacer})`,
                   }}
                 />
               </td>
@@ -32,7 +32,7 @@ const SpacerTokens = ({ spacers }) => {
                 <code>{spacers[spacer].name}</code>
               </td>
               <td>
-                <code>{`--a-spacer-${spacer}`}</code>
+                <code>{`--a-spacers-${spacer}`}</code>
               </td>
               <td className={styles.DesignToken__CellDescription}>
                 {spacers[spacer].description}

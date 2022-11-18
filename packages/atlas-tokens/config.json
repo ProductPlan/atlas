@@ -14,7 +14,7 @@
       "buildPath": "dist/styles/",
       "files": [{
         "destination": "tokens.css",
-        "format": "css/variables",
+        "format": "css/custom/atlas",
         "options": {
           "outputReferences": true
         }
