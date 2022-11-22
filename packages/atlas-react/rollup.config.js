@@ -20,16 +20,12 @@ export default [
         prefix: `@import "./src/common/styles/atlas.scss";`,
         output: "dist/atlas.css",
       }),
-      babel({
-        babelHelpers: "runtime",
-        exclude: "**/node_modules/**",
-        extensions: [".js", ".jsx"],
-      }),
-      commonjs(),
+      commonjs({ include: /node_modules/ }),
+      babel({ babelHelpers: 'bundled' })
     ],
     output: [
-      { file: pkg.main, format: "cjs" },
-      { file: pkg.module, format: "es", exports: "named" },
+      { dir: './dist/cjs/', format: "cjs" },
+      { dir: './dist/esm/', format: "es", exports: "named" },
     ],
   },
 ];

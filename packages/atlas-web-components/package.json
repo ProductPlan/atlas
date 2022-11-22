@@ -1,0 +1,23 @@
+{
+  "name": "@productplan/atlas-web-components",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "# not implemented",
+    "build": "vite build",
+    "build:lib": "yarn build -- -c=vite.lib.config.js",
+    "build:watch": "yarn build:lib -w",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@productplan/atlas-tokens": "*",
+    "preact": "^10.11.2",
+    "preact-custom-element": "^4.2.1"
+  },
+  "devDependencies": {
+    "@preact/preset-vite": "^2.4.0",
+    "terser": "^5.15.1",
+    "vite": "^3.2.3"
+  }
+}
