@@ -12,6 +12,7 @@ export const buttonVariants = ["default", "secondary", "ghost"];
 export default function BasicButton({
   label,
   htmlType = "button",
+  htmlId,
   type = "default",
   onClick,
   trailingIcon,
@@ -23,6 +24,7 @@ export default function BasicButton({
       theme={type}
       onClick={onClick}
       type={htmlType}
+      htmlId={htmlId}
     >
       {leadingIcon && <span slot="leadingIcon">{leadingIcon}</span>}
       {trailingIcon && <span slot="trailingIcon">{trailingIcon}</span>}
@@ -35,6 +37,8 @@ BasicButton.propTypes = {
   label: PropTypes.string.isRequired,
   /** html type attribute, one of button, submit, or reset */
   htmlType: PropTypes.oneOf(buttonHtmlTypes),
+  /** html id attribute */
+  htmlId: PropTypes.string,
   /** one of default, secondary, ghost */
   type: PropTypes.oneOf(buttonVariants),
   /** Click Handler */

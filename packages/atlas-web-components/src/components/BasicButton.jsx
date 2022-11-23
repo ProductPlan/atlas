@@ -4,19 +4,19 @@ import "redefine-custom-elements";
 
 const BasicButton = ({
   label = "",
-  onClick = () => {},
   theme = "default",
+  type = "button",
+  htmlId,
   leadingIcon,
   trailingIcon,
-  type = "button",
 }) => {
   return (
     <>
       <style>{styles}</style>
       <button
-        onClick={onClick}
         className={`BasicButton BasicButton--${theme}`}
         type={type}
+        htmlId={htmlId}
       >
         {leadingIcon && <span className="leadingIcon">{leadingIcon}</span>}
         {label}

@@ -1,4 +1,8 @@
-const withTM = require("next-transpile-modules")(["@productplan/atlas"]);
+const withTM = require("next-transpile-modules")([
+  "@productplan/atlas",
+  "@productplan/atlas-web-components",
+  "@productplan/atlas-tokens"
+]);
 
 module.exports = withTM({
   reactStrictMode: true,
