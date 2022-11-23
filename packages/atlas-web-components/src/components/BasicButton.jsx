@@ -1,5 +1,6 @@
 import register from 'preact-custom-element';
 import styles from "./BasicButton.scss";
+import "redefine-custom-elements";
 
 const BasicButton = ({
   label = "",

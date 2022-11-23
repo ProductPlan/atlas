@@ -4167,11 +4167,11 @@ end-of-stream@^1.1.0:
     once "^1.4.0"
 
 enhanced-resolve@^5.7.0:
-  version "5.10.0"
-  resolved "https://registry.yarnpkg.com/enhanced-resolve/-/enhanced-resolve-5.10.0.tgz#0dc579c3bb2a1032e357ac45b8f3a6f3ad4fb1e6"
-  integrity sha512-T0yTFjdpldGY8PmuXXR0PyQ1ufZpEGiHVrp7zHKB7jdR4qlmZHhONVM5AQOAWXuF/w3dnHbEQVrNptJgt7F+cQ==
+  version "5.11.0"
+  resolved "https://registry.yarnpkg.com/enhanced-resolve/-/enhanced-resolve-5.11.0.tgz#543cf6c847a85adba0c4a5e2170bded4d493919a"
+  integrity sha512-0Gcraf7gAJSQoPg+bTSXNhuzAYtXqLc4C011vb8S3B8XUSEkGYNBk20c68X9291VF4vvsCD8SPkr6Mza+DwU+g==
   dependencies:
-    graceful-fs "^4.2.4"
+    graceful-fs "^4.2.9"
     tapable "^2.2.0"
 
 enquirer@^2.3.5, enquirer@^2.3.6:
@@ -8937,6 +8937,11 @@ recursive-readdir@^2.2.2:
   integrity sha512-nRCcW9Sj7NuZwa2XvH9co8NPeXUBhZP7CRKJtU+cS6PW9FpCIFoI5ib0NT1ZrbNuPoRy0ylyCaUL8Gih4LSyFg==
   dependencies:
     minimatch "3.0.4"
+
+redefine-custom-elements@^0.1.2:
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/redefine-custom-elements/-/redefine-custom-elements-0.1.2.tgz#beb9d029f1c04979265ffff621c77a26c7098c72"
+  integrity sha512-QAUiJmxKoiFfWroR044D5Q7C8twfUp+IyUo8N53u8fiUQfkFMelwqrIhQZFRkUbsmjJbEtcrxlPonNBkEK7TDQ==
 
 redent@^3.0.0:
   version "3.0.0"
