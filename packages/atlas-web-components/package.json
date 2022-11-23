@@ -4,10 +4,11 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "# not implemented",
+    "dev": "yarn run build:lib",
+    "develop": "# TODO: not implemented",
     "build": "vite build",
     "build:lib": "yarn build -- -c=vite.lib.config.js",
-    "build:watch": "yarn build:lib -w",
+    "build:lib:watch": "yarn build:lib -w",
     "preview": "vite preview"
   },
   "dependencies": {

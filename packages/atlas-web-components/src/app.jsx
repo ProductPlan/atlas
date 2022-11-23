@@ -4,8 +4,6 @@ import './components/BasicButton'
 import './app.css'
 
 export function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
       <div>
@@ -17,14 +15,9 @@ export function App() {
         </a>
       </div>
       <h1>Vite + Preact</h1>
-      <atlas-basic-button label="Click me!" />
-      <div class="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/app.jsx</code> and save to test HMR
-        </p>
+      <div className="card">
+        <h1></h1>
+        <atlas-basic-button label="My Label"></atlas-basic-button>
       </div>
       <p class="read-the-docs">
         Click on the Vite and Preact logos to learn more

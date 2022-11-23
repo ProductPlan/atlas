@@ -5,7 +5,6 @@ import babel from "@rollup/plugin-babel";
 import { externals } from "rollup-plugin-node-externals";
 import scss from "rollup-plugin-scss";
 import del from "rollup-plugin-delete";
-import pkg from "./package.json";
 
 export default [
   {

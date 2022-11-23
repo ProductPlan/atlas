@@ -12,7 +12,7 @@
       "outputs": []
     },
     "dev": {
-      "dependsOn": ["^dev", "^build:watch"],
+      // "dependsOn": ["^dev"],
       "cache": false
     },
     "test": {
