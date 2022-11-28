@@ -28,7 +28,6 @@ let config = {
         "css": true
       }
     ],
-    "@babel/plugin-transform-runtime",
     ['babel-plugin-module-resolver', moduleResolverPluginConfig]
   ]
 };

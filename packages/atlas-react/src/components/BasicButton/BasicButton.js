@@ -1,7 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
-import classNames from "classnames";
-import "./BasicButton.scss";
+
+if (globalThis?.customElements) {
+  import("@productplan/atlas-web-components/dist/lib/BasicButton.js");
+}
 
 const buttonHtmlTypes = ["button", "submit", "reset"];
 export const buttonVariants = ["default", "secondary", "ghost"];
@@ -9,44 +11,34 @@ export const buttonVariants = ["default", "secondary", "ghost"];
 /** A Basic Button */
 export default function BasicButton({
   label,
-  htmlForm,
   htmlType = "button",
+  htmlId,
   type = "default",
   onClick,
   trailingIcon,
   leadingIcon,
 }) {
-  const classes = classNames("BasicButton", {
-    [`BasicButton--${type}`]: true,
-  });
-
   return (
-    <button
-      className={classes}
-      type={htmlType}
-      form={htmlForm}
+    <atlas-basic-button
+      label={label}
+      theme={type}
       onClick={onClick}
+      type={htmlType}
+      htmlId={htmlId}
     >
-      {leadingIcon ? (
-        <span className="BasicButton__leadingIcon">{leadingIcon}</span>
-      ) : null}
-      {label}
-      {trailingIcon ? (
-        <span className="BasicButton__trailingIcon">{trailingIcon}</span>
-      ) : null}
-    </button>
+      {leadingIcon && <span slot="leadingIcon">{leadingIcon}</span>}
+      {trailingIcon && <span slot="trailingIcon">{trailingIcon}</span>}
+    </atlas-basic-button>
   );
 }
 
 BasicButton.propTypes = {
   /** Text to display in the button */
   label: PropTypes.string.isRequired,
-  /** Optional: what form on the page should this button be attached to */
-  htmlForm: PropTypes.string,
   /** html type attribute, one of button, submit, or reset */
   htmlType: PropTypes.oneOf(buttonHtmlTypes),
   /** html id attribute */
-  htmlId: PropTypes.string.isRequired,
+  htmlId: PropTypes.string,
   /** one of default, secondary, ghost */
   type: PropTypes.oneOf(buttonVariants),
   /** Click Handler */

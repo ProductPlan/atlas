@@ -25,7 +25,7 @@ module.exports = {
     { value: 'POC', name: 'POC:      Proof of Concept' },
   ],
 
-  scopes: [{ name: 'global' }, { name: 'atlas-docs' }, { name: 'atlas-react' }, { name: 'atlas-tokens' }],
+  scopes: [{ name: 'global' }, { name: 'atlas-docs' }, { name: 'atlas-react' }, { name: 'atlas-tokens' }, { name: 'atlas-web-components' }],
 
   allowTicketNumber: true,
   isTicketNumberRequired: false,

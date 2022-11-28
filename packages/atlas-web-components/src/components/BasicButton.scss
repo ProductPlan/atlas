@@ -1,7 +1,9 @@
+@import "../styles/atlas.scss";
+
 .BasicButton.BasicButton--default {
   --#{$namespace}-button-background-color: #{color(blue-400)};
-  --#{$namespace}-button-background-color-hover: #{color(blue-400)};
-  --#{$namespace}-button-background-color-focus: #{color(blue-400)};
+  --#{$namespace}-button-background-color-hover: #{color(blue-500)};
+  --#{$namespace}-button-background-color-focus: #{color(blue-700)};
   --#{$namespace}-button-background-color-focus-shadow: #{color(blue-200)};
   --#{$namespace}-button-background-color-active: #{color(blue-700)};
   --#{$namespace}-button-color: #{color(white-400)};
@@ -35,7 +37,7 @@
 }
 
 .BasicButton {
-  padding: 8px 16px;
+  padding: spacer(mini) spacer(small);
   background-color: var(--#{$namespace}-button-background-color);
   border-radius: 4px;
   border: none;
@@ -86,3 +88,4 @@
   margin-left: -8px;
   margin-right: 4px;
 }
+
