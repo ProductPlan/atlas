@@ -1,5 +1,6 @@
 import React from "react";
-import { render, screen } from "@testing-library/react";
+import { render } from "@testing-library/react";
+import { screen } from "shadow-dom-testing-library";
 import BasicButton, { buttonVariants } from "@components/BasicButton";
 
 const icon = <i className="fa fa-chevron-left"></i>;
@@ -15,7 +16,7 @@ describe("BasicButton", () => {
       />
     );
 
-    screen.getByText("Click Me").click();
+    screen.getByShadowText("Click Me").click();
     expect(onClick).toBeCalled();
     expect(onClick).toBeCalledTimes(1);
   });
@@ -28,14 +29,12 @@ describe("BasicButton", () => {
       render(
         <BasicButton
           label={label}
-          htmlForm="formId"
           htmlType={type}
           htmlId="buttonWithClickHandler"
         />
       );
 
-      const buttonElement = screen.getByText(label);
-      expect(buttonElement.getAttribute("form")).toBe("formId");
+      const buttonElement = screen.getByShadowText(label);
       expect(buttonElement.getAttribute("type")).toBe(type);
     });
   });
@@ -45,7 +44,7 @@ describe("BasicButton", () => {
       <BasicButton label="Click Me" htmlType="submit" htmlId="buttonWithForm" />
     );
 
-    expect(screen.getByText("Click Me").getAttribute("type")).toBe("submit");
+    expect(screen.getByShadowText("Click Me").getAttribute("type")).toBe("submit");
   });
 
   describe("when using different variants", () => {

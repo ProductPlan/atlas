@@ -9410,6 +9410,11 @@ set-blocking@^2.0.0:
   resolved "https://registry.yarnpkg.com/set-blocking/-/set-blocking-2.0.0.tgz#045f9782d011ae9a6803ddd382b24392b3d890f7"
   integrity sha512-KiKBS8AnWGEyLzofFfmvKwpdPzqiy16LvQfK3yv/fVH7Bj13/wl3JSR1J+rfgRE9q7xUJK4qvgS8raSOeLUehw==
 
+shadow-dom-testing-library@^1.8.0:
+  version "1.8.0"
+  resolved "https://registry.yarnpkg.com/shadow-dom-testing-library/-/shadow-dom-testing-library-1.8.0.tgz#dd88eaa640127e5af0d7f7fbf700f3e0def3b7e6"
+  integrity sha512-BkAx1fnwQN0GJuA1e0jkxicpW0A35ImjsWVzhEhmkzpIlygf3r6Ia9KvxcHAmHJ1nwxLU8k/pNgkrr0JQHEgLw==
+
 shebang-command@^1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/shebang-command/-/shebang-command-1.2.0.tgz#44aac65b695b03398968c39f363fee5deafdf1ea"
