@@ -6,10 +6,10 @@
   "scripts": {
     "dev": "yarn run build:lib",
     "develop": "# TODO: not implemented",
-    "build": "vite build",
-    "build:lib": "yarn run build -- -c=vite.lib.config.js -w",
+    "build": "# TODO: not implemented",
+    "build:lib": "vite build -c=vite.lib.config.js",
     "build:lib:watch": "yarn run build:lib -w",
-    "preview": "vite preview"
+    "preview": "vite build && vite preview"
   },
   "dependencies": {
     "@productplan/atlas-tokens": "*",
