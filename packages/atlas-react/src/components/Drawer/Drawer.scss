@@ -36,6 +36,7 @@
   &__title {
     @include heading20;
     flex: 1;
+    margin: 0;
   }
 
   &__footer {
