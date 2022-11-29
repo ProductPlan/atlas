@@ -1,46 +1,36 @@
-$black: #282929;
-$white: #fff;
-$blue: #0A6CB9;
-$blue-500: #0757AA;
-$gray1: #6A6E72;
-$gray2: #919497;
-$blue-700: #064474;
-$blue-200: #c0e2fc;
-$light-gray3: #F0F3F5;
-$light-gray1: #D1D5D9;
-$light-blue: #ECF6FE;
+@import "../../common/styles/atlas";
 
 .IconButton {
+  @include body16;
   background: none;
   border: none;
   margin: 0;
   padding: 0;
-  height: 24px;
-  width: 24px;
-  font-size: 16px;
+  height: spacer(medium);
+  width: spacer(medium);
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #6A6E72;
+  color: color('gray-400');
   transition: color 300ms ease;
   cursor: pointer;
-  border-radius: 4px;
-  
+  border-radius: spacer('micro');
+
   &:hover {
-    color: $blue;
+    color: color('blue-400');
   }
-  
+
   &:active, &:focus {
     outline: none;
-    background-color: $light-blue;
-    color: $blue;
+    background-color: color('blue-100');
+    color: color('blue-400');
   }
-  
+
   &:disabled {
-    color: $gray2;
+    color: color('gray-200');
   }
 
   &.is-active {
-    color: $blue;
+    color: color('blue-400');
   }
 }

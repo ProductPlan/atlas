@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import "./BasicButton.scss";
 
 if (globalThis?.customElements) {
   import("@productplan/atlas-web-components/dist/lib/BasicButton.js");
