@@ -16,6 +16,7 @@
     "plop": "yarn workspace @productplan/atlas plop"
   },
   "devDependencies": {
+    "@changesets/cli": "^2.25.2",
     "commitizen": "^4.2.5",
     "cz-customizable": "^7.0.0",
     "eslint-config-custom": "*",

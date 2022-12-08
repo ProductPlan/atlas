@@ -1,11 +1,13 @@
 {
   "name": "@productplan/atlas-tokens",
-  "version": "0.0.0",
+  "version": "0.1.0",
+  "private": true,
   "main": "dist/js/tokens.js",
   "license": "MIT",
   "scripts": {
     "build": "npm run clean && node ./build.js",
-    "clean": "del-cli --force ./dist"
+    "clean": "del-cli --force ./dist",
+    "dev": "npm run build"
   },
   "dependencies": {
     "del-cli": "^5.0.0",
