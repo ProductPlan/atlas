@@ -3,5 +3,12 @@ import {BasicButton} from "@productplan/atlas";
 
 /** Ghost style */
 export default function ExampleBasicButtonGhost() {
-  return <BasicButton label="Howdy again" htmlId="ghost_button" htmlForm="" htmlType="button" type="ghost" />
+  const label = "Button (Ghost)";
+
+  return (
+    <>
+      <BasicButton label={label} htmlType="button" type="ghost" />
+      <BasicButton label={label} htmlType="button" type="ghost" disabled />
+    </>
+  );
 }

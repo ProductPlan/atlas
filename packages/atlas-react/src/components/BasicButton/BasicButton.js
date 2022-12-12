@@ -7,7 +7,7 @@ if (globalThis?.customElements) {
 }
 
 const buttonHtmlTypes = ["button", "submit", "reset"];
-export const buttonVariants = ["default", "secondary", "ghost"];
+export const buttonVariants = ["default", "secondary", "tertiary", "ghost"];
 
 /** A Basic Button */
 export default function BasicButton({
@@ -18,6 +18,7 @@ export default function BasicButton({
   onClick,
   trailingIcon,
   leadingIcon,
+  disabled = undefined,
 }) {
   return (
     <atlas-basic-button
@@ -26,6 +27,7 @@ export default function BasicButton({
       onClick={onClick}
       type={htmlType}
       htmlId={htmlId}
+      disabled={disabled}
     >
       {leadingIcon && <span slot="leadingIcon">{leadingIcon}</span>}
       {trailingIcon && <span slot="trailingIcon">{trailingIcon}</span>}
@@ -34,6 +36,8 @@ export default function BasicButton({
 }
 
 BasicButton.propTypes = {
+  /** The button is disabled or not */
+  disabled: PropTypes.bool,
   /** Text to display in the button */
   label: PropTypes.string.isRequired,
   /** html type attribute, one of button, submit, or reset */

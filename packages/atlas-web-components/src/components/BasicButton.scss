@@ -27,6 +27,15 @@
   --#{$namespace}-button-color: #{color(blue-400)};
 }
 
+.BasicButton.BasicButton--tertiary {
+  --#{$namespace}-button-background-color: #{color(light-gray-100)};
+  --#{$namespace}-button-background-color-hover: #{color(light-gray-400)};
+  --#{$namespace}-button-background-color-focus: #{color(light-gray-400)};
+  --#{$namespace}-button-background-color-focus-shadow: #{color(blue-200)};
+  --#{$namespace}-button-background-color-active: #{color(black-400)};
+  --#{$namespace}-button-color: #{color(black-400)};
+}
+
 .BasicButton.BasicButton--destructive {
   --#{$namespace}-button-background-color: #{color(red-400)};
   --#{$namespace}-button-background-color-hover: #{color(red-500)};

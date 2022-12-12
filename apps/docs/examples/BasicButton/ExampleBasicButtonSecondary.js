@@ -3,5 +3,12 @@ import {BasicButton} from "@productplan/atlas";
 
 /** Secondary style */
 export default function ExampleBasicButtonSecondary() {
-  return <BasicButton label="Howdy" htmlId="secondary_button" htmlForm="" htmlType="button" type="secondary" />
+  const label = "Button (Secondary)";
+
+  return (
+    <>
+      <BasicButton label={label} htmlType="button" type="secondary" />
+      <BasicButton label={label} htmlType="button" type="secondary" disabled />
+    </>
+  );
 }

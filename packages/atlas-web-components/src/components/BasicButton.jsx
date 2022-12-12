@@ -9,6 +9,7 @@ const BasicButton = ({
   htmlId,
   leadingIcon,
   trailingIcon,
+  disabled = undefined,
 }) => {
   return (
     <>
@@ -17,6 +18,7 @@ const BasicButton = ({
         className={`BasicButton BasicButton--${theme}`}
         type={type}
         htmlId={htmlId}
+        disabled={disabled}
       >
         {leadingIcon && <span className="leadingIcon">{leadingIcon}</span>}
         {label}
