@@ -45,18 +45,42 @@
   --#{$namespace}-button-color: #{color(white-400)};
 }
 
+.BasicButton.BasicButton--size-default  {
+  --#{$namespace}-button-padding: #{spacer(mini)} #{spacer(small)};
+  --#{$namespace}-button-height: 36px;
+  --#{$namespace}-button-font-size: var(--a-size-font-body-14);
+  --#{namespace}-button-leading-icon-margin: 0 #{spacer(mini)} 0 0;
+  --#{namespace}-button-trailing-icon-margin: 0 0 0 #{spacer(mini)};
+}
+
+.BasicButton.BasicButton--size-small  {
+  --#{$namespace}-button-padding: #{spacer(micro)} calc(#{spacer(micro)} + #{spacer(mini)});
+  --#{$namespace}-button-height: 28px;
+  --#{$namespace}-button-font-size: var(--a-size-font-body-14);
+  --#{namespace}-button-leading-icon-margin: 0 #{spacer(micro)} 0 0;
+  --#{namespace}-button-trailing-icon-margin: 0 0 0 #{spacer(micro)};
+}
+
+.BasicButton.BasicButton--size-mini  {
+  --#{$namespace}-button-padding: #{spacer(micro)} #{spacer(mini)};
+  --#{$namespace}-button-height: 26px;
+  --#{$namespace}-button-font-size: var(--a-size-font-body-12);
+  --#{namespace}-button-leading-icon-margin: 0 #{spacer(micro)} 0 0;
+  --#{namespace}-button-trailing-icon-margin: 0 0 0 #{spacer(micro)};
+}
+
 .BasicButton {
-  padding: spacer(mini) spacer(small);
+  padding: var(--#{$namespace}-button-padding);
   background-color: var(--#{$namespace}-button-background-color);
   border-radius: 4px;
   border: none;
   color: var(--#{$namespace}-button-color);
-  font-size: 14px;
+  font-size: var(--#{$namespace}-button-font-size);
   line-height: 1;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  height: 36px;
+  height: var(--#{$namespace}-button-height);
   cursor: pointer;
 
   &:focus {
@@ -76,25 +100,19 @@
   &:hover {
     background-color: var(--#{$namespace}-button-background-color-hover);
   }
-}
 
-.trailingIcon {
-  height: 20px;
-  width: 20px;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  margin-right: -8px;
-  margin-left: 4px;
-}
+  .trailingIcon {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: var(--#{namespace}-button-trailing-icon-margin);
+  }
 
-.leadingIcon {
-  height: 20px;
-  width: 20px;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: -8px;
-  margin-right: 4px;
+  .leadingIcon {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: var(--#{namespace}-button-leading-icon-margin);
+  }
 }
 

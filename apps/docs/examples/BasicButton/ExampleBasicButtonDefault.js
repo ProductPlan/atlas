@@ -7,8 +7,10 @@ export default function ExampleBasicButtonDefault() {
 
   return (
     <>
-      <BasicButton label={label} htmlId="default_button" htmlForm="" htmlType="button" type="default" />
-      <BasicButton label={label} htmlId="default_button" htmlForm="" htmlType="button" type="default" disabled />
+      <BasicButton label={label} htmlId="default_button" type="default" />
+      <BasicButton label={label} htmlId="default_button" type="default" disabled />
+      <BasicButton label={label} htmlId="default_button" type="default" size="small" />
+      <BasicButton label={label} htmlId="default_button" type="default" size="mini" />
     </>
   );
 }

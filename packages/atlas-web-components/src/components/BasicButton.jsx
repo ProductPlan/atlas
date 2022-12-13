@@ -6,6 +6,7 @@ const BasicButton = ({
   label = "",
   theme = "default",
   type = "button",
+  size = "default",
   htmlId,
   leadingIcon,
   trailingIcon,
@@ -15,10 +16,11 @@ const BasicButton = ({
     <>
       <style>{styles}</style>
       <button
-        className={`BasicButton BasicButton--${theme}`}
+        className={`BasicButton BasicButton--${theme} BasicButton--size-${size}`}
         type={type}
         htmlId={htmlId}
         disabled={disabled}
+        size={size}
       >
         {leadingIcon && <span className="leadingIcon">{leadingIcon}</span>}
         {label}

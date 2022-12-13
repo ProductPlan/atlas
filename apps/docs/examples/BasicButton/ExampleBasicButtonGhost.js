@@ -9,6 +9,8 @@ export default function ExampleBasicButtonGhost() {
     <>
       <BasicButton label={label} htmlType="button" type="ghost" />
       <BasicButton label={label} htmlType="button" type="ghost" disabled />
+      <BasicButton label={label} htmlType="button" type="ghost" size="small" />
+      <BasicButton label={label} htmlType="button" type="ghost" size="mini" />
     </>
   );
 }

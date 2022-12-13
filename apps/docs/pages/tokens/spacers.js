@@ -7,8 +7,6 @@ import DesignTokensNavigation from "../../common/DesignTokens/DesignTokensNaviga
 export default function Spacers() {
   const spacers = tokens.spacers;
 
-  debugger;
-
   return (
     <PageContent
       title="Design Tokens: Spacers"

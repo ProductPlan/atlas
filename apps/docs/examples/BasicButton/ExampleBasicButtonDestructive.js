@@ -7,8 +7,10 @@ export default function ExampleBasicButtonDestructive() {
 
   return (
     <>
-      <BasicButton label={label} htmlType="button" type="destructive" />
-      <BasicButton label={label} htmlType="button" type="destructive" disabled />
+      <BasicButton label={label} type="destructive" />
+      <BasicButton label={label} type="destructive" disabled />
+      <BasicButton label={label} type="destructive" size="small" />
+      <BasicButton label={label} type="destructive" size="mini" />
     </>
   );
 }

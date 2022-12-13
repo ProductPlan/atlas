@@ -10,6 +10,8 @@ export default function ExampleBasicButtonWithTrailingIcon() {
       <BasicButton label="I have an icon!" htmlType="button" type="tertiary" trailingIcon={<i className="fas fa-check" />} />
       <BasicButton label="I have an icon!" htmlType="button" type="destructive" trailingIcon={<i className="fas fa-check" />} />
       <BasicButton label="I have an icon!" htmlType="button" type="ghost" trailingIcon={<i className="fas fa-check" />} />
+      <BasicButton label="I have an icon!" htmlType="button" type="default" trailingIcon={<i className="fas fa-check" />} size="small" />
+      <BasicButton label="I have an icon!" htmlType="button" type="default" trailingIcon={<i className="fas fa-check" />} size="mini" />
     </>
   );
 }

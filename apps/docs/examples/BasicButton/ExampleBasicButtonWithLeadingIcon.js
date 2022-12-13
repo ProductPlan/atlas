@@ -10,6 +10,8 @@ export default function ExampleBasicButtonWithLeadingIcon() {
       <BasicButton label="I have an icon!" htmlType="button" type="tertiary" leadingIcon={<i className="fas fa-check" />} />
       <BasicButton label="I have an icon!" htmlType="button" type="destructive" leadingIcon={<i className="fas fa-check" />} />
       <BasicButton label="I have an icon!" htmlType="button" type="ghost" leadingIcon={<i className="fas fa-check" />} />
+      <BasicButton label="I have an icon!" htmlType="button" type="default" leadingIcon={<i className="fas fa-check" />} size="small" />
+      <BasicButton label="I have an icon!" htmlType="button" type="default" leadingIcon={<i className="fas fa-check" />} size="mini" />
     </>
   );
 }

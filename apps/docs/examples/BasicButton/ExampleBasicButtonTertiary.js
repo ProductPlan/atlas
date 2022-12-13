@@ -9,6 +9,8 @@ export default function ExampleBasicButtonTertiary() {
     <>
       <BasicButton label={label} htmlType="button" type="tertiary" />
       <BasicButton label={label} htmlType="button" type="tertiary" disabled />
+      <BasicButton label={label} htmlType="button" type="tertiary" size="small" />
+      <BasicButton label={label} htmlType="button" type="tertiary" size="mini" />
     </>
   );
 }

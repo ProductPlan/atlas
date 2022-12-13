@@ -7,7 +7,14 @@ if (globalThis?.customElements) {
 }
 
 const buttonHtmlTypes = ["button", "submit", "reset"];
-export const buttonVariants = ["default", "secondary", "tertiary", "ghost"];
+export const buttonVariants = [
+  "default",
+  "secondary",
+  "tertiary",
+  "ghost",
+  "destructive",
+];
+export const buttonSizes = ["default", "small", "mini"];
 
 /** A Basic Button */
 export default function BasicButton({
@@ -15,6 +22,7 @@ export default function BasicButton({
   htmlType = "button",
   htmlId,
   type = "default",
+  size = "default",
   onClick,
   trailingIcon,
   leadingIcon,
@@ -28,6 +36,7 @@ export default function BasicButton({
       type={htmlType}
       htmlId={htmlId}
       disabled={disabled}
+      size={size}
     >
       {leadingIcon && <span slot="leadingIcon">{leadingIcon}</span>}
       {trailingIcon && <span slot="trailingIcon">{trailingIcon}</span>}
@@ -48,6 +57,8 @@ BasicButton.propTypes = {
   type: PropTypes.oneOf(buttonVariants),
   /** Click Handler */
   onClick: PropTypes.func,
+  /** button size */
+  size: PropTypes.oneOf(buttonSizes),
   /** icon to display to the right of the label */
   trailingIcon: PropTypes.element,
   /** icon to display to the left of the label */
