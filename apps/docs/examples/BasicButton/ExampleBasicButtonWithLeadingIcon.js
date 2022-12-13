@@ -1,5 +1,4 @@
-import React from "react";
-import {BasicButton} from "@productplan/atlas";
+import { BasicButton } from "@productplan/atlas";
 
 /** Button with a leading icon */
 export default function ExampleBasicButtonWithLeadingIcon() {

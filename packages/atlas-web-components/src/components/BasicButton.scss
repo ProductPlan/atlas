@@ -49,24 +49,48 @@
   --#{$namespace}-button-padding: #{spacer(mini)} #{spacer(small)};
   --#{$namespace}-button-height: 36px;
   --#{$namespace}-button-font-size: var(--a-size-font-body-14);
-  --#{namespace}-button-leading-icon-margin: 0 #{spacer(mini)} 0 0;
-  --#{namespace}-button-trailing-icon-margin: 0 0 0 #{spacer(mini)};
+  --#{$namespace}-button-width: auto;
+  --#{$namespace}-button-leading-icon-margin: 0 #{spacer(mini)} 0 0;
+  --#{$namespace}-button-trailing-icon-margin: 0 0 0 #{spacer(mini)};
+}
+
+.BasicButton.BasicButton--size-full-width  {
+  --#{$namespace}-button-padding: #{spacer(mini)} #{spacer(small)};
+  --#{$namespace}-button-height: 36px;
+  --#{$namespace}-button-font-size: var(--a-size-font-body-14);
+  --#{$namespace}-button-width: 100%;
+  --#{$namespace}-button-leading-icon-margin: 0 #{spacer(mini)} 0 0;
+  --#{$namespace}-button-trailing-icon-margin: 0 0 0 #{spacer(mini)};
 }
 
 .BasicButton.BasicButton--size-small  {
   --#{$namespace}-button-padding: #{spacer(micro)} calc(#{spacer(micro)} + #{spacer(mini)});
   --#{$namespace}-button-height: 28px;
   --#{$namespace}-button-font-size: var(--a-size-font-body-14);
-  --#{namespace}-button-leading-icon-margin: 0 #{spacer(micro)} 0 0;
-  --#{namespace}-button-trailing-icon-margin: 0 0 0 #{spacer(micro)};
+  --#{$namespace}-button-width: auto;
+  --#{$namespace}-button-leading-icon-margin: 0 #{spacer(micro)} 0 0;
+  --#{$namespace}-button-trailing-icon-margin: 0 0 0 #{spacer(micro)};
 }
 
 .BasicButton.BasicButton--size-mini  {
   --#{$namespace}-button-padding: #{spacer(micro)} #{spacer(mini)};
   --#{$namespace}-button-height: 26px;
   --#{$namespace}-button-font-size: var(--a-size-font-body-12);
-  --#{namespace}-button-leading-icon-margin: 0 #{spacer(micro)} 0 0;
-  --#{namespace}-button-trailing-icon-margin: 0 0 0 #{spacer(micro)};
+  --#{$namespace}-button-width: auto;
+  --#{$namespace}-button-leading-icon-margin: 0 #{spacer(micro)} 0 0;
+  --#{$namespace}-button-trailing-icon-margin: 0 0 0 #{spacer(micro)};
+}
+
+:host {
+  display: inline-block;
+}
+
+:host([disabled]) {
+  pointer-events: none;
+}
+
+:host([size="full-width"]) {
+  width: 100%;
 }
 
 .BasicButton {
@@ -82,6 +106,7 @@
   justify-content: center;
   height: var(--#{$namespace}-button-height);
   cursor: pointer;
+  width: var(--#{$namespace}-button-width);
 
   &:focus {
     outline: none;
@@ -105,14 +130,14 @@
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    margin: var(--#{namespace}-button-trailing-icon-margin);
+    margin: var(--#{$namespace}-button-trailing-icon-margin);
   }
 
   .leadingIcon {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    margin: var(--#{namespace}-button-leading-icon-margin);
+    margin: var(--#{$namespace}-button-leading-icon-margin);
   }
 }
 

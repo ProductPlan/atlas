@@ -14,7 +14,7 @@ export const buttonVariants = [
   "ghost",
   "destructive",
 ];
-export const buttonSizes = ["default", "small", "mini"];
+export const buttonSizes = ["default", "small", "mini", "full-width"];
 
 /** A Basic Button */
 export default function BasicButton({
