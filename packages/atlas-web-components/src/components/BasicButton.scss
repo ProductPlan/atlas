@@ -81,6 +81,18 @@
   --#{$namespace}-button-trailing-icon-margin: 0 0 0 #{spacer(micro)};
 }
 
+.BasicButton.BasicButton--align-left {
+  --#{$namespace}-button-align: flex-start;
+}
+
+.BasicButton.BasicButton--align-right {
+  --#{$namespace}-button-align: flex-end;
+}
+
+.BasicButton.BasicButton--align-center {
+  --#{$namespace}-button-align: center;
+}
+
 :host {
   display: inline-block;
 }
@@ -103,7 +115,7 @@
   line-height: 1;
   display: inline-flex;
   align-items: center;
-  justify-content: center;
+  justify-content: var(--#{$namespace}-button-align);
   height: var(--#{$namespace}-button-height);
   cursor: pointer;
   width: var(--#{$namespace}-button-width);
@@ -127,17 +139,21 @@
   }
 
   .trailingIcon {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    margin: var(--#{$namespace}-button-trailing-icon-margin);
+    ::slotted(*) {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      margin: var(--#{$namespace}-button-trailing-icon-margin);
+    }
   }
 
   .leadingIcon {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    margin: var(--#{$namespace}-button-leading-icon-margin);
+    ::slotted(*) {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      margin: var(--#{$namespace}-button-leading-icon-margin);
+    }
   }
 }
 

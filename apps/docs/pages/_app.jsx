@@ -3,7 +3,7 @@ import Heading from "../common/Heading";
 import Navigation from "../common/Navigation";
 import componentData from "../data/componentData";
 
-import "./styles.css";
+import "./styles.scss";
 import "./normalize.css";
 import "@productplan/atlas-tokens/dist/styles/tokens.css";
 import "@productplan/atlas/dist/atlas.css";

@@ -15,21 +15,24 @@ export const buttonVariants = [
   "destructive",
 ];
 export const buttonSizes = ["default", "small", "mini", "full-width"];
+export const buttonAlignments = ["left", "center", "right"];
 
 /** A Basic Button */
 export default function BasicButton({
   label,
-  htmlType = "button",
   htmlId,
-  type = "default",
-  size = "default",
   onClick,
-  trailingIcon,
-  leadingIcon,
+  align = "center",
   disabled = undefined,
+  htmlType = "button",
+  leadingIcon = null,
+  size = "default",
+  trailingIcon = null,
+  type = "default",
 }) {
   return (
     <atlas-basic-button
+      align={align}
       label={label}
       theme={type}
       onClick={onClick}
@@ -45,6 +48,8 @@ export default function BasicButton({
 }
 
 BasicButton.propTypes = {
+  /** Button content alignment (left, center, right) */
+  align: PropTypes.oneOf(buttonAlignments),
   /** The button is disabled or not */
   disabled: PropTypes.bool,
   /** Text to display in the button */
@@ -53,11 +58,11 @@ BasicButton.propTypes = {
   htmlType: PropTypes.oneOf(buttonHtmlTypes),
   /** html id attribute */
   htmlId: PropTypes.string,
-  /** one of default, secondary, ghost */
+  /** one of default, secondary, tertiary, destructive, ghost */
   type: PropTypes.oneOf(buttonVariants),
   /** Click Handler */
   onClick: PropTypes.func,
-  /** button size */
+  /** button size (default, small, mini, full-width) */
   size: PropTypes.oneOf(buttonSizes),
   /** icon to display to the right of the label */
   trailingIcon: PropTypes.element,

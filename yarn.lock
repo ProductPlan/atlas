@@ -9076,6 +9076,11 @@ preact@^10.11.2:
   resolved "https://registry.yarnpkg.com/preact/-/preact-10.11.3.tgz#8a7e4ba19d3992c488b0785afcc0f8aa13c78d19"
   integrity sha512-eY93IVpod/zG3uMF22Unl8h9KkrcKIRs2EGar8hwLZZDU1lkjph303V9HZBwufh2s736U6VXuhD109LYqPoffg==
 
+preactement@^1.8.2:
+  version "1.8.2"
+  resolved "https://registry.yarnpkg.com/preactement/-/preactement-1.8.2.tgz#e4a81aff91ad4de50cc6ab25a838d9d371d740cf"
+  integrity sha512-YJHjmSc3u9bCtkueKDpNHuf3feCSCAc9R5xE2N7BsteBQB7O2cpFpK1yaFZLzmW+lDV/A4vCVFRpANmSL92Dpg==
+
 preferred-pm@^3.0.0:
   version "3.0.3"
   resolved "https://registry.yarnpkg.com/preferred-pm/-/preferred-pm-3.0.3.tgz#1b6338000371e3edbce52ef2e4f65eb2e73586d6"
