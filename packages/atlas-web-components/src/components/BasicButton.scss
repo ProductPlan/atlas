@@ -93,8 +93,16 @@
   --#{$namespace}-button-align: center;
 }
 
-:host {
+:host, :host[type="button"] {
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-appearance: none;
+  -webkit-user-select: none;
+  appearance: none !important;
+  background: none;
+  border: none;
   display: inline-block;
+  user-select: none;
 }
 
 :host([disabled]) {
