@@ -8,12 +8,15 @@
   ],
   "scripts": {
     "build": "turbo run build",
+    "changeset": "changeset",
     "commit": "cz",
     "dev": "turbo run dev --parallel",
     "export": "turbo run export",
     "lint": "turbo run lint",
     "test": "turbo run test",
-    "plop": "yarn workspace @productplan/atlas plop"
+    "prerelease": "yarn build && yarn test",
+    "plop": "yarn workspace @productplan/atlas plop",
+    "release": "changeset publish"
   },
   "devDependencies": {
     "@changesets/cli": "^2.25.2",
