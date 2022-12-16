@@ -3,9 +3,24 @@
 exports[`BasicButton when using different variants renders a default button 1`] = `
 <div>
   <atlas-basic-button
+    align="center"
     htmlid="button-default"
     label="Click Me"
+    size="default"
     theme="default"
+    type="button"
+  />
+</div>
+`;
+
+exports[`BasicButton when using different variants renders a destructive button 1`] = `
+<div>
+  <atlas-basic-button
+    align="center"
+    htmlid="button-destructive"
+    label="Click Me"
+    size="default"
+    theme="destructive"
     type="button"
   />
 </div>
@@ -14,8 +29,10 @@ exports[`BasicButton when using different variants renders a default button 1`] 
 exports[`BasicButton when using different variants renders a ghost button 1`] = `
 <div>
   <atlas-basic-button
+    align="center"
     htmlid="button-ghost"
     label="Click Me"
+    size="default"
     theme="ghost"
     type="button"
   />
@@ -25,9 +42,24 @@ exports[`BasicButton when using different variants renders a ghost button 1`] = 
 exports[`BasicButton when using different variants renders a secondary button 1`] = `
 <div>
   <atlas-basic-button
+    align="center"
     htmlid="button-secondary"
     label="Click Me"
+    size="default"
     theme="secondary"
+    type="button"
+  />
+</div>
+`;
+
+exports[`BasicButton when using different variants renders a tertiary button 1`] = `
+<div>
+  <atlas-basic-button
+    align="center"
+    htmlid="button-tertiary"
+    label="Click Me"
+    size="default"
+    theme="tertiary"
     type="button"
   />
 </div>
@@ -36,8 +68,10 @@ exports[`BasicButton when using different variants renders a secondary button 1`
 exports[`BasicButton when using icons when button with type default has a leading icon renders the icon 1`] = `
 <div>
   <atlas-basic-button
+    align="center"
     htmlid="button-default"
     label="Click Me"
+    size="default"
     theme="default"
     type="button"
   >
@@ -55,9 +89,53 @@ exports[`BasicButton when using icons when button with type default has a leadin
 exports[`BasicButton when using icons when button with type default has a trailing icon renders the icon 1`] = `
 <div>
   <atlas-basic-button
+    align="center"
     htmlid="button-default"
     label="Click Me"
+    size="default"
     theme="default"
+    type="button"
+  >
+    <span
+      slot="trailingIcon"
+    >
+      <i
+        class="fa fa-chevron-left"
+      />
+    </span>
+  </atlas-basic-button>
+</div>
+`;
+
+exports[`BasicButton when using icons when button with type destructive has a leading icon renders the icon 1`] = `
+<div>
+  <atlas-basic-button
+    align="center"
+    htmlid="button-destructive"
+    label="Click Me"
+    size="default"
+    theme="destructive"
+    type="button"
+  >
+    <span
+      slot="leadingIcon"
+    >
+      <i
+        class="fa fa-chevron-left"
+      />
+    </span>
+  </atlas-basic-button>
+</div>
+`;
+
+exports[`BasicButton when using icons when button with type destructive has a trailing icon renders the icon 1`] = `
+<div>
+  <atlas-basic-button
+    align="center"
+    htmlid="button-destructive"
+    label="Click Me"
+    size="default"
+    theme="destructive"
     type="button"
   >
     <span
@@ -74,8 +152,10 @@ exports[`BasicButton when using icons when button with type default has a traili
 exports[`BasicButton when using icons when button with type ghost has a leading icon renders the icon 1`] = `
 <div>
   <atlas-basic-button
+    align="center"
     htmlid="button-ghost"
     label="Click Me"
+    size="default"
     theme="ghost"
     type="button"
   >
@@ -93,8 +173,10 @@ exports[`BasicButton when using icons when button with type ghost has a leading 
 exports[`BasicButton when using icons when button with type ghost has a trailing icon renders the icon 1`] = `
 <div>
   <atlas-basic-button
+    align="center"
     htmlid="button-ghost"
     label="Click Me"
+    size="default"
     theme="ghost"
     type="button"
   >
@@ -112,8 +194,10 @@ exports[`BasicButton when using icons when button with type ghost has a trailing
 exports[`BasicButton when using icons when button with type secondary has a leading icon renders the icon 1`] = `
 <div>
   <atlas-basic-button
+    align="center"
     htmlid="button-secondary"
     label="Click Me"
+    size="default"
     theme="secondary"
     type="button"
   >
@@ -131,9 +215,53 @@ exports[`BasicButton when using icons when button with type secondary has a lead
 exports[`BasicButton when using icons when button with type secondary has a trailing icon renders the icon 1`] = `
 <div>
   <atlas-basic-button
+    align="center"
     htmlid="button-secondary"
     label="Click Me"
+    size="default"
     theme="secondary"
+    type="button"
+  >
+    <span
+      slot="trailingIcon"
+    >
+      <i
+        class="fa fa-chevron-left"
+      />
+    </span>
+  </atlas-basic-button>
+</div>
+`;
+
+exports[`BasicButton when using icons when button with type tertiary has a leading icon renders the icon 1`] = `
+<div>
+  <atlas-basic-button
+    align="center"
+    htmlid="button-tertiary"
+    label="Click Me"
+    size="default"
+    theme="tertiary"
+    type="button"
+  >
+    <span
+      slot="leadingIcon"
+    >
+      <i
+        class="fa fa-chevron-left"
+      />
+    </span>
+  </atlas-basic-button>
+</div>
+`;
+
+exports[`BasicButton when using icons when button with type tertiary has a trailing icon renders the icon 1`] = `
+<div>
+  <atlas-basic-button
+    align="center"
+    htmlid="button-tertiary"
+    label="Click Me"
+    size="default"
+    theme="tertiary"
     type="button"
   >
     <span
