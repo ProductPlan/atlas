@@ -22,6 +22,7 @@ const NavigationLink = ({ href, label }) => {
 
 export default function Navigation({ components }) {
   const router = useRouter();
+  const portedComponents = ["BasicButton"];
 
   return (
     <nav className={styles.Sidebar}>
@@ -39,7 +40,7 @@ export default function Navigation({ components }) {
       <div className={styles.Sidebar__title}>Components</div>
 
       <ul className={styles.Sidebar__list}>
-        {components.map((name) => {
+        {components.filter(component => portedComponents.includes(component)).map((name) => {
           return (
             <NavigationLink key={name} href={`/components/${name}`} label={name} />
           );
