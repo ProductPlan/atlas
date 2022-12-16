@@ -1,6 +1,6 @@
 {
   "name": "@productplan/atlas-web-components",
-  "private": true,
+  "license": "MIT",
   "version": "0.2.0",
   "type": "module",
   "scripts": {
