@@ -8,14 +8,19 @@
   ],
   "scripts": {
     "build": "turbo run build",
+    "changeset": "changeset",
     "commit": "cz",
     "dev": "turbo run dev --parallel",
     "export": "turbo run export",
     "lint": "turbo run lint",
     "test": "turbo run test",
-    "plop": "yarn workspace @productplan/atlas plop"
+    "prerelease": "yarn build && yarn test",
+    "plop": "yarn workspace @productplan/atlas plop",
+    "release": "changeset publish"
   },
   "devDependencies": {
+    "@changesets/changelog-github": "^0.4.7",
+    "@changesets/cli": "^2.25.2",
     "commitizen": "^4.2.5",
     "cz-customizable": "^7.0.0",
     "eslint-config-custom": "*",
