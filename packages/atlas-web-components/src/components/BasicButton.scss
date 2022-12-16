@@ -27,6 +27,15 @@
   --#{$namespace}-button-color: #{color(blue-400)};
 }
 
+.BasicButton.BasicButton--tertiary {
+  --#{$namespace}-button-background-color: #{color(light-gray-100)};
+  --#{$namespace}-button-background-color-hover: #{color(light-gray-400)};
+  --#{$namespace}-button-background-color-focus: #{color(light-gray-400)};
+  --#{$namespace}-button-background-color-focus-shadow: #{color(blue-200)};
+  --#{$namespace}-button-background-color-active: #{color(black-400)};
+  --#{$namespace}-button-color: #{color(black-400)};
+}
+
 .BasicButton.BasicButton--destructive {
   --#{$namespace}-button-background-color: #{color(red-400)};
   --#{$namespace}-button-background-color-hover: #{color(red-500)};
@@ -36,19 +45,88 @@
   --#{$namespace}-button-color: #{color(white-400)};
 }
 
+.BasicButton.BasicButton--size-default  {
+  --#{$namespace}-button-padding: #{spacer(mini)} #{spacer(small)};
+  --#{$namespace}-button-height: 36px;
+  --#{$namespace}-button-font-size: var(--a-size-font-body-14);
+  --#{$namespace}-button-width: auto;
+  --#{$namespace}-button-leading-icon-margin: 0 #{spacer(mini)} 0 0;
+  --#{$namespace}-button-trailing-icon-margin: 0 0 0 #{spacer(mini)};
+}
+
+.BasicButton.BasicButton--size-full-width  {
+  --#{$namespace}-button-padding: #{spacer(mini)} #{spacer(small)};
+  --#{$namespace}-button-height: 36px;
+  --#{$namespace}-button-font-size: var(--a-size-font-body-14);
+  --#{$namespace}-button-width: 100%;
+  --#{$namespace}-button-leading-icon-margin: 0 #{spacer(mini)} 0 0;
+  --#{$namespace}-button-trailing-icon-margin: 0 0 0 #{spacer(mini)};
+}
+
+.BasicButton.BasicButton--size-small  {
+  --#{$namespace}-button-padding: #{spacer(micro)} calc(#{spacer(micro)} + #{spacer(mini)});
+  --#{$namespace}-button-height: 28px;
+  --#{$namespace}-button-font-size: var(--a-size-font-body-14);
+  --#{$namespace}-button-width: auto;
+  --#{$namespace}-button-leading-icon-margin: 0 #{spacer(micro)} 0 0;
+  --#{$namespace}-button-trailing-icon-margin: 0 0 0 #{spacer(micro)};
+}
+
+.BasicButton.BasicButton--size-mini  {
+  --#{$namespace}-button-padding: #{spacer(micro)} #{spacer(mini)};
+  --#{$namespace}-button-height: 26px;
+  --#{$namespace}-button-font-size: var(--a-size-font-body-12);
+  --#{$namespace}-button-width: auto;
+  --#{$namespace}-button-leading-icon-margin: 0 #{spacer(micro)} 0 0;
+  --#{$namespace}-button-trailing-icon-margin: 0 0 0 #{spacer(micro)};
+}
+
+.BasicButton.BasicButton--align-left {
+  --#{$namespace}-button-align: flex-start;
+}
+
+.BasicButton.BasicButton--align-right {
+  --#{$namespace}-button-align: flex-end;
+}
+
+.BasicButton.BasicButton--align-center {
+  --#{$namespace}-button-align: center;
+}
+
+:host, :host[type="button"] {
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-appearance: none;
+  -webkit-user-select: none;
+  appearance: none !important;
+  background: none;
+  border: none;
+  display: inline-block;
+  user-select: none;
+}
+
+:host([disabled]) {
+  pointer-events: none;
+}
+
+:host([size="full-width"]) {
+  width: 100%;
+}
+
 .BasicButton {
-  padding: spacer(mini) spacer(small);
+  padding: var(--#{$namespace}-button-padding);
   background-color: var(--#{$namespace}-button-background-color);
   border-radius: 4px;
   border: none;
   color: var(--#{$namespace}-button-color);
-  font-size: 14px;
+  font-size: var(--#{$namespace}-button-font-size);
   line-height: 1;
   display: inline-flex;
   align-items: center;
-  justify-content: center;
-  height: 36px;
+  justify-content: var(--#{$namespace}-button-align);
+  height: var(--#{$namespace}-button-height);
   cursor: pointer;
+  width: var(--#{$namespace}-button-width);
 
   &:focus {
     outline: none;
@@ -67,25 +145,23 @@
   &:hover {
     background-color: var(--#{$namespace}-button-background-color-hover);
   }
-}
 
-.trailingIcon {
-  height: 20px;
-  width: 20px;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  margin-right: -8px;
-  margin-left: 4px;
-}
+  .trailingIcon {
+    ::slotted(*) {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      margin: var(--#{$namespace}-button-trailing-icon-margin);
+    }
+  }
 
-.leadingIcon {
-  height: 20px;
-  width: 20px;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: -8px;
-  margin-right: 4px;
+  .leadingIcon {
+    ::slotted(*) {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      margin: var(--#{$namespace}-button-leading-icon-margin);
+    }
+  }
 }
 
