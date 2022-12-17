@@ -8,8 +8,8 @@ describe("homepage", () => {
   it("renders", () => {
     cy.contains("h1", "Welcome to 🌐 Atlas");
   });
-
-  componentData.forEach(({ name }) => {
+  // TODO: remove filter when completing #184056510
+  componentData.filter(({name}) => ["BasicButton"].includes(name)).forEach(({ name }) => {
     it(`navigate and renders ${name}`, () => {
       cy.contains("a", name).click();
       cy.url().should("include", name);
