@@ -1,7 +1,6 @@
 {
   "name": "@productplan/atlas-tokens",
   "version": "0.1.0",
-  "private": true,
   "main": "dist/js/tokens.js",
   "license": "MIT",
   "scripts": {
