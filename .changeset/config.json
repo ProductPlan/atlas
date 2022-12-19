@@ -1,9 +1,6 @@
 {
   "$schema": "https://unpkg.com/@changesets/config@2.2.0/schema.json",
-  "changelog": [
-    "@changesets/changelog-github",
-    { "repo": "productplan/atlas" }
-  ],
+  "changelog": "@changesets/cli/changelog",
   "commit": true,
   "fixed": [],
   "linked": [],
