@@ -8,172 +8,210 @@ $fontWeights: map-get($tokens, 'font-weight');
 @mixin fontSize($typography) {
   font-size: var(--#{$namespace}-size-#{$typography});
   line-height: var(--#{$namespace}-line-height-#{$typography});
-  // font-weight: var(--#{$namespace}-font-weight-#{$typography});
+}
+
+@mixin fontFamily($fontFamily) {
+  font-family: var(--#{$namespace}-font-family-#{$fontFamily});
 }
 
 @mixin heading48 {
   @include fontSize('font-heading-48');
+  @include fontFamily('heading');
   font-weight: var(--#{$namespace}-font-weight-font-700);
 }
 
 @mixin heading40 {
   @include fontSize('font-heading-40');
+  @include fontFamily('heading');
   font-weight: var(--#{$namespace}-font-weight-font-700);
 }
 
 @mixin heading32 {
   @include fontSize('font-heading-32');
+  @include fontFamily('heading');
   font-weight: var(--#{$namespace}-font-weight-font-500);
 }
 
 @mixin heading28 {
   @include fontSize('font-heading-28');
+  @include fontFamily('heading');
   font-weight: var(--#{$namespace}-font-weight-font-500);
 }
 
 @mixin heading24 {
   @include fontSize('font-heading-24');
+  @include fontFamily('heading');
   font-weight: var(--#{$namespace}-font-weight-font-500);
 }
 
 @mixin heading20 {
   @include fontSize('font-heading-20');
+  @include fontFamily('heading');
   font-weight: var(--#{$namespace}-font-weight-font-500);
 }
 
 @mixin heading18 {
   @include fontSize('font-heading-18');
+  @include fontFamily('heading');
   font-weight: var(--#{$namespace}-font-weight-font-500);
 }
 
 @mixin heading16 {
   @include fontSize('font-heading-16');
+  @include fontFamily('heading');
   font-weight: var(--#{$namespace}-font-weight-font-500);
 }
 
 @mixin body24 {
   @include fontSize('font-body-24');
+  @include fontFamily('body');
   font-weight: var(--#{$namespace}-font-weight-font-500);
 }
 
 @mixin body24Light {
   @include fontSize('font-body-24');
+  @include fontFamily('body');
   font-weight: var(--#{$namespace}-font-weight-font-400);
 }
 
 @mixin body24Bold {
   @include fontSize('font-body-24');
+  @include fontFamily('body');
   font-weight: var(--#{$namespace}-font-weight-font-700);
 }
 
 @mixin body20 {
   @include fontSize('font-body-20');
+  @include fontFamily('body');
 }
 
 @mixin body20Light {
   @include fontSize('font-body-20');
+  @include fontFamily('body');
   font-weight: var(--#{$namespace}-font-weight-font-400);
 }
 
 @mixin body20Bold {
   @include fontSize('font-body-20');
+  @include fontFamily('body');
   font-weight: var(--#{$namespace}-font-weight-font-700);
 }
 
 @mixin body18 {
   @include fontSize('font-body-18');
+  @include fontFamily('body');
 }
 
 @mixin body18Light {
   @include fontSize('font-body-18');
+  @include fontFamily('body');
   font-weight: var(--#{$namespace}-font-weight-font-400);
 }
 
 @mixin body18Bold {
   @include fontSize('font-body-18');
+  @include fontFamily('body');
   font-weight: var(--#{$namespace}-font-weight-font-700);
 }
 
 @mixin body16 {
   @include fontSize('font-body-16');
+  @include fontFamily('body');
 }
 
 @mixin body16Light {
   @include fontSize('font-body-16');
+  @include fontFamily('body');
   font-weight: var(--#{$namespace}-font-weight-font-400);
 }
 
 @mixin body16Bold {
   @include fontSize('font-body-16');
+  @include fontFamily('body');
   font-weight: var(--#{$namespace}-font-weight-font-700);
 }
 
 @mixin body14 {
   @include fontSize('font-body-14');
+  @include fontFamily('body');
 }
 
 @mixin body14Light {
   @include fontSize('font-body-14');
+  @include fontFamily('body');
   font-weight: var(--#{$namespace}-font-weight-font-400);
 }
 
 @mixin body14Bold {
   @include fontSize('font-body-14');
+  @include fontFamily('body');
   font-weight: var(--#{$namespace}-font-weight-font-700);
 }
 
 @mixin body12 {
   @include fontSize('font-body-12');
+  @include fontFamily('body');
 }
 
 @mixin body12Light {
   @include fontSize('font-body-12');
+  @include fontFamily('body');
   font-weight: var(--#{$namespace}-font-weight-font-400);
 }
 
 @mixin body12Bold {
   @include fontSize('font-body-12');
+  @include fontFamily('body');
   font-weight: var(--#{$namespace}-font-weight-font-700);
 }
 
 @mixin longForm24 {
   @include fontSize('font-long-form-24');
+  @include fontFamily('body');
 }
 
 @mixin longForm24Light {
   @include fontSize('font-long-form-24');
+  @include fontFamily('long-form');
   font-weight: var(--#{$namespace}-font-weight-font-400);
 }
 
 @mixin longForm24Bold {
   @include fontSize('font-long-form-24');
+  @include fontFamily('long-form');
   font-weight: var(--#{$namespace}-font-weight-font-700);
 }
 
 @mixin longForm20 {
   @include fontSize('font-long-form-20');
+  @include fontFamily('long-form');
 }
 
 @mixin longForm20Light {
   @include fontSize('font-long-form-20');
+  @include fontFamily('long-form');
   font-weight: var(--#{$namespace}-font-weight-font-400);
 }
 
 @mixin longForm20Bold {
   @include fontSize('font-long-form-20');
+  @include fontFamily('long-form');
   font-weight: var(--#{$namespace}-font-weight-font-700);
 }
 
 @mixin longForm18 {
   @include fontSize('font-long-form-18');
+  @include fontFamily('long-form');
 }
 
 @mixin longForm18Light {
   @include fontSize('font-long-form-18');
+  @include fontFamily('long-form');
   font-weight: var(--#{$namespace}-font-weight-font-400);
 }
 
 @mixin longForm18Bold {
   @include fontSize('font-long-form-18');
+  @include fontFamily('long-form');
   font-weight: var(--#{$namespace}-font-weight-font-700);
 }

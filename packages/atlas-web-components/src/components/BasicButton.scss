@@ -114,6 +114,7 @@
 }
 
 .BasicButton {
+  @include fontFamily('body');
   padding: var(--#{$namespace}-button-padding);
   background-color: var(--#{$namespace}-button-background-color);
   border-radius: 4px;
