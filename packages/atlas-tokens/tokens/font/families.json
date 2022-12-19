@@ -1,0 +1,16 @@
+{
+  "font-family": {
+    "heading": {
+      "value": "-apple-system, Roboto, 'Helvetica Neue', sans-serif, Arial"
+    },
+    "body": {
+      "value": "-apple-system, Roboto, 'Helvetica Neue', sans-serif, Arial"
+    },
+    "longform": {
+      "value": "'Georgia', Times, serif"
+    },
+    "monospace": {
+      "value": "ui-monospace, SFMono-Regular, 'SF Mono', Consolas, 'Liberation Mono', Menlo, monospace"
+    }
+  }
+}

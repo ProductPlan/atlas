@@ -11,6 +11,10 @@ body, html {
   --docs-color-black: #282929;
   --docs-color-white: #ffffff;
   --docs-color-blue: #0A6CB9;
+
+  // Overrides
+  --a-font-family-body: 'Inter', Arial, Helvetica, sans-serif !important;
+  --a-font-family-heading: 'Inter', Arial, Helvetica, sans-serif !important;
 }
 
 body {
