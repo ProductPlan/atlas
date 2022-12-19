@@ -1,5 +1,11 @@
 # @productplan/atlas
 
+## 0.3.0
+
+### Minor Changes
+
+- 2217f70: add font family tokens
+
 ## 0.2.0
 
 ### Minor Changes

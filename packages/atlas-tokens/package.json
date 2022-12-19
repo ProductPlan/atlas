@@ -2,7 +2,7 @@
   "author": "ProductPlan <dev@productplan.com>",
   "name": "@productplan/atlas-tokens",
   "homepage": "https://github.com/ProductPlan/atlas",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "main": "dist/js/tokens.js",
   "license": "MIT",
   "scripts": {
