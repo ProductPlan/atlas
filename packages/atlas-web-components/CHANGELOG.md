@@ -1,5 +1,29 @@
 # @productplan/atlas-web-components
 
+## 0.3.1
+
+### Patch Changes
+
+- c72b26e: - add font family
+  - add author to package.json
+  - add license
+  - add shields to repo
+- Updated dependencies [c72b26e]
+  - @productplan/atlas-tokens@0.2.1
+
+## 0.3.0
+
+### Minor Changes
+
+- 2217f70: add font family tokens
+
+### Patch Changes
+
+- 7677582: add button sizes (default, small, mini)
+- Updated dependencies [7677582]
+- Updated dependencies [2217f70]
+  - @productplan/atlas-tokens@0.2.0
+
 ## 0.2.0
 
 ### Minor Changes
