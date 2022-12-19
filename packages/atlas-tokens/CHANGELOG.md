@@ -1,5 +1,14 @@
 # @productplan/atlas-tokens
 
+## 0.2.1
+
+### Patch Changes
+
+- c72b26e: - add font family
+  - add author to package.json
+  - add license
+  - add shields to repo
+
 ## 0.2.0
 
 ### Minor Changes
