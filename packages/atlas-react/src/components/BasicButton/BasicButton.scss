@@ -1,7 +1,159 @@
 @import "../../common/styles/atlas";
 
-atlas-basic-button {
+.BasicButton.BasicButton--default {
+  --#{$namespace}-button-background-color: #{color(blue-400)};
+  --#{$namespace}-button-background-color-hover: #{color(blue-500)};
+  --#{$namespace}-button-background-color-focus: #{color(blue-700)};
+  --#{$namespace}-button-background-color-focus-shadow: #{color(blue-200)};
+  --#{$namespace}-button-background-color-active: #{color(blue-700)};
+  --#{$namespace}-button-color: #{color(white-400)};
+}
+
+.BasicButton.BasicButton--ghost {
+  --#{$namespace}-button-background-color: transparent;
+  --#{$namespace}-button-background-color-hover: #{color(light-gray-300)};
+  --#{$namespace}-button-background-color-focus: #{color(light-gray-300)};
+  --#{$namespace}-button-background-color-focus-shadow: #{color(blue-200)};
+  --#{$namespace}-button-background-color-active: #{color(light-gray-300)};
+  --#{$namespace}-button-color: #{color(black-400)};
+}
+
+.BasicButton.BasicButton--secondary {
+  --#{$namespace}-button-background-color: #{color(blue-100)};
+  --#{$namespace}-button-background-color-hover: #{color(blue-200)};
+  --#{$namespace}-button-background-color-focus: #{color(blue-200)};
+  --#{$namespace}-button-background-color-focus-shadow: #{color(blue-200)};
+  --#{$namespace}-button-background-color-active: #{color(blue-200)};
+  --#{$namespace}-button-color: #{color(blue-400)};
+}
+
+.BasicButton.BasicButton--tertiary {
+  --#{$namespace}-button-background-color: #{color(light-gray-100)};
+  --#{$namespace}-button-background-color-hover: #{color(light-gray-400)};
+  --#{$namespace}-button-background-color-focus: #{color(light-gray-400)};
+  --#{$namespace}-button-background-color-focus-shadow: #{color(blue-200)};
+  --#{$namespace}-button-background-color-active: #{color(black-400)};
+  --#{$namespace}-button-color: #{color(black-400)};
+}
+
+.BasicButton.BasicButton--destructive {
+  --#{$namespace}-button-background-color: #{color(red-400)};
+  --#{$namespace}-button-background-color-hover: #{color(red-500)};
+  --#{$namespace}-button-background-color-focus: #{color(red-500)};
+  --#{$namespace}-button-background-color-focus-shadow: #{color(red-100)};
+  --#{$namespace}-button-background-color-active: #{color(red-500)};
+  --#{$namespace}-button-color: #{color(white-400)};
+}
+
+.BasicButton.BasicButton--size-default  {
+  --#{$namespace}-button-padding: #{spacer(mini)} #{spacer(small)};
+  --#{$namespace}-button-height: 36px;
+  --#{$namespace}-button-font-size: var(--a-size-font-body-14);
+  --#{$namespace}-button-width: auto;
+  --#{$namespace}-button-leading-icon-margin: 0 #{spacer(mini)} 0 0;
+  --#{$namespace}-button-trailing-icon-margin: 0 0 0 #{spacer(mini)};
+}
+
+.BasicButton.BasicButton--size-full-width  {
+  --#{$namespace}-button-padding: #{spacer(mini)} #{spacer(small)};
+  --#{$namespace}-button-height: 36px;
+  --#{$namespace}-button-font-size: var(--a-size-font-body-14);
+  --#{$namespace}-button-width: 100%;
+  --#{$namespace}-button-leading-icon-margin: 0 #{spacer(mini)} 0 0;
+  --#{$namespace}-button-trailing-icon-margin: 0 0 0 #{spacer(mini)};
+}
+
+.BasicButton.BasicButton--size-small  {
+  --#{$namespace}-button-padding: #{spacer(micro)} calc(#{spacer(micro)} + #{spacer(mini)});
+  --#{$namespace}-button-height: 28px;
+  --#{$namespace}-button-font-size: var(--a-size-font-body-14);
+  --#{$namespace}-button-width: auto;
+  --#{$namespace}-button-leading-icon-margin: 0 #{spacer(micro)} 0 0;
+  --#{$namespace}-button-trailing-icon-margin: 0 0 0 #{spacer(micro)};
+}
+
+.BasicButton.BasicButton--size-mini  {
+  --#{$namespace}-button-padding: #{spacer(micro)} #{spacer(mini)};
+  --#{$namespace}-button-height: 26px;
+  --#{$namespace}-button-font-size: var(--a-size-font-body-12);
+  --#{$namespace}-button-width: auto;
+  --#{$namespace}-button-leading-icon-margin: 0 #{spacer(micro)} 0 0;
+  --#{$namespace}-button-trailing-icon-margin: 0 0 0 #{spacer(micro)};
+}
+
+.BasicButton.BasicButton--align-left {
+  --#{$namespace}-button-align: flex-start;
+}
+
+.BasicButton.BasicButton--align-right {
+  --#{$namespace}-button-align: flex-end;
+}
+
+.BasicButton.BasicButton--align-center {
+  --#{$namespace}-button-align: center;
+}
+
+.BasicButton {
   & + & {
     margin-left: spacer(small);
   }
 }
+
+.BasicButton[disabled] {
+  pointer-events: none;
+}
+
+.BasicButton {
+  @include fontFamily('body');
+  padding: var(--#{$namespace}-button-padding);
+  background-color: var(--#{$namespace}-button-background-color);
+  border-radius: 4px;
+  border: none;
+  color: var(--#{$namespace}-button-color);
+  font-size: var(--#{$namespace}-button-font-size);
+  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: var(--#{$namespace}-button-align);
+  height: var(--#{$namespace}-button-height);
+  cursor: pointer;
+  width: var(--#{$namespace}-button-width);
+
+  &:focus {
+    outline: none;
+    box-shadow: 0px 0px 0px 2px var(--#{$namespace}-button-background-color-focus-shadow);
+    background-color: var(--#{$namespace}-button-background-color-focus);
+  }
+
+  &:active {
+    background-color: var(--#{$namespace}-button-background-color-active);
+  }
+
+  &:disabled {
+    opacity: 0.5;
+  }
+
+  &:hover {
+    background-color: var(--#{$namespace}-button-background-color-hover);
+  }
+
+  .trailingIcon {
+    i {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      margin: var(--#{$namespace}-button-trailing-icon-margin);
+    }
+  }
+
+  .leadingIcon {
+    i {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      margin: var(--#{$namespace}-button-leading-icon-margin);
+    }
+  }
+}
+
+

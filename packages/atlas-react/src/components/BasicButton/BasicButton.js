@@ -2,10 +2,6 @@ import React from "react";
 import PropTypes from "prop-types";
 import "./BasicButton.scss";
 
-if (globalThis?.customElements) {
-  import("@productplan/atlas-web-components/dist/lib/BasicButton.js");
-}
-
 const buttonHtmlTypes = ["button", "submit", "reset"];
 export const buttonVariants = [
   "default",
@@ -31,19 +27,17 @@ export default function BasicButton({
   type = "default",
 }) {
   return (
-    <atlas-basic-button
-      align={align}
-      label={label}
-      theme={type}
-      onClick={onClick}
+    <button
+      className={`BasicButton BasicButton--${type} BasicButton--size-${size} BasicButton--align-${align}`}
       type={htmlType}
-      htmlId={htmlId}
       disabled={disabled}
-      size={size}
+      onClick={onClick}
+      id={htmlId}
     >
-      {leadingIcon && <span slot="leadingIcon">{leadingIcon}</span>}
-      {trailingIcon && <span slot="trailingIcon">{trailingIcon}</span>}
-    </atlas-basic-button>
+      {leadingIcon && <span className="leadingIcon">{leadingIcon}</span>}
+      {label}
+      {trailingIcon && <span className="trailingIcon">{trailingIcon}</span>}
+    </button>
   );
 }
 
