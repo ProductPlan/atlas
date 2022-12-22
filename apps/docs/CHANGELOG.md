@@ -1,5 +1,13 @@
 # @productplan/atlas-docs
 
+## 0.3.2
+
+### Patch Changes
+
+- 0ab0b33: create the basic button as a non wrapper for web components package
+- Updated dependencies [0ab0b33]
+  - @productplan/atlas@0.3.2
+
 ## 0.3.1
 
 ### Patch Changes
