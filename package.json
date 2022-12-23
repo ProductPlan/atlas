@@ -8,10 +8,10 @@
     "packages/*"
   ],
   "scripts": {
-    "build": "turbo run build",
+    "build": "NODE_ENV=production && turbo run build",
     "changeset": "changeset",
     "commit": "cz",
-    "dev": "turbo run dev --parallel",
+    "dev": "NODE_ENV=development && turbo run build:lib && turbo run dev --parallel",
     "export": "turbo run export",
     "lint": "turbo run lint",
     "test": "turbo run test",

@@ -74,6 +74,7 @@
     "rollup-plugin-delete": "^2.0.0",
     "rollup-plugin-node-externals": "^5.0.1",
     "rollup-plugin-scss": "3",
+    "rollup-plugin-uglify": "^6.0.4",
     "sass": "^1.55.0",
     "sass-loader": "^13.0.2",
     "semver": "^7.3.5",
