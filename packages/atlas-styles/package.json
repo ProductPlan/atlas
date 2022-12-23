@@ -1,0 +1,17 @@
+{
+  "author": "ProductPlan <dev@productplan.com>",
+  "name": "@productplan/atlas-styles",
+  "homepage": "https://github.com/ProductPlan/atlas",
+  "version": "0.0.0",
+  "main": "atlas.scss",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "lint": "stylelint {src,tests}/**/*.scss"
+  },
+  "devDependencies": {
+    "@productplan/atlas-tokens": "0.2.1",
+    "stylelint": "^14.16.0",
+    "stylelint-config-standard-scss": "^6.1.0"
+  }
+}

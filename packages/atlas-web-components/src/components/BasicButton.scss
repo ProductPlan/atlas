@@ -1,4 +1,4 @@
-@import "../styles/atlas.scss";
+@import "@productplan/atlas-styles/atlas.scss";
 
 .BasicButton.BasicButton--default {
   --#{$namespace}-button-background-color: #{color(blue-400)};

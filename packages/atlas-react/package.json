@@ -20,6 +20,7 @@
     "@babel/core": "^7.19.3",
     "@babel/preset-env": "^7.19.4",
     "@babel/preset-react": "^7.18.6",
+    "@productplan/atlas-styles": "*",
     "@productplan/atlas-tokens": "*",
     "@productplan/atlas-web-components": "*",
     "@rollup/plugin-babel": "^6.0.0",

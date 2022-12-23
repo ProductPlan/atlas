@@ -1,6 +1,6 @@
 @import "@productplan/atlas-tokens/dist/styles/tokens.scss";
 
-$spacers: map-get($tokens, 'spacers');
+$spacers: map-get($tokens, "spacers");
 
 @function spacer($spacer) {
   @return var(--#{$namespace}-spacers-#{$spacer});

@@ -18,7 +18,7 @@ export default [
         extensions: [".js", "jsx"],
       }),
       scss({
-        prefix: `@import "./src/common/styles/atlas.scss";`,
+        prefix: `@import "@productplan/atlas-styles/atlas.scss";`,
         output: "dist/atlas.css",
         outputStyle:
           process.env.NODE_ENV === "production" ? "compressed" : "expanded",
