@@ -1,4 +1,4 @@
-import register from "preact-custom-element";
+import { define } from 'preactement';
 import styles from "./BasicButton.scss";
 import "redefine-custom-elements";
 
@@ -23,27 +23,12 @@ const BasicButton = ({
         disabled={disabled}
         size={size}
       >
-        <span className="leadingIcon"><slot name="leadingIcon"></slot></span>
+        {leadingIcon && <span className="leadingIcon">{leadingIcon}</span>}
         {label}
-        <span className="trailingIcon"><slot name="trailingIcon"></slot></span>
+        {trailingIcon && <span className="trailingIcon">{trailingIcon}</span>}
       </button>
     </>
   );
 };
 
-register(
-  BasicButton,
-  "atlas-basic-button",
-  [
-    "align",
-    "disabled",
-    "htmlId",
-    "label",
-    "leadingIcon",
-    "size",
-    "theme",
-    "trailingIcon",
-    "type",
-  ],
-  { shadow: true }
-);
+define('atlas-basic-button', () => BasicButton, { attributes: ['align', 'disabled', 'htmlId', 'label', 'size', 'theme', 'type']})

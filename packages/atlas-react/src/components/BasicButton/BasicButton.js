@@ -26,18 +26,26 @@ export default function BasicButton({
   trailingIcon = null,
   type = "default",
 }) {
+  if (globalThis?.customElements) {
+    import("@productplan/atlas-web-components/dist/lib/BasicButton");
+  }
+
   return (
-    <button
-      className={`BasicButton BasicButton--${type} BasicButton--size-${size} BasicButton--align-${align}`}
-      type={htmlType}
+    <atlas-basic-button
+      // create a unique key to force re-rendering of the component
+      key={`${label}-${htmlId}-${onClick}-${align}-${disabled}-${htmlType}-${leadingIcon}-${size}-${trailingIcon}-${type}`}
+      align={align}
       disabled={disabled}
+      htmlId={htmlId}
+      label={label}
+      size={size}
+      theme={type}
+      type={htmlType}
       onClick={onClick}
-      id={htmlId}
     >
-      {leadingIcon && <span className="leadingIcon">{leadingIcon}</span>}
-      {label}
-      {trailingIcon && <span className="trailingIcon">{trailingIcon}</span>}
-    </button>
+      {leadingIcon && <span slot="leadingIcon">{leadingIcon}</span>}
+      {trailingIcon && <span slot="trailingIcon">{trailingIcon}</span>}
+    </atlas-basic-button>
   );
 }
 

@@ -136,6 +136,7 @@ export default function ExampleBasicButtonPlayground() {
           disabled={disabled === true ? true : undefined}
           trailingIcon={trailingIcon ? <i className="fas fa-check" /> : null}
           leadingIcon={leadingIcon ? <i className="fas fa-check" /> : null}
+          onClick={() => { alert(`Clicked ${label} 🌐 !!`)}}
         />
       </div>
     </>
