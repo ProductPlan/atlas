@@ -1,7 +1,11 @@
 import React from "react";
 import { render } from "@testing-library/react";
 import { screen } from "shadow-dom-testing-library";
-import BasicButton, { buttonVariants } from "@components/BasicButton";
+import BasicButton, {
+  buttonVariants,
+  buttonSizes,
+  buttonAlignments,
+} from "@components/BasicButton";
 
 const icon = <i className="fa fa-chevron-left"></i>;
 
@@ -44,7 +48,9 @@ describe("BasicButton", () => {
       <BasicButton label="Click Me" htmlType="submit" htmlId="buttonWithForm" />
     );
 
-    expect(screen.getByShadowText("Click Me").getAttribute("type")).toBe("submit");
+    expect(screen.getByShadowText("Click Me").getAttribute("type")).toBe(
+      "submit"
+    );
   });
 
   describe("when using different variants", () => {
@@ -52,6 +58,33 @@ describe("BasicButton", () => {
       it(`renders a ${type} button`, () => {
         const { container } = render(
           <BasicButton label="Click Me" type={type} htmlId={`button-${type}`} />
+        );
+        expect(container).toMatchSnapshot();
+      });
+    });
+  });
+
+  describe("when using different sizes", () => {
+    buttonSizes.forEach((size) => {
+      it(`renders a ${size} button`, () => {
+        const { container } = render(
+          <BasicButton label="Click Me" size={size} htmlId={`button-${size}`} />
+        );
+        expect(container).toMatchSnapshot();
+      });
+    });
+  });
+
+  describe("when using different text alignments", () => {
+    buttonAlignments.forEach((textAlign) => {
+      it(`renders a ${textAlign} button`, () => {
+        const { container } = render(
+          <BasicButton
+            label="Click Me"
+            align={textAlign}
+            htmlId={`button-${textAlign}`}
+            size={buttonSizes['full-width']}
+          />
         );
         expect(container).toMatchSnapshot();
       });

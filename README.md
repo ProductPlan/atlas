@@ -10,6 +10,7 @@ This is a [monorepo](https://monorepo.tools/) made up of several different packa
 
 - `@productplan/atlas`: The core package, containing React components.
 - `@productplan/atlas-docs`: The documentation site for Atlas.
+- `@productplan/atlas-styles`: Common styles, variables and `mixins` for Atlas.
 - `@productplan/atlas-tokens`: The design tokens for Atlas.
 - `@productplan/atlas-web-components`: The package containing the [Web Components](https://developer.mozilla.org/en-US/docs/Web/Web_Components) for Atlas.
 

@@ -14,6 +14,7 @@
     "preview": "vite build && vite preview"
   },
   "dependencies": {
+    "@productplan/atlas-styles": "*",
     "@productplan/atlas-tokens": "*",
     "preact": "^10.11.2",
     "preact-custom-element": "^4.2.1",
