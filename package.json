@@ -12,7 +12,7 @@
     "changeset": "changeset",
     "commit": "cz",
     "dev": "NODE_ENV=development && turbo run build:lib && turbo run dev --parallel",
-    "export": "turbo run export",
+    "export": "NODE_ENV=development && turbo run export",
     "lint": "turbo run lint",
     "test": "turbo run test",
     "prerelease": "yarn build && yarn test",
