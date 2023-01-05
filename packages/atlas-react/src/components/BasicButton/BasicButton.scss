@@ -1,3 +1,6 @@
+@use "~@productplan/atlas-web-components/dist/lib/BasicButton.css";
+@import "~@productplan/atlas-styles/atlas.scss";
+
 atlas-basic-button {
   & + & {
     margin-left: spacer(small);

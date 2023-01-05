@@ -4,7 +4,7 @@ import { nodeResolve } from "@rollup/plugin-node-resolve";
 import commonjs from "@rollup/plugin-commonjs";
 import babel from "@rollup/plugin-babel";
 import { externals } from "rollup-plugin-node-externals";
-import scss from "rollup-plugin-scss";
+import sass from 'rollup-plugin-sass';
 import del from "rollup-plugin-delete";
 import { uglify } from "rollup-plugin-uglify";
 
@@ -17,8 +17,7 @@ export default [
       nodeResolve({
         extensions: [".js", "jsx"],
       }),
-      scss({
-        prefix: `@import "@productplan/atlas-styles/atlas.scss";`,
+      sass({
         output: "dist/atlas.css",
         outputStyle:
           process.env.NODE_ENV === "production" ? "compressed" : "expanded",

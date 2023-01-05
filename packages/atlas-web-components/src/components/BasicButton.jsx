@@ -1,6 +1,6 @@
 import { define } from 'preactement';
-import styles from "./BasicButton.scss";
 import "redefine-custom-elements";
+import "./BasicButton.scss";
 
 const BasicButton = ({
   align = "center",
@@ -15,7 +15,6 @@ const BasicButton = ({
 }) => {
   return (
     <>
-      <style>{styles}</style>
       <button
         className={`BasicButton BasicButton--${theme} BasicButton--size-${size} BasicButton--align-${align}`}
         type={type}
