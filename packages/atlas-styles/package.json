@@ -4,7 +4,6 @@
   "homepage": "https://github.com/ProductPlan/atlas",
   "version": "0.2.0",
   "main": "atlas.scss",
-  "private": true,
   "license": "MIT",
   "scripts": {
     "lint": "stylelint {src,tests}/**/*.scss"
