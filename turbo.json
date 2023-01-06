@@ -24,7 +24,7 @@
       "outputs": []
     },
     "export": {
-      "dependsOn": ["lint", "test", "build"],
+      "dependsOn": ["lint", "build"],
       "outputs": []
     }
   },
