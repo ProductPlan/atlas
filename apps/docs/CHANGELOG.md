@@ -1,5 +1,17 @@
 # @productplan/atlas-docs
 
+## 0.4.0
+
+### Minor Changes
+
+- c6e6644: add new wc wrapper without the shadow dom
+
+### Patch Changes
+
+- Updated dependencies [c6e6644]
+  - @productplan/atlas@0.4.0
+  - @productplan/atlas-web-components@0.4.0
+
 ## 0.3.2
 
 ### Patch Changes
