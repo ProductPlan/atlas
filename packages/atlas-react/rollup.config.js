@@ -14,9 +14,6 @@ export default [
     plugins: [
       del({ targets: "dist/*" }),
       externals({ deps: true }),
-      nodeResolve({
-        extensions: [".js", "jsx"],
-      }),
       sass({
         output: "dist/atlas.css",
         outputStyle:
@@ -25,6 +22,9 @@ export default [
       commonjs({ include: /node_modules/ }),
       babel({ babelHelpers: "bundled" }),
       process.env.NODE_ENV === "production" && uglify(),
+      nodeResolve({
+        extensions: [".js", "jsx"],
+      }),
     ],
     output: [
       { dir: "./dist/cjs/", format: "cjs", sourcemap: true },
