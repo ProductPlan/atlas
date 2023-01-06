@@ -1,5 +1,5 @@
 import React from "react";
-import { render } from "@testing-library/react";
+import { render, waitFor } from "@testing-library/react";
 import { screen } from "shadow-dom-testing-library";
 import BasicButton, {
   buttonVariants,
@@ -10,9 +10,9 @@ import BasicButton, {
 const icon = <i className="fa fa-chevron-left"></i>;
 
 describe("BasicButton", () => {
-  it("handles the click onClick handler", () => {
+  it("handles the click onClick handler", async () => {
     const onClick = jest.fn();
-    render(
+    const { container } = render(
       <BasicButton
         label="Click Me"
         onClick={onClick}
@@ -20,7 +20,12 @@ describe("BasicButton", () => {
       />
     );
 
+    await waitFor(() => {
+      screen.findByShadowLabelText("Click Me");
+    });
+
     screen.getByShadowText("Click Me").click();
+    expect(container).toMatchSnapshot();
     expect(onClick).toBeCalled();
     expect(onClick).toBeCalledTimes(1);
   });

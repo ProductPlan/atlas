@@ -1,335 +1,554 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`BasicButton when using different sizes renders a default button 1`] = `
+exports[`BasicButton handles the click onClick handler 1`] = `
 <div>
-  <button
-    class="BasicButton BasicButton--default BasicButton--size-default BasicButton--align-center"
-    id="button-default"
+  <atlas-basic-button
+    align="center"
+    htmlid="buttonWithClickHandler"
+    label="Click Me"
+    size="default"
+    theme="default"
     type="button"
   >
-    Click Me
-  </button>
+    <button
+      class="BasicButton BasicButton--default BasicButton--size-default BasicButton--align-center"
+      size="default"
+      type="button"
+    >
+      Click Me
+    </button>
+  </atlas-basic-button>
+</div>
+`;
+
+exports[`BasicButton when using different sizes renders a default button 1`] = `
+<div>
+  <atlas-basic-button
+    align="center"
+    htmlid="button-default"
+    label="Click Me"
+    size="default"
+    theme="default"
+    type="button"
+  >
+    <button
+      class="BasicButton BasicButton--default BasicButton--size-default BasicButton--align-center"
+      size="default"
+      type="button"
+    >
+      Click Me
+    </button>
+  </atlas-basic-button>
 </div>
 `;
 
 exports[`BasicButton when using different sizes renders a full-width button 1`] = `
 <div>
-  <button
-    class="BasicButton BasicButton--default BasicButton--size-full-width BasicButton--align-center"
-    id="button-full-width"
+  <atlas-basic-button
+    align="center"
+    htmlid="button-full-width"
+    label="Click Me"
+    size="full-width"
+    theme="default"
     type="button"
   >
-    Click Me
-  </button>
+    <button
+      class="BasicButton BasicButton--default BasicButton--size-full-width BasicButton--align-center"
+      size="full-width"
+      type="button"
+    >
+      Click Me
+    </button>
+  </atlas-basic-button>
 </div>
 `;
 
 exports[`BasicButton when using different sizes renders a mini button 1`] = `
 <div>
-  <button
-    class="BasicButton BasicButton--default BasicButton--size-mini BasicButton--align-center"
-    id="button-mini"
+  <atlas-basic-button
+    align="center"
+    htmlid="button-mini"
+    label="Click Me"
+    size="mini"
+    theme="default"
     type="button"
   >
-    Click Me
-  </button>
+    <button
+      class="BasicButton BasicButton--default BasicButton--size-mini BasicButton--align-center"
+      size="mini"
+      type="button"
+    >
+      Click Me
+    </button>
+  </atlas-basic-button>
 </div>
 `;
 
 exports[`BasicButton when using different sizes renders a small button 1`] = `
 <div>
-  <button
-    class="BasicButton BasicButton--default BasicButton--size-small BasicButton--align-center"
-    id="button-small"
+  <atlas-basic-button
+    align="center"
+    htmlid="button-small"
+    label="Click Me"
+    size="small"
+    theme="default"
     type="button"
   >
-    Click Me
-  </button>
+    <button
+      class="BasicButton BasicButton--default BasicButton--size-small BasicButton--align-center"
+      size="small"
+      type="button"
+    >
+      Click Me
+    </button>
+  </atlas-basic-button>
 </div>
 `;
 
 exports[`BasicButton when using different text alignments renders a center button 1`] = `
 <div>
-  <button
-    class="BasicButton BasicButton--default BasicButton--size-default BasicButton--align-center"
-    id="button-center"
+  <atlas-basic-button
+    align="center"
+    htmlid="button-center"
+    label="Click Me"
+    size="default"
+    theme="default"
     type="button"
   >
-    Click Me
-  </button>
+    <button
+      class="BasicButton BasicButton--default BasicButton--size-default BasicButton--align-center"
+      size="default"
+      type="button"
+    >
+      Click Me
+    </button>
+  </atlas-basic-button>
 </div>
 `;
 
 exports[`BasicButton when using different text alignments renders a left button 1`] = `
 <div>
-  <button
-    class="BasicButton BasicButton--default BasicButton--size-default BasicButton--align-left"
-    id="button-left"
+  <atlas-basic-button
+    align="left"
+    htmlid="button-left"
+    label="Click Me"
+    size="default"
+    theme="default"
     type="button"
   >
-    Click Me
-  </button>
+    <button
+      class="BasicButton BasicButton--default BasicButton--size-default BasicButton--align-left"
+      size="default"
+      type="button"
+    >
+      Click Me
+    </button>
+  </atlas-basic-button>
 </div>
 `;
 
 exports[`BasicButton when using different text alignments renders a right button 1`] = `
 <div>
-  <button
-    class="BasicButton BasicButton--default BasicButton--size-default BasicButton--align-right"
-    id="button-right"
+  <atlas-basic-button
+    align="right"
+    htmlid="button-right"
+    label="Click Me"
+    size="default"
+    theme="default"
     type="button"
   >
-    Click Me
-  </button>
+    <button
+      class="BasicButton BasicButton--default BasicButton--size-default BasicButton--align-right"
+      size="default"
+      type="button"
+    >
+      Click Me
+    </button>
+  </atlas-basic-button>
 </div>
 `;
 
 exports[`BasicButton when using different variants renders a default button 1`] = `
 <div>
-  <button
-    class="BasicButton BasicButton--default BasicButton--size-default BasicButton--align-center"
-    id="button-default"
+  <atlas-basic-button
+    align="center"
+    htmlid="button-default"
+    label="Click Me"
+    size="default"
+    theme="default"
     type="button"
   >
-    Click Me
-  </button>
+    <button
+      class="BasicButton BasicButton--default BasicButton--size-default BasicButton--align-center"
+      size="default"
+      type="button"
+    >
+      Click Me
+    </button>
+  </atlas-basic-button>
 </div>
 `;
 
 exports[`BasicButton when using different variants renders a destructive button 1`] = `
 <div>
-  <button
-    class="BasicButton BasicButton--destructive BasicButton--size-default BasicButton--align-center"
-    id="button-destructive"
+  <atlas-basic-button
+    align="center"
+    htmlid="button-destructive"
+    label="Click Me"
+    size="default"
+    theme="destructive"
     type="button"
   >
-    Click Me
-  </button>
+    <button
+      class="BasicButton BasicButton--destructive BasicButton--size-default BasicButton--align-center"
+      size="default"
+      type="button"
+    >
+      Click Me
+    </button>
+  </atlas-basic-button>
 </div>
 `;
 
 exports[`BasicButton when using different variants renders a ghost button 1`] = `
 <div>
-  <button
-    class="BasicButton BasicButton--ghost BasicButton--size-default BasicButton--align-center"
-    id="button-ghost"
+  <atlas-basic-button
+    align="center"
+    htmlid="button-ghost"
+    label="Click Me"
+    size="default"
+    theme="ghost"
     type="button"
   >
-    Click Me
-  </button>
+    <button
+      class="BasicButton BasicButton--ghost BasicButton--size-default BasicButton--align-center"
+      size="default"
+      type="button"
+    >
+      Click Me
+    </button>
+  </atlas-basic-button>
 </div>
 `;
 
 exports[`BasicButton when using different variants renders a secondary button 1`] = `
 <div>
-  <button
-    class="BasicButton BasicButton--secondary BasicButton--size-default BasicButton--align-center"
-    id="button-secondary"
+  <atlas-basic-button
+    align="center"
+    htmlid="button-secondary"
+    label="Click Me"
+    size="default"
+    theme="secondary"
     type="button"
   >
-    Click Me
-  </button>
+    <button
+      class="BasicButton BasicButton--secondary BasicButton--size-default BasicButton--align-center"
+      size="default"
+      type="button"
+    >
+      Click Me
+    </button>
+  </atlas-basic-button>
 </div>
 `;
 
 exports[`BasicButton when using different variants renders a tertiary button 1`] = `
 <div>
-  <button
-    class="BasicButton BasicButton--tertiary BasicButton--size-default BasicButton--align-center"
-    id="button-tertiary"
+  <atlas-basic-button
+    align="center"
+    htmlid="button-tertiary"
+    label="Click Me"
+    size="default"
+    theme="tertiary"
     type="button"
   >
-    Click Me
-  </button>
+    <button
+      class="BasicButton BasicButton--tertiary BasicButton--size-default BasicButton--align-center"
+      size="default"
+      type="button"
+    >
+      Click Me
+    </button>
+  </atlas-basic-button>
 </div>
 `;
 
 exports[`BasicButton when using icons when button with type default has a leading icon renders the icon 1`] = `
 <div>
-  <button
-    class="BasicButton BasicButton--default BasicButton--size-default BasicButton--align-center"
-    id="button-default"
+  <atlas-basic-button
+    align="center"
+    htmlid="button-default"
+    label="Click Me"
+    size="default"
+    theme="default"
     type="button"
   >
-    <span
-      class="leadingIcon"
+    <button
+      class="BasicButton BasicButton--default BasicButton--size-default BasicButton--align-center"
+      size="default"
+      type="button"
     >
-      <i
-        class="fa fa-chevron-left"
-      />
-    </span>
-    Click Me
-  </button>
+      <span
+        class="leadingIcon"
+      >
+        <i
+          class="fa fa-chevron-left"
+        />
+      </span>
+      Click Me
+    </button>
+  </atlas-basic-button>
 </div>
 `;
 
 exports[`BasicButton when using icons when button with type default has a trailing icon renders the icon 1`] = `
 <div>
-  <button
-    class="BasicButton BasicButton--default BasicButton--size-default BasicButton--align-center"
-    id="button-default"
+  <atlas-basic-button
+    align="center"
+    htmlid="button-default"
+    label="Click Me"
+    size="default"
+    theme="default"
     type="button"
   >
-    Click Me
-    <span
-      class="trailingIcon"
+    <button
+      class="BasicButton BasicButton--default BasicButton--size-default BasicButton--align-center"
+      size="default"
+      type="button"
     >
-      <i
-        class="fa fa-chevron-left"
-      />
-    </span>
-  </button>
+      Click Me
+      <span
+        class="trailingIcon"
+      >
+        <i
+          class="fa fa-chevron-left"
+        />
+      </span>
+    </button>
+  </atlas-basic-button>
 </div>
 `;
 
 exports[`BasicButton when using icons when button with type destructive has a leading icon renders the icon 1`] = `
 <div>
-  <button
-    class="BasicButton BasicButton--destructive BasicButton--size-default BasicButton--align-center"
-    id="button-destructive"
+  <atlas-basic-button
+    align="center"
+    htmlid="button-destructive"
+    label="Click Me"
+    size="default"
+    theme="destructive"
     type="button"
   >
-    <span
-      class="leadingIcon"
+    <button
+      class="BasicButton BasicButton--destructive BasicButton--size-default BasicButton--align-center"
+      size="default"
+      type="button"
     >
-      <i
-        class="fa fa-chevron-left"
-      />
-    </span>
-    Click Me
-  </button>
+      <span
+        class="leadingIcon"
+      >
+        <i
+          class="fa fa-chevron-left"
+        />
+      </span>
+      Click Me
+    </button>
+  </atlas-basic-button>
 </div>
 `;
 
 exports[`BasicButton when using icons when button with type destructive has a trailing icon renders the icon 1`] = `
 <div>
-  <button
-    class="BasicButton BasicButton--destructive BasicButton--size-default BasicButton--align-center"
-    id="button-destructive"
+  <atlas-basic-button
+    align="center"
+    htmlid="button-destructive"
+    label="Click Me"
+    size="default"
+    theme="destructive"
     type="button"
   >
-    Click Me
-    <span
-      class="trailingIcon"
+    <button
+      class="BasicButton BasicButton--destructive BasicButton--size-default BasicButton--align-center"
+      size="default"
+      type="button"
     >
-      <i
-        class="fa fa-chevron-left"
-      />
-    </span>
-  </button>
+      Click Me
+      <span
+        class="trailingIcon"
+      >
+        <i
+          class="fa fa-chevron-left"
+        />
+      </span>
+    </button>
+  </atlas-basic-button>
 </div>
 `;
 
 exports[`BasicButton when using icons when button with type ghost has a leading icon renders the icon 1`] = `
 <div>
-  <button
-    class="BasicButton BasicButton--ghost BasicButton--size-default BasicButton--align-center"
-    id="button-ghost"
+  <atlas-basic-button
+    align="center"
+    htmlid="button-ghost"
+    label="Click Me"
+    size="default"
+    theme="ghost"
     type="button"
   >
-    <span
-      class="leadingIcon"
+    <button
+      class="BasicButton BasicButton--ghost BasicButton--size-default BasicButton--align-center"
+      size="default"
+      type="button"
     >
-      <i
-        class="fa fa-chevron-left"
-      />
-    </span>
-    Click Me
-  </button>
+      <span
+        class="leadingIcon"
+      >
+        <i
+          class="fa fa-chevron-left"
+        />
+      </span>
+      Click Me
+    </button>
+  </atlas-basic-button>
 </div>
 `;
 
 exports[`BasicButton when using icons when button with type ghost has a trailing icon renders the icon 1`] = `
 <div>
-  <button
-    class="BasicButton BasicButton--ghost BasicButton--size-default BasicButton--align-center"
-    id="button-ghost"
+  <atlas-basic-button
+    align="center"
+    htmlid="button-ghost"
+    label="Click Me"
+    size="default"
+    theme="ghost"
     type="button"
   >
-    Click Me
-    <span
-      class="trailingIcon"
+    <button
+      class="BasicButton BasicButton--ghost BasicButton--size-default BasicButton--align-center"
+      size="default"
+      type="button"
     >
-      <i
-        class="fa fa-chevron-left"
-      />
-    </span>
-  </button>
+      Click Me
+      <span
+        class="trailingIcon"
+      >
+        <i
+          class="fa fa-chevron-left"
+        />
+      </span>
+    </button>
+  </atlas-basic-button>
 </div>
 `;
 
 exports[`BasicButton when using icons when button with type secondary has a leading icon renders the icon 1`] = `
 <div>
-  <button
-    class="BasicButton BasicButton--secondary BasicButton--size-default BasicButton--align-center"
-    id="button-secondary"
+  <atlas-basic-button
+    align="center"
+    htmlid="button-secondary"
+    label="Click Me"
+    size="default"
+    theme="secondary"
     type="button"
   >
-    <span
-      class="leadingIcon"
+    <button
+      class="BasicButton BasicButton--secondary BasicButton--size-default BasicButton--align-center"
+      size="default"
+      type="button"
     >
-      <i
-        class="fa fa-chevron-left"
-      />
-    </span>
-    Click Me
-  </button>
+      <span
+        class="leadingIcon"
+      >
+        <i
+          class="fa fa-chevron-left"
+        />
+      </span>
+      Click Me
+    </button>
+  </atlas-basic-button>
 </div>
 `;
 
 exports[`BasicButton when using icons when button with type secondary has a trailing icon renders the icon 1`] = `
 <div>
-  <button
-    class="BasicButton BasicButton--secondary BasicButton--size-default BasicButton--align-center"
-    id="button-secondary"
+  <atlas-basic-button
+    align="center"
+    htmlid="button-secondary"
+    label="Click Me"
+    size="default"
+    theme="secondary"
     type="button"
   >
-    Click Me
-    <span
-      class="trailingIcon"
+    <button
+      class="BasicButton BasicButton--secondary BasicButton--size-default BasicButton--align-center"
+      size="default"
+      type="button"
     >
-      <i
-        class="fa fa-chevron-left"
-      />
-    </span>
-  </button>
+      Click Me
+      <span
+        class="trailingIcon"
+      >
+        <i
+          class="fa fa-chevron-left"
+        />
+      </span>
+    </button>
+  </atlas-basic-button>
 </div>
 `;
 
 exports[`BasicButton when using icons when button with type tertiary has a leading icon renders the icon 1`] = `
 <div>
-  <button
-    class="BasicButton BasicButton--tertiary BasicButton--size-default BasicButton--align-center"
-    id="button-tertiary"
+  <atlas-basic-button
+    align="center"
+    htmlid="button-tertiary"
+    label="Click Me"
+    size="default"
+    theme="tertiary"
     type="button"
   >
-    <span
-      class="leadingIcon"
+    <button
+      class="BasicButton BasicButton--tertiary BasicButton--size-default BasicButton--align-center"
+      size="default"
+      type="button"
     >
-      <i
-        class="fa fa-chevron-left"
-      />
-    </span>
-    Click Me
-  </button>
+      <span
+        class="leadingIcon"
+      >
+        <i
+          class="fa fa-chevron-left"
+        />
+      </span>
+      Click Me
+    </button>
+  </atlas-basic-button>
 </div>
 `;
 
 exports[`BasicButton when using icons when button with type tertiary has a trailing icon renders the icon 1`] = `
 <div>
-  <button
-    class="BasicButton BasicButton--tertiary BasicButton--size-default BasicButton--align-center"
-    id="button-tertiary"
+  <atlas-basic-button
+    align="center"
+    htmlid="button-tertiary"
+    label="Click Me"
+    size="default"
+    theme="tertiary"
     type="button"
   >
-    Click Me
-    <span
-      class="trailingIcon"
+    <button
+      class="BasicButton BasicButton--tertiary BasicButton--size-default BasicButton--align-center"
+      size="default"
+      type="button"
     >
-      <i
-        class="fa fa-chevron-left"
-      />
-    </span>
-  </button>
+      Click Me
+      <span
+        class="trailingIcon"
+      >
+        <i
+          class="fa fa-chevron-left"
+        />
+      </span>
+    </button>
+  </atlas-basic-button>
 </div>
 `;

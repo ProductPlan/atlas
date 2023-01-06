@@ -32,7 +32,7 @@
   --#{$namespace}-button-background-color-hover: #{color(light-gray-400)};
   --#{$namespace}-button-background-color-focus: #{color(light-gray-400)};
   --#{$namespace}-button-background-color-focus-shadow: #{color(blue-200)};
-  --#{$namespace}-button-background-color-active: #{color(black-400)};
+  --#{$namespace}-button-background-color-active: #{color(light-gray-400)};
   --#{$namespace}-button-color: #{color(black-400)};
 }
 
@@ -81,6 +81,15 @@
   --#{$namespace}-button-trailing-icon-margin: 0 0 0 #{spacer(micro)};
 }
 
+.BasicButton.BasicButton--size-full-width  {
+  --#{$namespace}-button-padding: #{spacer(mini)} #{spacer(small)};
+  --#{$namespace}-button-height: 36px;
+  --#{$namespace}-button-font-size: var(--a-size-font-body-14);
+  --#{$namespace}-button-width: 100%;
+  --#{$namespace}-button-leading-icon-margin: 0 #{spacer(mini)} 0 0;
+  --#{$namespace}-button-trailing-icon-margin: 0 0 0 #{spacer(mini)};
+}
+
 .BasicButton.BasicButton--align-left {
   --#{$namespace}-button-align: flex-start;
 }
@@ -93,7 +102,7 @@
   --#{$namespace}-button-align: center;
 }
 
-:host, :host[type="button"] {
+atlas-basic-button, atlas-basic-button[type="button"] {
   -moz-user-select: none;
   -ms-user-select: none;
   -webkit-appearance: none;
@@ -105,11 +114,11 @@
   user-select: none;
 }
 
-:host([disabled]) {
+atlas-basic-button[disabled] {
   pointer-events: none;
 }
 
-:host([size="full-width"]) {
+atlas-basic-button[size="full-width"] {
   width: 100%;
 }
 
@@ -148,7 +157,7 @@
   }
 
   .trailingIcon {
-    ::slotted(*) {
+    > * {
       display: inline-flex;
       justify-content: center;
       align-items: center;
@@ -157,7 +166,7 @@
   }
 
   .leadingIcon {
-    ::slotted(*) {
+    > * {
       display: inline-flex;
       justify-content: center;
       align-items: center;

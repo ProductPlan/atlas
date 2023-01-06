@@ -17,7 +17,7 @@
     "@productplan/atlas-styles": "*",
     "@productplan/atlas-tokens": "*",
     "preact": "^10.11.2",
-    "preact-custom-element": "^4.2.1",
+    "preactement": "^1.8.2",
     "redefine-custom-elements": "^0.1.2"
   },
   "devDependencies": {
