@@ -2,7 +2,7 @@
   "author": "ProductPlan <dev@productplan.com>",
   "name": "@productplan/atlas-styles",
   "homepage": "https://github.com/ProductPlan/atlas",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "main": "atlas.scss",
   "private": true,
   "license": "MIT",
