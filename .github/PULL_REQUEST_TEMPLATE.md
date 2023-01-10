@@ -21,7 +21,7 @@ Screenshot or gif of the changes made.
 
 ## Ticket
 
-[Ticket TICKET_ID](https://www.pivotaltracker.com/story/show/TICKET_ID)
+[Ticket](https://www.pivotaltracker.com/story/show/TICKET_ID)
 
 ## Checklist
 
