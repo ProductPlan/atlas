@@ -5,5 +5,3 @@ export {
 export { default as IconButton } from "./components/IconButton";
 export { default as DialogBox } from "./components/DialogBox";
 export { default as Drawer } from "./components/Drawer";
-
-export { default as AtlasIcon } from "./src/components/AtlasIcon";
