@@ -24,7 +24,7 @@ module.exports = function (plop) {
       {
         type: "append",
         path: "./src/index.js",
-        template: "export { default as {{componentName}} } from \"./src/components/{{componentName}}\";",
+        template: "export { default as {{componentName}} } from \"./components/{{componentName}}\";",
       }
     ],
   });
