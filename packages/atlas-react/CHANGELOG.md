@@ -1,5 +1,12 @@
 # @productplan/atlas
 
+## 0.4.1
+
+### Patch Changes
+
+- eb41863: test
+- 617766b: fix a bug with disabled attribute on web component
+
 ## 0.4.0
 
 ### Minor Changes
