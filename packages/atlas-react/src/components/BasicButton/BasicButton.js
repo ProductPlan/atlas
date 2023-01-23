@@ -29,19 +29,22 @@ export default function BasicButton({
   if (globalThis?.customElements) {
     import("@productplan/atlas-web-components/dist/lib/BasicButton");
   }
-
+  const properties = {};
+  if (disabled) {
+    properties.disabled = disabled;
+  }
   return (
     <atlas-basic-button
       // create a unique key to force re-rendering of the component
       key={`${label}-${htmlId}-${onClick}-${align}-${disabled}-${htmlType}-${leadingIcon}-${size}-${trailingIcon}-${type}`}
       align={align}
-      disabled={disabled}
       htmlId={htmlId}
       label={label}
       size={size}
       theme={type}
       type={htmlType}
       onClick={onClick}
+      {...properties}
     >
       {leadingIcon && <span slot="leadingIcon">{leadingIcon}</span>}
       {trailingIcon && <span slot="trailingIcon">{trailingIcon}</span>}
