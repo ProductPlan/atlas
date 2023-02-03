@@ -24,7 +24,7 @@ export default function AtlasPopover({
       {
         name: "offset",
         options: {
-          offset: [0, 16],
+          offset: [0, 12],
         },
       },
       {
@@ -96,7 +96,6 @@ AtlasPopover.propTypes = {
 
 /* Questions:
  * does a popover have a maximum height?
- * body has 8 and 14px padding which is a nonstandard padding
  */
 
 /* TODO:

@@ -9,7 +9,7 @@ export default function ExampleAtlasPopoverAbove() {
   return (
     <>
       <div style={{textAlign: "center"}}>
-        <button onClick={() => setShowPopover(true)} ref={setRefElement}>Show Popover</button>
+        <button onClick={() => setShowPopover(!showPopover)} ref={setRefElement}>Show Popover</button>
       </div>
       <AtlasPopover
         open={showPopover}

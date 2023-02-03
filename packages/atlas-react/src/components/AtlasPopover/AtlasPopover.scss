@@ -19,11 +19,11 @@
     background-color: var(--a-color-light-gray-100);
     border-radius: 6px 6px 0 0;
     font-weight: 500;
-    padding: var(--a-spacers-mini) 14px;
+    padding: var(--a-spacers-mini) var(--a-spacers-small);
   }
 
   &__body {
-    padding: var(--a-spacers-mini) 14px;
+    padding: var(--a-spacers-mini) var(--a-spacers-small);
 
     & > *:last-child {
       margin-bottom: 0;
@@ -69,45 +69,74 @@
     display: block;
     position: absolute;
   }
+}
 
-  &--above::before {
-  }
-
-  &--below::before {
-  }
+.AtlasPopover__arrow::after {
+    content: "";
+    display: block;
+    position: absolute;
 }
 
 
 [data-popper-placement^="right"] > .AtlasPopover__arrow {
   left: -10px;
-  border-right: 10px solid var(--a-color-white-400);
-  border-bottom: 10px solid var(--a-color-transparent-empty);
-  border-top: 10px solid var(--a-color-transparent-empty);
-}
-[data-popper-placement^="left"] > .AtlasPopover__arrow {
-  right: -10px;
-  border-left: 10px solid var(--a-color-white-400);
+  border-right: 10px solid var(--a-color-light-gray-400);
   border-bottom: 10px solid var(--a-color-transparent-empty);
   border-top: 10px solid var(--a-color-transparent-empty);
 
+  &::after {
+    border-right: 9px solid var(--a-color-white-400);
+    border-bottom: 9px solid var(--a-color-transparent-empty);
+    border-top: 9px solid var(--a-color-transparent-empty);
+    transform: translate(1px, -9px);
+  }
+}
+[data-popper-placement^="left"] > .AtlasPopover__arrow {
+  right: -10px;
+  border-left: 10px solid var(--a-color-light-gray-400);
+  border-bottom: 10px solid var(--a-color-transparent-empty);
+  border-top: 10px solid var(--a-color-transparent-empty);
+
+  &::after {
+    border-left: 9px solid var(--a-color-white-400);
+    border-bottom: 9px solid var(--a-color-transparent-empty);
+    border-top: 9px solid var(--a-color-transparent-empty);
+    transform: translate(-10px, -9px);
+
+  }
 }
 [data-popper-placement^="top"] > .AtlasPopover__arrow {
   bottom: -8px;
   border-left: 10px solid var(--a-color-transparent-empty);
   border-right: 10px solid var(--a-color-transparent-empty);
-  border-top: 10px solid var(--a-color-white-400);
+  border-top: 10px solid var(--a-color-light-gray-400);
   height: 0;
   top: calc(100%);
   width: 0;
+
+  &::after {
+    border-left: 9px solid var(--a-color-transparent-empty);
+    border-right: 9px solid var(--a-color-transparent-empty);
+    border-top: 9px solid var(--a-color-white-400);
+    transform: translate(-9px, -10px);
+  }
 }
 [data-popper-placement^="bottom"] > .AtlasPopover__arrow {
   top: -11px;
   border-left: 10px solid var(--a-color-transparent-empty);
   border-right: 10px solid var(--a-color-transparent-empty);
-  border-bottom: 10px solid var(--a-color-white-400);
+  border-bottom: 10px solid var(--a-color-light-gray-400);
   bottom: calc(100%);
   height: 0;
   width: 0;
+  top: -10px;
+
+  &::after {
+    border-left: 9px solid var(--a-color-transparent-empty);
+    border-right: 9px solid var(--a-color-transparent-empty);
+    border-bottom: 9px solid var(--a-color-light-gray-100);
+    transform: translate(-9px, 1px);
+  }
 }
 .AtlasPopover--simple > .AtlasPopover__arrow {
   display: none;
