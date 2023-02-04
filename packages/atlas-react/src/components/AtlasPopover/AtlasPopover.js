@@ -15,6 +15,7 @@ export default function AtlasPopover({
   simple = false,
   open = false,
   referenceElement,
+  offset = 12,
 }) {
   const [popperElement, setPopperElement] = useState(null);
   const [arrowElement, setArrowElement] = useState(null);
@@ -24,7 +25,7 @@ export default function AtlasPopover({
       {
         name: "offset",
         options: {
-          offset: [0, 12],
+          offset: [0, offset],
         },
       },
       {
@@ -90,13 +91,12 @@ AtlasPopover.propTypes = {
   simple: PropTypes.bool,
   /** whether to show or hide the popover */
   open: PropTypes.bool,
-
+  /** the element the Popover should point to */
   referenceElement: PropTypes.node,
+  /** how far away the Popover should be from the element it points to */
+  offset: PropTypes.number,
 };
 
 /* Questions:
  * does a popover have a maximum height?
- */
-
-/* TODO:
  */
