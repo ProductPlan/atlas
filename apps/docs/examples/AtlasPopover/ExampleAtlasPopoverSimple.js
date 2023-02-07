@@ -10,14 +10,12 @@ export default function ExampleAtlasPopoverSimple() {
   return (
     <>
       <div style={{textAlign: "center"}}>
-        <button onClick={() => setShowPopover(!showPopover)} ref={setRefElement}>Show Popover</button>
+        <button onClick={() => setShowPopover(!showPopover)} ref={setRefElement}>Show Popover Simple</button>
       </div>
       <AtlasPopover
         open={showPopover}
-        title="Popover Title"
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        Cras ullamcorper blandit ipsum at iaculis.
-        Integer scelerisque efficitur ipsum."
+        title="Popover Simple Title"
+        description="I am a simple popover."
         placement="top"
         onReadMoreClick={() => alert("well hello")}
         simple={true}

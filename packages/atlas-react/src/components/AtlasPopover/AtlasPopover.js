@@ -50,7 +50,7 @@ export default function AtlasPopover({
           style={styles.popper}
           {...attributes.popper}
         >
-          {!simple && <header className="AtlasPopover__header">{title}</header>}
+          <header className="AtlasPopover__header">{title}</header>
           <div className="AtlasPopover__body">
             <div className="AtlasPopover__description">{description}</div>
             {onReadMoreClick && (
@@ -61,9 +61,7 @@ export default function AtlasPopover({
                 {"Read more"}
               </button>
             )}
-            {children && !simple && (
-              <div className="AtlasPopover__meta">{children}</div>
-            )}
+            {children && <div className="AtlasPopover__meta">{children}</div>}
           </div>
           <div
             className="AtlasPopover__arrow"

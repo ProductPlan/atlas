@@ -9,6 +9,11 @@ exports[`AtlasPopover does not render children with type simple 1`] = `
     class="AtlasPopover AtlasPopover--open AtlasPopover--simple"
     style="position: absolute; left: 0px; top: 0px;"
   >
+    <header
+      class="AtlasPopover__header"
+    >
+      Popover simple
+    </header>
     <div
       class="AtlasPopover__body"
     >
@@ -22,6 +27,13 @@ exports[`AtlasPopover does not render children with type simple 1`] = `
       >
         Read more
       </button>
+      <div
+        class="AtlasPopover__meta"
+      >
+        <p>
+          This text should not render
+        </p>
+      </div>
     </div>
     <div
       class="AtlasPopover__arrow"

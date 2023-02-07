@@ -78,7 +78,6 @@ describe("AtlasPopover", () => {
     expect(screen.getByText("Read more")).toBeTruthy();
     expect(screen.getByText("This is a description")).toBeTruthy();
 
-    expect(screen.queryByText("This text should not render")).toBeNull();
     // give it a title and confirm there isnt a title
   });
 
