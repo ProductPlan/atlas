@@ -1,5 +1,11 @@
 # @productplan/atlas
 
+## 0.5.0
+
+### Minor Changes
+
+- 6f8ba6c: Adds AtlasPopover component
+
 ## 0.4.1
 
 ### Patch Changes
