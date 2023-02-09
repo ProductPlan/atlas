@@ -1,0 +1,119 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AtlasPopover does not render children with type simple 1`] = `
+<div>
+  <div
+    style="height: 10px; width: 100px;"
+  />
+  <div
+    class="AtlasPopover AtlasPopover--open AtlasPopover--simple"
+    style="position: absolute; left: 0px; top: 0px;"
+  >
+    <header
+      class="AtlasPopover__header"
+    >
+      Popover simple
+    </header>
+    <div
+      class="AtlasPopover__body"
+    >
+      <div
+        class="AtlasPopover__description"
+      >
+        This is a description
+      </div>
+      <button
+        class="AtlasPopover__action"
+      >
+        Read more
+      </button>
+      <div
+        class="AtlasPopover__meta"
+      >
+        <p>
+          This text should not render
+        </p>
+      </div>
+    </div>
+    <div
+      class="AtlasPopover__arrow"
+      style="position: absolute;"
+    />
+  </div>
+</div>
+`;
+
+exports[`AtlasPopover is not visible when open is false 1`] = `
+<div>
+  <div
+    style="height: 10px; width: 100px;"
+  />
+</div>
+`;
+
+exports[`AtlasPopover renders 1`] = `
+<div>
+  <div
+    style="height: 10px; width: 100px;"
+  />
+  <div
+    class="AtlasPopover AtlasPopover--open"
+    style="position: absolute; left: 0px; top: 0px;"
+  >
+    <header
+      class="AtlasPopover__header"
+    >
+      Popover with defaults
+    </header>
+    <div
+      class="AtlasPopover__body"
+    >
+      <div
+        class="AtlasPopover__description"
+      >
+        Hello World
+      </div>
+    </div>
+    <div
+      class="AtlasPopover__arrow"
+      style="position: absolute;"
+    />
+  </div>
+</div>
+`;
+
+exports[`AtlasPopover renders a read more action 1`] = `
+<div>
+  <div
+    style="height: 10px; width: 100px;"
+  />
+  <div
+    class="AtlasPopover AtlasPopover--open"
+    style="position: absolute; left: 0px; top: 0px;"
+  >
+    <header
+      class="AtlasPopover__header"
+    >
+      Popover with read more
+    </header>
+    <div
+      class="AtlasPopover__body"
+    >
+      <div
+        class="AtlasPopover__description"
+      >
+        Hello World
+      </div>
+      <button
+        class="AtlasPopover__action"
+      >
+        Read more
+      </button>
+    </div>
+    <div
+      class="AtlasPopover__arrow"
+      style="position: absolute;"
+    />
+  </div>
+</div>
+`;
