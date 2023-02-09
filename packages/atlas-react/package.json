@@ -2,7 +2,7 @@
   "author": "ProductPlan <dev@productplan.com>",
   "name": "@productplan/atlas",
   "homepage": "https://github.com/ProductPlan/atlas",
-  "version": "0.4.1",
+  "version": "0.5.0",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "sideEffects": false,
