@@ -12,7 +12,6 @@ export default function ExampleAtlasAlertWithButton() {
           hasButton
           label='Button'
           handleClick = { () => alert('Hello!')}
-          type='information'
         />
       </div>
     </div>

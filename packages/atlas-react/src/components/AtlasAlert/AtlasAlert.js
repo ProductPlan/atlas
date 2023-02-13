@@ -4,7 +4,6 @@ import classNames from "classnames";
 import BasicButton from "@components/BasicButton";
 import "./AtlasAlert.scss";
 
-
 const alertTypes = ["default", "information", "success", "warning", "danger"];
 /** An alert which contains important information about a page.  */
 export default function AtlasAlert({
