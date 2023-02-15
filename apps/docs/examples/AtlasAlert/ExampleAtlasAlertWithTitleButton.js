@@ -7,13 +7,11 @@ export default function ExampleAtlasAlertWithTitleButton() {
     <div style={{border: '2px solid var(--a-color-light-gray-100)', width: '548px', borderRadius: '4px'}}>
     <div style={{margin:'4px'}}>
         <AtlasAlert
-          hasTitle
-          title="This alert has a title!"
-          content="This is the content."
+          title="This success alert has a title!"
+          content="This is the content of a success alert that has a title and button."
           icon={<i className="fas fa-circle-check"></i>}
-          hasButton
-          label='Button'
-          handleClick = { () => alert('Hello!')}
+          label='Success'
+          handleClick = { () => alert('Success!')}
           type='success'
         />
       </div>

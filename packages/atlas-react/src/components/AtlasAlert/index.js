@@ -1,1 +1,1 @@
-export { default } from "./AtlasAlert";
+export { default, alertTypes } from "./AtlasAlert";

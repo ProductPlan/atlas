@@ -30,10 +30,9 @@ export default function ExampleAtlasAlertTypes() {
       <div style={{margin:'0px 4px 4px 4px'}}>
         <AtlasAlert
           content="This is a warning alert."
-          icon={<i className="fas fa-fish-fins"></i>}
+          icon={<i className="fas fa-square-exclamation"></i>}
           type="warning"
         />
-      {/* TODO -- wrong icon!!  */}
       </div>
       <div style={{margin:'0px 4px 4px 4px'}}>
         <AtlasAlert

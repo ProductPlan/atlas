@@ -7,10 +7,9 @@ export default function ExampleAtlasAlertWithButton() {
     <div style={{border: '2px solid var(--a-color-light-gray-100)', width: '548px', borderRadius: '4px'}}>
     <div style={{margin:'4px'}}>
         <AtlasAlert
-          content="This is the content."
+          content="This is the content of a default alert."
           icon={<i className="fas fa-circle-info"></i>}
-          hasButton
-          label='Button'
+          label='Default'
           handleClick = { () => alert('Hello!')}
         />
       </div>
