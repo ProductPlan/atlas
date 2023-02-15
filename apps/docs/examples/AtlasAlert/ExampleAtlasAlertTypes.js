@@ -5,7 +5,7 @@ import { AtlasAlert } from "@productplan/atlas";
 /** Alert Types */
 export default function ExampleAtlasAlertTypes() {
   return (
-    <div style={{border: '2px solid var(--a-color-light-gray-100)', width: '548px', borderRadius: '4px'}}>
+    <div style={{border: '2px solid var(--a-color-light-gray-100)', width: '556px', borderRadius: '4px'}}>
     <div style={{margin:'4px'}}>
         <AtlasAlert
           content="This is a default alert."

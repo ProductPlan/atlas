@@ -4,7 +4,7 @@ import { AtlasAlert } from "@productplan/atlas";
 /** Alert with Button and Title */
 export default function ExampleAtlasAlertWithTitleButton() {
   return (
-    <div style={{border: '2px solid var(--a-color-light-gray-100)', width: '548px', borderRadius: '4px'}}>
+    <div style={{border: '2px solid var(--a-color-light-gray-100)', width: '556px', borderRadius: '4px'}}>
     <div style={{margin:'4px'}}>
         <AtlasAlert
           title="This success alert has a title!"
