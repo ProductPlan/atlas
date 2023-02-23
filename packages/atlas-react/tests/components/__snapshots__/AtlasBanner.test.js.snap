@@ -1,0 +1,78 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AtlasBanner renders banner title 1`] = `
+<div>
+  <div
+    class="AtlasBanner AtlasBanner--information"
+  >
+    <div
+      class="AtlasBanner__content"
+    >
+      <i
+        class="fas fa-circle-check"
+      />
+      <div
+        class="AtlasBanner__title"
+      >
+        Dogs are great.
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`AtlasBanner renders banner with a button 1`] = `
+<div>
+  <div
+    class="AtlasBanner AtlasBanner--destructive AtlasBanner--button"
+  >
+    <div
+      class="AtlasBanner__content"
+    >
+      <i
+        class="fas fa-circle-check"
+      />
+      <div
+        class="AtlasBanner__title"
+      >
+        this is a title.
+      </div>
+      <atlas-basic-button
+        align="center"
+        label="Click Me!"
+        size="mini"
+        theme="default"
+        type="button"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`AtlasBanner renders dismissable banner 1`] = `
+<div>
+  <div
+    class="AtlasBanner AtlasBanner--information AtlasBanner--dismissable"
+  >
+    <div
+      class="AtlasBanner__content"
+    >
+      <i
+        class="fas fa-circle-check"
+      />
+      <div
+        class="AtlasBanner__title"
+      >
+        this is a title.
+      </div>
+      <button
+        aria-label="close"
+      >
+        <i
+          class="fas fa-xmark"
+        />
+      </button>
+    </div>
+  </div>
+</div>
+`;

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import PropTypes from "prop-types";
 import classNames from "classnames";
 import BasicButton from "@components/BasicButton";
@@ -7,34 +7,50 @@ import "./AtlasBanner.scss";
 const bannerTypes = ["information", "warning", "destructive", "success"];
 /** A banner which appears on load of a page and rests at the top of the page. They can be dismissible by clicking the close icon, or disappear after a certain duration. */
 export default function AtlasBanner({
-  type,
+  type = "information",
   isDismissable,
   title,
   label = null,
   handleClick,
-  // timeout,
+  timeout,
   leadingIcon,
   trailingIcon,
+  handleClose
 }) {
-  const classes = classNames("AtlasBanner", { [`AtlasBanner--${type}`]: true, "AtlasBanner--dismissable": isDismissable, "AtlasBanner--button": label });
+  const [isOpen, setIsOpen] = useState(true);
+  const classes = classNames("AtlasBanner", {
+    [`AtlasBanner--${type}`]: true,
+    "AtlasBanner--dismissable": isDismissable,
+    "AtlasBanner--button": label,
+  });
 
+  useEffect(() => {
+    if (timeout) {
+      setTimeout(() => {
+        setIsOpen(false);
+      }, timeout);
+    }
+  }, []);
+
+  const handleCloseBanner = () => {
+    handleClose()
+    setIsOpen(false)
+  }
+
+  if(!isOpen){
+    return
+  }
   return (
     <div className={classes}>
       <div className="AtlasBanner__content">
-        <div className="AtlasBanner__required">
         {leadingIcon}
         {title && <div className="AtlasBanner__title">{title}</div>}
-        </div>
-        <div className="AtlasBanner__conditional">
         {label && (
-          <BasicButton
-            label={label}
-            size="mini"
-            // onClick={handleClick}
-          />
+          <BasicButton label={label} size="mini" onClick={handleClick} />
         )}
-        {isDismissable ? trailingIcon : null}
-        </div>
+        {isDismissable && (
+          <button aria-label="close" onClick={handleCloseBanner}>{trailingIcon}</button>
+        )}
       </div>
     </div>
   );
@@ -51,6 +67,10 @@ AtlasBanner.propTypes = {
   label: PropTypes.string,
   /** click handler */
   handleClick: PropTypes.func,
+  /** click handler to close banner */
+  handleClose: PropTypes.func,
+  /** how long to display the banner (in milliseconds) */
+  timeout: PropTypes.number,
   /** icon to display to the left of banner content  */
   leadingIcon: PropTypes.element.isRequired,
   /** icon to display to the right of banner content  */
