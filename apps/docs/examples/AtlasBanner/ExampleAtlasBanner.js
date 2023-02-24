@@ -19,27 +19,18 @@ export default function ExampleAtlasBanner() {
     />
     <AtlasBanner
       title="This is a warning banner."
-      label="Label"
       leadingIcon={<i className="fas fa-circle-check"></i>}
-      // trailingIcon={<i className="fas fa-xmark"></i>}
       type="warning"
-      // isDismissable
     />
     <AtlasBanner
       title="This is a destructive banner."
-      // label="Label"
       leadingIcon={<i className="fas fa-circle-check"></i>}
-      trailingIcon={<i className="fas fa-xmark"></i>}
       type="destructive"
-      isDismissable
     />
     <AtlasBanner
       title="This is a success banner."
-      label="Label"
       leadingIcon={<i className="fas fa-circle-check"></i>}
-      trailingIcon={<i className="fas fa-xmark"></i>}
       type="success"
-      isDismissable
     />
   </div>
   )

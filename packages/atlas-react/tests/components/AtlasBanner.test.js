@@ -20,7 +20,7 @@ describe("AtlasBanner", () => {
         const {container} = render(
             <AtlasBanner
             label="Click Me!"
-            title="this is a title."
+            title="Cats are great."
             leadingIcon={<i className="fas fa-circle-check"></i>}
             trailingIcon={<i className="fas fa-xmark"></i>}
             type="destructive"
@@ -33,11 +33,11 @@ describe("AtlasBanner", () => {
         expect(handleClick).toHaveBeenCalled();
     })
 
-    it("renders dismissable banner", () => {
+    it("renders dismissable banner and checks banner is closed", () => {
         const handleClose = jest.fn();
         const {container} = render(
             <AtlasBanner
-            title="this is a title."
+            title="Birds are great."
             leadingIcon={<i className="fas fa-circle-check"></i>}
             trailingIcon={<i className="fas fa-xmark"></i>}
             isDismissable
@@ -45,7 +45,10 @@ describe("AtlasBanner", () => {
         />
         )
         expect(container).toMatchSnapshot()
+        const content = screen.getByText("Birds are great.")
+        expect(content).toBeTruthy();
         fireEvent.click(screen.getByRole('button', {name: 'close'}))
         expect(handleClose).toHaveBeenCalled();
+        expect(screen.queryByText("Birds are great.")).toBeFalsy();
     })
 })

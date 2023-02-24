@@ -10,14 +10,15 @@ export default function ExampleAtlasBannerDismissableButton() {
          {showButton ?  
          <BasicButton label="Show Banner" onClick={(()=> setShowButton(false))}/> 
          : <AtlasBanner
-          label="Label"
-          title="this is a title."
+          label="Button" 
+          title="This is a title."
           leadingIcon={<i className="fas fa-circle-check"></i>}
           trailingIcon={<i className="fas fa-xmark"></i>}
           type="destructive"
           isDismissable
           handleClose = {(()=> setShowButton(true))}
-        />}
+          handleClick = {(() => alert('Hello!'))}
+          />}
       </div>
     )
   }

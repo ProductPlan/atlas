@@ -35,7 +35,7 @@ exports[`AtlasBanner renders banner with a button 1`] = `
       <div
         class="AtlasBanner__title"
       >
-        this is a title.
+        Cats are great.
       </div>
       <atlas-basic-button
         align="center"
@@ -63,7 +63,35 @@ exports[`AtlasBanner renders dismissable banner 1`] = `
       <div
         class="AtlasBanner__title"
       >
-        this is a title.
+        Birds are great.
+      </div>
+      <button
+        aria-label="close"
+      >
+        <i
+          class="fas fa-xmark"
+        />
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`AtlasBanner renders dismissable banner and checks banner is closed 1`] = `
+<div>
+  <div
+    class="AtlasBanner AtlasBanner--information AtlasBanner--dismissable"
+  >
+    <div
+      class="AtlasBanner__content"
+    >
+      <i
+        class="fas fa-circle-check"
+      />
+      <div
+        class="AtlasBanner__title"
+      >
+        Birds are great.
       </div>
       <button
         aria-label="close"

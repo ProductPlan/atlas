@@ -6,7 +6,7 @@ export default function ExampleAtlasBannerButton() {
   return (
     <div>
     <AtlasBanner 
-            title="this is a title." 
+            title="This banner has a button." 
             label="Label"  
             leadingIcon={<i className="fas fa-circle-check"></i>} 
             type="information"
