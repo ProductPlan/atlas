@@ -49,18 +49,19 @@
     }
   }
 
-  &__content > * {
-    margin-left: 8px;
-  }
   &--button {
     .AtlasBanner__title {
       width: 781px;
+    }
+    .BasicButton {
+      margin: 16px 0 16px 8px;
     }
   }
 
   &--dismissable {
     .AtlasBanner__title {
       width: 812px;
+      margin-right: 8px;
     }
   }
 
@@ -68,15 +69,18 @@
     .AtlasBanner__title {
       width: 745px;
     }
-    .AtlasBanner__content {
-      & > *:last-child { 
-        margin-left: 16px
-      }
+    .BasicButton {
+      margin: 16px 16px 16px 8px;
     }
    }
+
+   &__title {
+    margin: 20px 0 20px 8px;
+  }
+  
   &__content {
     display: flex;
-    margin: 20px 16px;
+    margin: 0px 16px;
     border-radius: 4px;
     align-items: center;
     i::before {
@@ -85,10 +89,10 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      margin: 20px 0 20px 0;
     }
   }
-
-  button {
+  button[aria-label="close"] {
     background: transparent;
     border: none;
   }

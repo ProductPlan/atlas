@@ -19,6 +19,6 @@ describe("AtlasBanner", () => {
     })
     it("shows dismissable banner with button", () => {
         cy.contains("button", "Show Banner").click()
-        cy.contains("div", "This banner can be dismissed.")
+        cy.contains("div", "This is a title.")
     })
 })
