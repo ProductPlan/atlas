@@ -68,6 +68,7 @@
    &.AtlasBanner--dismissable.AtlasBanner--button {
     .AtlasBanner__title {
       width: 745px;
+      margin-right: 0px;
     }
     .BasicButton {
       margin: 16px 16px 16px 8px;
@@ -75,6 +76,7 @@
    }
 
    &__title {
+    width: 840px;
     margin: 20px 0 20px 8px;
   }
   
