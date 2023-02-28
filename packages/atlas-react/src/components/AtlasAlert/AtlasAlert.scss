@@ -1,0 +1,81 @@
+@import "~@productplan/atlas-styles/atlas.scss";
+
+.AtlasAlert{
+  border-radius: 4px;
+  display: flex;
+  flex-direction: row;
+  width: 548px;
+  
+  &__body {
+    margin:  16px 16px 16px 8px;
+    font-size: 14px;
+    line-height: 20px;
+    & > * {
+      margin-bottom: 4px;
+    }
+    & > *:last-child {
+      margin-bottom: 0px;
+    }
+  }
+  
+  &__title {
+    font-weight: var(--a-font-weight-font-500);
+  }
+  
+  &__content {
+    font-weight:var(--a-font-weight-font-400);
+    margin-bottom: 8px;
+  }
+
+  i {
+    margin-top: 16px;
+    margin-left: 16px;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &--default {
+    background: var(--a-color-light-gray-100);
+    i {
+      color: var(--a-color-gray-400)
+    }
+
+    .BasicButton {
+      background-color: var(--a-color-gray-400)
+    }
+  }
+  &--information{
+    background: var(--a-color-blue-100);
+    color: var(--a-color-blue-700);
+    i {
+      color: var(--a-color-blue-400)
+    }
+  }
+  &--success {
+    background: var(--a-color-green-100);
+    color: var(--a-color-green-700);
+    i {
+      color: var(--a-color-green-400)
+    }
+  }
+  &--warning {
+    background: var(--a-color-yellow-100);
+    color: var(--a-color-yellow-700);
+    i {
+      color: var(--a-color-yellow-400)
+    }
+  }
+  &--danger {
+    background: var(--a-color-red-100);
+    color: var(--a-color-red-700);
+    i {
+      color: var(--a-color-red-400)
+    }
+  }
+}
+
+
+

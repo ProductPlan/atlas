@@ -22,7 +22,7 @@ const NavigationLink = ({ href, label }) => {
 
 export default function Navigation({ components }) {
   const router = useRouter();
-  const portedComponents = ["BasicButton", "AtlasPopover"];
+  const portedComponents = ["BasicButton", "AtlasPopover", "AtlasAlert"];
 
   return (
     <nav className={styles.Sidebar}>
