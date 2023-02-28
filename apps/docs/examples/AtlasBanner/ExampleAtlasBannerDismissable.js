@@ -11,7 +11,7 @@ export default function ExampleAtlasBannerDismissable() {
          <BasicButton label="Show Banner" onClick={(()=> setShowButton(false))}/> 
          : <AtlasBanner
           title="This banner can be dismissed."
-          leadingIcon={<i className="fas fa-circle-check"></i>}
+          leadingIcon={<i className="fa fa-circle-exclamation"></i>}
           trailingIcon={<i className="fas fa-xmark"></i>}
           type="warning"
           isDismissable

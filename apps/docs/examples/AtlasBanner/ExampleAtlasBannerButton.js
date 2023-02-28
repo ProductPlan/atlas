@@ -8,7 +8,7 @@ export default function ExampleAtlasBannerButton() {
     <AtlasBanner 
             title="This banner has a button." 
             label="Label"  
-            leadingIcon={<i className="fas fa-circle-check"></i>} 
+            leadingIcon={<i className="fas fa-circle-info"></i>} 
             type="information"
             handleClick = {(() => alert('Hello!'))}
     />

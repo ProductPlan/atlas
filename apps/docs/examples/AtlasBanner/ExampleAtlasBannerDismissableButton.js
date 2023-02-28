@@ -12,7 +12,7 @@ export default function ExampleAtlasBannerDismissableButton() {
          : <AtlasBanner
           label="Button" 
           title="This is a title."
-          leadingIcon={<i className="fas fa-circle-check"></i>}
+          leadingIcon={<i className="fas fa-triangle-exclamation"></i>}
           trailingIcon={<i className="fas fa-xmark"></i>}
           type="destructive"
           isDismissable
