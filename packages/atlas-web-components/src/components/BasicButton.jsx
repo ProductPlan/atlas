@@ -18,7 +18,7 @@ const BasicButton = ({
       <button
         className={`BasicButton BasicButton--${theme} BasicButton--size-${size} BasicButton--align-${align}`}
         type={type}
-        htmlId={htmlId}
+        id={htmlId}
         disabled={disabled}
         size={size}
       >
