@@ -1,0 +1,181 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AtlasAlert renders a button 1`] = `
+<div>
+  <div
+    class="AtlasAlert AtlasAlert--default"
+  >
+    <i
+      class="fas fa-circle-info"
+    />
+    <div
+      class="AtlasAlert__body"
+    >
+      <div
+        class="AtlasAlert__content"
+      >
+        This is the content.
+      </div>
+      <atlas-basic-button
+        align="center"
+        label="Click Me!"
+        size="mini"
+        theme="default"
+        type="button"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`AtlasAlert renders alert content 1`] = `
+<div>
+  <div
+    class="AtlasAlert AtlasAlert--default"
+  >
+    <i
+      class="fas fa-circle-info"
+    />
+    <div
+      class="AtlasAlert__body"
+    >
+      <div
+        class="AtlasAlert__content"
+      >
+        This is a default alert.
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`AtlasAlert renders alert title 1`] = `
+<div>
+  <div
+    class="AtlasAlert AtlasAlert--default"
+  >
+    <i
+      class="fas fa-circle-info"
+    />
+    <div
+      class="AtlasAlert__body"
+    >
+      <div
+        class="AtlasAlert__title"
+      >
+        Finding Nemo
+      </div>
+      <div
+        class="AtlasAlert__content"
+      >
+        Just keep swimming.
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`AtlasAlert when using different types renders a danger alert 1`] = `
+<div>
+  <div
+    class="AtlasAlert AtlasAlert--default"
+  >
+    <i
+      class="fas fa-circle-info"
+    />
+    <div
+      class="AtlasAlert__body"
+    >
+      <div
+        class="AtlasAlert__content"
+      >
+        This is a danger alert.
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`AtlasAlert when using different types renders a default alert 1`] = `
+<div>
+  <div
+    class="AtlasAlert AtlasAlert--default"
+  >
+    <i
+      class="fas fa-circle-info"
+    />
+    <div
+      class="AtlasAlert__body"
+    >
+      <div
+        class="AtlasAlert__content"
+      >
+        This is a default alert.
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`AtlasAlert when using different types renders a information alert 1`] = `
+<div>
+  <div
+    class="AtlasAlert AtlasAlert--default"
+  >
+    <i
+      class="fas fa-circle-info"
+    />
+    <div
+      class="AtlasAlert__body"
+    >
+      <div
+        class="AtlasAlert__content"
+      >
+        This is a information alert.
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`AtlasAlert when using different types renders a success alert 1`] = `
+<div>
+  <div
+    class="AtlasAlert AtlasAlert--default"
+  >
+    <i
+      class="fas fa-circle-info"
+    />
+    <div
+      class="AtlasAlert__body"
+    >
+      <div
+        class="AtlasAlert__content"
+      >
+        This is a success alert.
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`AtlasAlert when using different types renders a warning alert 1`] = `
+<div>
+  <div
+    class="AtlasAlert AtlasAlert--default"
+  >
+    <i
+      class="fas fa-circle-info"
+    />
+    <div
+      class="AtlasAlert__body"
+    >
+      <div
+        class="AtlasAlert__content"
+      >
+        This is a warning alert.
+      </div>
+    </div>
+  </div>
+</div>
+`;
