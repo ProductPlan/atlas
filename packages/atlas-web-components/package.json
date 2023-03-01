@@ -3,7 +3,7 @@
   "name": "@productplan/atlas-web-components",
   "homepage": "https://github.com/ProductPlan/atlas",
   "license": "MIT",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "type": "module",
   "scripts": {
     "dev": "yarn run build:lib",

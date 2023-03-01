@@ -1,5 +1,11 @@
 # @productplan/atlas-web-components
 
+## 0.4.1
+
+### Patch Changes
+
+- 984c297: fix issue with button not receiving an id attribute
+
 ## 0.4.0
 
 ### Minor Changes
