@@ -5,7 +5,7 @@ import "./BasicButton.scss";
 const BasicButton = ({
   align = "center",
   disabled = undefined,
-  htmlId = undefined,
+  htmlid = undefined,
   label = "",
   leadingIcon = null,
   size = "default",
@@ -18,7 +18,7 @@ const BasicButton = ({
       <button
         className={`BasicButton BasicButton--${theme} BasicButton--size-${size} BasicButton--align-${align}`}
         type={type}
-        id={htmlId}
+        id={htmlid}
         disabled={disabled}
         size={size}
       >
@@ -30,4 +30,4 @@ const BasicButton = ({
   );
 };
 
-define('atlas-basic-button', () => BasicButton, { attributes: ['align', 'disabled', 'htmlId', 'label', 'size', 'theme', 'type']})
+define('atlas-basic-button', () => BasicButton, { attributes: ['align', 'disabled', 'htmlid', 'label', 'size', 'theme', 'type']})
