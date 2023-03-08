@@ -1,5 +1,11 @@
 # @productplan/atlas
 
+## 0.6.0
+
+### Minor Changes
+
+- 2b7014c: alert, banner, additional bugfixes for buttons
+
 ## 0.5.0
 
 ### Minor Changes

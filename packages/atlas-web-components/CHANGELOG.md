@@ -1,5 +1,11 @@
 # @productplan/atlas-web-components
 
+## 0.4.2
+
+### Patch Changes
+
+- 2b7014c: alert, banner, additional bugfixes for buttons
+
 ## 0.4.1
 
 ### Patch Changes
