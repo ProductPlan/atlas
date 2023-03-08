@@ -38,7 +38,7 @@ export default function BasicButton({
       // create a unique key to force re-rendering of the component
       key={`${label}-${htmlId}-${onClick}-${align}-${disabled}-${htmlType}-${leadingIcon}-${size}-${trailingIcon}-${type}`}
       align={align}
-      htmlId={htmlId}
+      htmlid={htmlId}
       label={label}
       size={size}
       theme={type}
