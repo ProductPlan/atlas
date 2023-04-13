@@ -9,7 +9,7 @@
     "lint": "stylelint {src,tests}/**/*.scss"
   },
   "devDependencies": {
-    "@productplan/atlas-tokens": "0.2.1",
+    "@productplan/atlas-tokens": "0.2.2",
     "stylelint": "^14.16.0",
     "stylelint-config-standard-scss": "^6.1.0"
   }

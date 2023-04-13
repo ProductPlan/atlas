@@ -1,5 +1,11 @@
 # @productplan/atlas-tokens
 
+## 0.2.2
+
+### Patch Changes
+
+- ab779d8: add border radius tokens
+
 ## 0.2.1
 
 ### Patch Changes
