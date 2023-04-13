@@ -1,0 +1,40 @@
+{
+  "border-radius": {
+    "micro": {
+      "value": "0.125rem",
+      "description": "Radius of 2px"
+    },
+    "mini": {
+      "value": "0.25rem",
+      "description": "Radius of 4px"
+    },
+    "small": {
+      "value": "0.5rem",
+      "description": "Radius of 8px"
+    },
+    "medium": {
+      "value": "0.75rem",
+      "description": "Radius of 12px"
+    },
+    "large": {
+      "value": "1rem",
+      "description": "Radius of 16px"
+    },
+    "xl": {
+      "value": "1.25rem",
+      "description": "Radius of 20px"
+    },
+    "2xl": {
+      "value": "1.5rem",
+      "description": "Radius of 24px"
+    },
+    "half": {
+      "value": "50%",
+      "description": "Radius of 50%"
+    },
+    "full": {
+      "value": "624.9375rem",
+      "description": "Radius of 9999px"
+    }
+  }
+}

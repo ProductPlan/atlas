@@ -18,6 +18,10 @@ const DesignTokensNavigation = () => {
       href: "/tokens/spacers",
     },
     {
+      label: "Shapes",
+      href: "/tokens/shapes",
+    },
+    {
       label: "Typography",
       href: "/tokens/typography",
     },
