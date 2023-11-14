@@ -1,5 +1,11 @@
 # @productplan/atlas-web-components
 
+## 0.4.3
+
+### Patch Changes
+
+- 0b44e9f: add ghost and tertiarty variation fixes
+
 ## 0.4.2
 
 ### Patch Changes
