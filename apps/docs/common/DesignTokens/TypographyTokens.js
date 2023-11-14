@@ -1,4 +1,5 @@
 import styles from "./DesignTokens.module.scss";
+import DesignTokenValueInput from "./DesignTokenValueInput";
 
 const TypographyTokens = ({ fontFamilies }) => {
   return (
@@ -32,7 +33,9 @@ const TypographyTokens = ({ fontFamilies }) => {
                 <code>{fontFamilies[fontFamily].name}</code>
               </td>
               <td>
-                <code>{`--a-size-font-${fontFamily}`}</code>
+                <DesignTokenValueInput
+                  value={`--a-size-font-${fontFamily}`}
+                />
               </td>
               <td className={styles.DesignToken__CellDescription}>
                 {fontFamilies[fontFamily].description}

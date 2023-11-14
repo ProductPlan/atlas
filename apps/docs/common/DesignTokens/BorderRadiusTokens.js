@@ -1,4 +1,5 @@
 import styles from "./DesignTokens.module.scss";
+import DesignTokenValueInput from "./DesignTokenValueInput";
 
 const BorderRadiusTokens = ({ borderRadiusTokens }) => {
   return (
@@ -36,7 +37,9 @@ const BorderRadiusTokens = ({ borderRadiusTokens }) => {
                   <code>{borderRadiusTokens[borderRadius].name}</code>
                 </td>
                 <td>
-                  <code>{`--a-border-radius-${borderRadius}`}</code>
+                  <DesignTokenValueInput
+                    value={`--a-border-radius-${borderRadius}`}
+                  />
                 </td>
                 <td className={styles.DesignToken__CellDescription}>
                   {borderRadiusTokens[borderRadius].description}

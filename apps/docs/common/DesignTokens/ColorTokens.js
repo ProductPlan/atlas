@@ -1,4 +1,5 @@
 import styles from "./DesignTokens.module.scss";
+import DesignTokenValueInput from "./DesignTokenValueInput";
 
 const ColorTokens = ({ colors }) => {
   return (
@@ -26,17 +27,22 @@ const ColorTokens = ({ colors }) => {
                       width: 100,
                       height: 40,
                       borderRadius: 4,
+                      border: 1,
+                      borderColor: "var(--a-color-light-gray-300)",
+                      borderStyle: "solid",
                     }}
                   />
                 </td>
                 <td>
-                  <code>{colors[color][shade].value}</code>
+                  <code>{colors[color][shade].value.toUpperCase()}</code>
                 </td>
                 <td>
                   <code>{colors[color][shade].name}</code>
                 </td>
                 <td>
-                  <code>{`--a-color-${color}-${shade}`}</code>
+                  <DesignTokenValueInput
+                    value={`--a-color-${color}-${shade}`}
+                  />
                 </td>
                 <td className={styles.DesignToken__CellDescription}>
                   {colors[color][shade].description}
