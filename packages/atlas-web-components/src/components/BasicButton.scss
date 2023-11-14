@@ -11,7 +11,7 @@
 }
 
 .BasicButton.BasicButton--ghost {
-  --#{$namespace}-button-background-color: transparent;
+  --#{$namespace}-button-background-color: #{color(white-400)};
   --#{$namespace}-button-background-color-disabled: #{color(white-400)};
   --#{$namespace}-button-background-color-hover: #{color(light-gray-300)};
   --#{$namespace}-button-background-color-focus: #{color(light-gray-300)};
@@ -154,7 +154,7 @@ atlas-basic-button[size="full-width"] {
   }
 
   &:disabled {
-    background-color: var(--#{$namespace}-button-background-disabled, --#{$namespace}-button-background-color);
+    background-color: var(--#{$namespace}-button-background-color-disabled);
     opacity: 0.5;
   }
 
