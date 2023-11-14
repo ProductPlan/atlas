@@ -1,5 +1,11 @@
 # @productplan/atlas
 
+## 0.6.1
+
+### Patch Changes
+
+- 6a7684e: add ghost style variant change
+
 ## 0.6.0
 
 ### Minor Changes
