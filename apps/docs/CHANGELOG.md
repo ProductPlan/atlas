@@ -1,5 +1,13 @@
 # @productplan/atlas-docs
 
+## 0.4.2
+
+### Patch Changes
+
+- 0b44e9f: add ghost and tertiarty variation fixes
+- Updated dependencies [0b44e9f]
+  - @productplan/atlas-web-components@0.4.3
+
 ## 0.4.1
 
 ### Patch Changes
