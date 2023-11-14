@@ -1,4 +1,5 @@
 import styles from "./DesignTokens.module.scss";
+import DesignTokenValueInput from "./DesignTokenValueInput";
 
 const SpacerTokens = ({ spacers }) => {
   return (
@@ -32,7 +33,9 @@ const SpacerTokens = ({ spacers }) => {
                 <code>{spacers[spacer].name}</code>
               </td>
               <td>
-                <code>{`--a-spacers-${spacer}`}</code>
+                <DesignTokenValueInput
+                  value={`--a-spacers-${spacer}`}
+                />
               </td>
               <td className={styles.DesignToken__CellDescription}>
                 {spacers[spacer].description}

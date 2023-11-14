@@ -2,6 +2,7 @@
 
 .BasicButton.BasicButton--default {
   --#{$namespace}-button-background-color: #{color(blue-400)};
+  --#{$namespace}-button-background-color-disabled: #{color(blue-400)};
   --#{$namespace}-button-background-color-hover: #{color(blue-500)};
   --#{$namespace}-button-background-color-focus: #{color(blue-700)};
   --#{$namespace}-button-background-color-focus-shadow: #{color(blue-200)};
@@ -11,6 +12,7 @@
 
 .BasicButton.BasicButton--ghost {
   --#{$namespace}-button-background-color: transparent;
+  --#{$namespace}-button-background-color-disabled: #{color(white-400)};
   --#{$namespace}-button-background-color-hover: #{color(light-gray-300)};
   --#{$namespace}-button-background-color-focus: #{color(light-gray-300)};
   --#{$namespace}-button-background-color-focus-shadow: #{color(blue-200)};
@@ -20,6 +22,7 @@
 
 .BasicButton.BasicButton--secondary {
   --#{$namespace}-button-background-color: #{color(blue-100)};
+  --#{$namespace}-button-background-color-disabled: #{color(blue-100)};
   --#{$namespace}-button-background-color-hover: #{color(blue-200)};
   --#{$namespace}-button-background-color-focus: #{color(blue-200)};
   --#{$namespace}-button-background-color-focus-shadow: #{color(blue-200)};
@@ -29,6 +32,7 @@
 
 .BasicButton.BasicButton--tertiary {
   --#{$namespace}-button-background-color: #{color(light-gray-100)};
+  --#{$namespace}-button-background-color-disabled: "transparent";
   --#{$namespace}-button-background-color-hover: #{color(light-gray-400)};
   --#{$namespace}-button-background-color-focus: #{color(light-gray-400)};
   --#{$namespace}-button-background-color-focus-shadow: #{color(blue-200)};
@@ -38,6 +42,7 @@
 
 .BasicButton.BasicButton--destructive {
   --#{$namespace}-button-background-color: #{color(red-400)};
+  --#{$namespace}-button-background-color-disabled: #{color(red-400)};
   --#{$namespace}-button-background-color-hover: #{color(red-500)};
   --#{$namespace}-button-background-color-focus: #{color(red-500)};
   --#{$namespace}-button-background-color-focus-shadow: #{color(red-100)};
@@ -149,6 +154,7 @@ atlas-basic-button[size="full-width"] {
   }
 
   &:disabled {
+    background-color: var(--#{$namespace}-button-background-disabled, --#{$namespace}-button-background-color);
     opacity: 0.5;
   }
 

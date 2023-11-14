@@ -1,4 +1,5 @@
 import styles from "./DesignTokens.module.scss";
+import DesignTokenValueInput from "./DesignTokenValueInput";
 
 const FontTokens = ({ fontSizes, lineHeights, fontWeights }) => {
   return (
@@ -32,7 +33,9 @@ const FontTokens = ({ fontSizes, lineHeights, fontWeights }) => {
                 <code>{fontSizes[fontSize].name}</code>
               </td>
               <td>
-                <code>{`--a-size-font-${fontSize}`}</code>
+                <DesignTokenValueInput
+                  value={`--a-size-font-${fontSize}`}
+                />
               </td>
               <td className={styles.DesignToken__CellDescription}>
                 {fontSizes[fontSize].description}
@@ -56,7 +59,9 @@ const FontTokens = ({ fontSizes, lineHeights, fontWeights }) => {
                 <code>{fontWeights[fontWeight].name}</code>
               </td>
               <td>
-                <code>{`--a-font-weight-font-${fontWeight}`}</code>
+                <DesignTokenValueInput
+                  value={`--a-font-weight-font-${fontWeight}`}
+                />
               </td>
               <td className={styles.DesignToken__CellDescription}>
                 {fontWeights[fontWeight].description}
@@ -80,7 +85,9 @@ const FontTokens = ({ fontSizes, lineHeights, fontWeights }) => {
                 <code>{lineHeights[lineHeight].name}</code>
               </td>
               <td>
-                <code>{`--a-line-height-font-${lineHeight}`}</code>
+                <DesignTokenValueInput
+                  value={`--a-line-height-font-${lineHeight}`}
+                />
               </td>
               <td className={styles.DesignToken__CellDescription}>
                 {lineHeights[lineHeight].description}
